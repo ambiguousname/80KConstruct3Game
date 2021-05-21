@@ -1,0 +1,6 @@
+For the Construct 3 Demo, we need:
+- Placeholder art (with the general style that our final game is going to have)
+- Buying traps
+- Enemies wandering around that can fall into pits
+- Selecting and placing different traps (maybe include 1 or 2 of the traps from our miro board?)
+- Maybe some sound effects?
