@@ -8,6 +8,7 @@ class Enemy {
 		this.instance = enemyInstance;
 		this.pathIndex = 0;
 		this.dying = false;
+		this.dead = false;
 		this.trapImmunity = [];
 	}
 	initializePathing(){
@@ -20,11 +21,13 @@ class Enemy {
 		if (self.pathIndex >= paths[self.name].length) self.pathIndex = 0;
 	}
 	update(self){
-		if(self.instance.width <= 0 && self.instance.height <= 0) self.instance.destroy();
-		if (self.dying) {self.instance.width -= 2; self.instance.height -= 2; self.instance.behaviors.MoveTo.stop();}
+		if (!self.dead){
+			if(self.instance.width <= 0 && self.instance.height <= 0) {self.instance.destroy(); self.dead = true;}
+			if (self.dying) {self.instance.width -= 2; self.instance.height -= 2; self.instance.behaviors.MoveTo.stop();}
+		}
 	}
 	getCollision(self, trapInstance){
-		if (!self.dying && self.instance.x > trapInstance.x - trapInstance.width/2 && self.instance.x < trapInstance.x + trapInstance.width/2 && self.instance.y > trapInstance.y - trapInstance.height/2 && self.instance.y < trapInstance.y + trapInstance.height/2 && !(trapInstance.objectType.name in self.trapImmunity)){
+		if (!self.dying && self.instance.x > trapInstance.x - trapInstance.width/2 && self.instance.x < trapInstance.x + trapInstance.width/2 && self.instance.y > trapInstance.y - trapInstance.height/2 && self.instance.y < trapInstance.y + trapInstance.height/2 && !self.trapImmunity.includes(trapInstance.objectType.name)){
 			if(trapInstance.objectType.name === "Pitfall") self.dying = true;
 		}
 	}
