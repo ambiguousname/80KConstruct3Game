@@ -1,0 +1,37 @@
+{
+	"name": "Balloon",
+	"plugin-id": "Sprite",
+	"sid": 454022140059441,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 133,
+						"height": 216,
+						"originX": 0.7969924812030075,
+						"originY": 0.4444444444444444,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9916389,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 725241384566033,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

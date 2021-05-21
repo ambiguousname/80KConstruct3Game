@@ -81,7 +81,8 @@
 			"Keyboard",
 			"SelectionText",
 			"Inventory",
-			"Pitfall"
+			"Pitfall",
+			"Balloon"
 		],
 		"subfolders": []
 	},
