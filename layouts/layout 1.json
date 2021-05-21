@@ -6,6 +6,39 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "TiledBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -10,
+						"y": -10,
+						"width": 1731.6726071316848,
+						"height": 979.8613416518863,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
@@ -146,28 +179,46 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 6,
+					"uid": 7,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 488,
-						"y": 232,
-						"width": 203,
-						"height": 162,
-						"originX": 0,
-						"originY": 0,
+						"x": 411,
+						"y": 367,
+						"width": 78.77816956492453,
+						"height": 78.77816956492453,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

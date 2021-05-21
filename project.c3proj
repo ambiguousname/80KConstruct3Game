@@ -29,6 +29,30 @@
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
 		}
 	],
 	"uniqueId": "ae4uc6y0npj",
@@ -36,7 +60,8 @@
 		"items": [
 			"Enemy",
 			"PathObj",
-			"TiledBackground"
+			"TiledBackground",
+			"Player"
 		],
 		"subfolders": []
 	},
