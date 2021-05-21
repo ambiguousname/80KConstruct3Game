@@ -82,7 +82,9 @@
 			"SelectionText",
 			"Inventory",
 			"Pitfall",
-			"Balloon"
+			"Balloon",
+			"Text",
+			"Sprite"
 		],
 		"subfolders": []
 	},
