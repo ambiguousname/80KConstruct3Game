@@ -9,18 +9,17 @@ class Enemy {
 	}
 	
 	initializePathing(){
-		var self = this;
-		this.instance.behaviors.MoveTo.addEventListener("arrived", function(){
-			var position = paths[self.name][self.pathIndex];
-			self.instance.behaviors.MoveTo.moveToPosition(position[0], position[1]);
-			self.pathIndex += 1;
-			if (self.pathIndex >= paths[self.name].length) {
-				self.pathIndex = 0;
-			}
-		});
-		console.log(paths);
+		this.instance.behaviors.MoveTo.addEventListener("arrived", () => updatePath(this));
 		var startPos = paths[this.name][this.pathIndex];
 		this.instance.behaviors.MoveTo.moveToPosition(startPos[0], startPos[1]);
+	}
+	updatePath(self){
+		var position = paths[self.name][self.pathIndex];
+		self.instance.behaviors.MoveTo.moveToPosition(position[0], position[1]);
+		self.pathIndex += 1;
+		if (self.pathIndex >= paths[self.name].length) {
+			self.pathIndex = 0;
+		}
 	}
 }
 runOnStartup(async runtime =>
