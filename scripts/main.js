@@ -1,5 +1,5 @@
+// Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to read my code.
 var paths = new Map();
-var enemies = [];
 class Enemy {
 	constructor(enemyName, enemyType, enemyInstance) {
 		this.name = enemyName;
@@ -7,23 +7,17 @@ class Enemy {
 		this.instance = enemyInstance;
 		this.pathIndex = 0;
 	}
-	
 	initializePathing(){
 		this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this));
-		var startPos = paths[this.name][this.pathIndex];
-		this.instance.behaviors.MoveTo.moveToPosition(startPos[0], startPos[1]);
+		this.instance.behaviors.MoveTo.moveToPosition(paths[this.name][this.pathIndex][0], paths[this.name][this.pathIndex][1]);
 	}
 	updatePath(self){
-		var position = paths[self.name][self.pathIndex];
-		self.instance.behaviors.MoveTo.moveToPosition(position[0], position[1]);
+		self.instance.behaviors.MoveTo.moveToPosition(paths[self.name][self.pathIndex][0], paths[self.name][self.pathIndex][1]);
 		self.pathIndex += 1;
-		if (self.pathIndex >= paths[self.name].length) {
-			self.pathIndex = 0;
-		}
+		if (self.pathIndex >= paths[self.name].length) self.pathIndex = 0;
 	}
 }
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime)));
-
 async function OnBeforeProjectStart(runtime)
 {
 	// Get the paths and add them to our object:
@@ -40,11 +34,9 @@ async function OnBeforeProjectStart(runtime)
 		}
 	});
 	// Now we get the enemies:
-	var enemy_temp_arr = runtime.objects.Enemy.getAllInstances();
-	enemy_temp_arr.forEach(function(e){
+	runtime.objects.Enemy.getAllInstances().forEach(function(e){
 		var enemy = new Enemy(e.instVars.EnemyName, e.instVars.EnemyType, e);
 		enemy.initializePathing();
-		enemies.push(enemy);
 	});
 	runtime.globalVars.Selected = 0;
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
