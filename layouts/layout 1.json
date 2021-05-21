@@ -80,7 +80,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use arrow keys to move around.\n\nUse the number keys to switch between traps.\n\nPress SPACE to place down a trap.",
+						"text": "Use arrow keys to move around.\n\nUse the number keys or numpad to switch between traps.\n\nPress SPACE to place down a trap.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -103,8 +103,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 58,
-						"y": 55,
+						"x": 55,
+						"y": 43,
 						"width": 356,
 						"height": 146,
 						"originX": 0,
@@ -146,50 +146,6 @@
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "Enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {
-						"EnemyName": "",
-						"EnemyType": ""
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 100,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 547,
-						"y": 85,
-						"width": 95.4358423235212,
-						"height": 95.4358423235212,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
 					}
 				},
 				{
@@ -241,6 +197,138 @@
 						],
 						"angle": 0,
 						"zElevation": 1
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"EnemyName": "",
+						"EnemyType": ""
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 200,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 547,
+						"y": 85,
+						"width": 95.4358423235212,
+						"height": 95.4358423235212,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {
+						"EnemyName": "Dave",
+						"EnemyType": ""
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 200,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 758,
+						"y": 606,
+						"width": 95.4358423235212,
+						"height": 95.4358423235212,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {
+						"EnemyName": "Bob",
+						"EnemyType": ""
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 200,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1378,
+						"y": 175,
+						"width": 95.4358423235212,
+						"height": 95.4358423235212,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
 					}
 				},
 				{
@@ -325,6 +413,326 @@
 					"world": {
 						"x": 546,
 						"y": 89,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 756,
+						"y": 605,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 499,
+						"y": 793,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 16,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 895,
+						"y": 836,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"Position": 3,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1203,
+						"y": 679,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"Position": 4,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 870,
+						"y": 641,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"instanceVariables": {
+						"Position": 5,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1282,
+						"y": 863,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Bob"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1374,
+						"y": 176,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Bob"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1003,
+						"y": 383,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "Bob"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1166,
+						"y": 569,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {
+						"Position": 3,
+						"EnemyName": "Bob"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1507,
+						"y": 567,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
