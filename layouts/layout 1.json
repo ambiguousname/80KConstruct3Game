@@ -146,46 +146,28 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "TiledBackground",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
 					},
 					"uid": 6,
 					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 192,
-						"y": 325,
-						"width": 122.93494214420895,
-						"height": 122.93494214420895,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 488,
+						"y": 232,
+						"width": 203,
+						"height": 162,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
