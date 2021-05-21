@@ -1,0 +1,50 @@
+{
+	"name": "PathObj",
+	"plugin-id": "Sprite",
+	"sid": 449077714248373,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Position",
+			"type": "number",
+			"desc": "",
+			"sid": 146398985772059
+		},
+		{
+			"name": "EnemyName",
+			"type": "string",
+			"desc": "",
+			"sid": 211747988212143
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3149651,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 969759413303789,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
