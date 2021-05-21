@@ -1,4 +1,4 @@
-var paths = {};
+var paths = new Map();
 var enemies = [];
 class Enemy {
 	constructor(enemyName, enemyType, enemyInstance) {
@@ -22,13 +22,7 @@ class Enemy {
 		}
 	}
 }
-runOnStartup(async runtime =>
-{
-	// Code to run on the loading screen.
-	// Note layouts, objects etc. are not yet available.
-	
-	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
-});
+runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime)));
 
 async function OnBeforeProjectStart(runtime)
 {
@@ -52,4 +46,23 @@ async function OnBeforeProjectStart(runtime)
 		enemy.initializePathing();
 		enemies.push(enemy);
 	});
+	runtime.globalVars.Selected = 0;
+	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
+	runtime.objects.SelectionText.getFirstInstance().text = "Trap: Pitfall. Count: " + inv[Object.keys(inv)[0]] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
+	runtime.addEventListener("tick", () => Tick(runtime));
+}
+
+function Tick(runtime){
+	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
+	for (var i = 0; i < Object.keys(inv).length; i++){
+		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
+			runtime.globalVars.Selected = i;
+			runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[i] + ". Count: " + inv[Object.keys(inv)[i]] + ".";
+		}
+	}
+	if (runtime.keyboard.isKeyDown("Space") && inv[Object.keys(inv)[runtime.globalVars.Selected]] > 0) {
+		runtime.objects[Object.keys(inv)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
+		inv[Object.keys(inv)[runtime.globalVars.Selected]] -= 1;
+		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + ".";
+	}
 }

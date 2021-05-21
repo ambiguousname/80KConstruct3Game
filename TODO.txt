@@ -4,4 +4,5 @@ For the Construct 3 Demo, we need:
 - Mission Timer - Wendi
 - Enemies wandering around that can fall into pits - Tyler
 - Selecting and placing different traps (maybe include 1 or 2 of the traps from our miro board?) - Tyler
+- Refunding Traps - Tyler (Wait for Buying traps to be done)
 - Maybe some sound effects and/or music? - Tyler

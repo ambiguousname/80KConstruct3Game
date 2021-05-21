@@ -24,8 +24,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
@@ -70,7 +78,10 @@
 			"PathObj",
 			"TiledBackground",
 			"Player",
-			"Inventory"
+			"Keyboard",
+			"SelectionText",
+			"Inventory",
+			"Pitfall"
 		],
 		"subfolders": []
 	},

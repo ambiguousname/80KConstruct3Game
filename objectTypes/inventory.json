@@ -1,62 +1,92 @@
 {
 	"name": "Inventory",
-	"plugin-id": "Dictionary",
-	"sid": 123125009949923,
-	"isGlobal": true,
+	"plugin-id": "Sprite",
+	"sid": 810509721350326,
+	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Pitfall",
 			"type": "number",
 			"desc": "",
-			"sid": 505366907564908
+			"sid": 911282390709777
 		},
 		{
 			"name": "Balloon",
 			"type": "number",
 			"desc": "",
-			"sid": 342780667984411
+			"sid": 790241261824053
 		},
 		{
 			"name": "Trapdoor",
 			"type": "number",
 			"desc": "",
-			"sid": 970826760993958
+			"sid": 106645151824966
 		},
 		{
 			"name": "Wind",
 			"type": "number",
 			"desc": "",
-			"sid": 381825209922232
+			"sid": 911471771416062
 		},
 		{
 			"name": "Rocket",
 			"type": "number",
 			"desc": "",
-			"sid": 761882124973676
-		},
-		{
-			"name": "Snake",
-			"type": "number",
-			"desc": "",
-			"sid": 993108207323689
+			"sid": 794183741586983
 		},
 		{
 			"name": "Firework",
 			"type": "number",
 			"desc": "",
-			"sid": 547164203361486
+			"sid": 956342404261304
+		},
+		{
+			"name": "Snake",
+			"type": "number",
+			"desc": "",
+			"sid": 833888732187089
 		},
 		{
 			"name": "Lion",
 			"type": "number",
 			"desc": "",
-			"sid": 322170796135079
+			"sid": 664673420564513
 		},
 		{
 			"name": "Block",
 			"type": "number",
 			"desc": "",
-			"sid": 883686551007489
+			"sid": 181317975483014
 		}
-	]
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1418764,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 475109693898118,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
 }
