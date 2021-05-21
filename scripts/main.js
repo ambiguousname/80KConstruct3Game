@@ -9,7 +9,7 @@ class Enemy {
 	}
 	
 	initializePathing(){
-		this.instance.behaviors.MoveTo.addEventListener("arrived", () => updatePath(this));
+		this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this));
 		var startPos = paths[this.name][this.pathIndex];
 		this.instance.behaviors.MoveTo.moveToPosition(startPos[0], startPos[1]);
 	}
@@ -32,7 +32,6 @@ runOnStartup(async runtime =>
 
 async function OnBeforeProjectStart(runtime)
 {
-	runtime.addEventListener("tick", () => Tick(runtime));
 	// Get the paths and add them to our object:
 	var path_temp_arr = runtime.objects.PathObj.getAllInstances();
 	path_temp_arr.forEach(function(p){
