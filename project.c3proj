@@ -23,6 +23,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -61,7 +69,8 @@
 			"Enemy",
 			"PathObj",
 			"TiledBackground",
-			"Player"
+			"Player",
+			"Inventory"
 		],
 		"subfolders": []
 	},
@@ -78,7 +87,9 @@
 		"subfolders": []
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"Event sheet 1"
+		],
 		"subfolders": []
 	},
 	"rootFileFolders": {

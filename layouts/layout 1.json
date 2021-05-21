@@ -256,7 +256,24 @@
 		}
 	],
 	"sid": 941762947010654,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Inventory",
+			"properties": {},
+			"uid": 8,
+			"instanceVariables": {
+				"Pitfall": 1,
+				"Balloon": 0,
+				"Trapdoor": 0,
+				"Wind": 0,
+				"Rocket": 0,
+				"Snake": 0,
+				"Firework": 0,
+				"Lion": 0,
+				"Block": 0
+			}
+		}
+	],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,

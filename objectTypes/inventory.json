@@ -1,0 +1,62 @@
+{
+	"name": "Inventory",
+	"plugin-id": "Dictionary",
+	"sid": 123125009949923,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "Pitfall",
+			"type": "number",
+			"desc": "",
+			"sid": 505366907564908
+		},
+		{
+			"name": "Balloon",
+			"type": "number",
+			"desc": "",
+			"sid": 342780667984411
+		},
+		{
+			"name": "Trapdoor",
+			"type": "number",
+			"desc": "",
+			"sid": 970826760993958
+		},
+		{
+			"name": "Wind",
+			"type": "number",
+			"desc": "",
+			"sid": 381825209922232
+		},
+		{
+			"name": "Rocket",
+			"type": "number",
+			"desc": "",
+			"sid": 761882124973676
+		},
+		{
+			"name": "Snake",
+			"type": "number",
+			"desc": "",
+			"sid": 993108207323689
+		},
+		{
+			"name": "Firework",
+			"type": "number",
+			"desc": "",
+			"sid": 547164203361486
+		},
+		{
+			"name": "Lion",
+			"type": "number",
+			"desc": "",
+			"sid": 322170796135079
+		},
+		{
+			"name": "Block",
+			"type": "number",
+			"desc": "",
+			"sid": 883686551007489
+		}
+	]
+}
