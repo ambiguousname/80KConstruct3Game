@@ -1,5 +1,65 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Coins",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 542603376522304
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Coins",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 330127832283168,
+							"parameters": {
+								"object": "Coin"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Coin",
+							"sid": 708493514399587
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Player",
+							"sid": 450229204121280,
+							"parameters": {
+								"instance-variable": "Coins",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 710750860646332,
+							"parameters": {
+								"variable": "Coins",
+								"value": "Player.Coins"
+							}
+						}
+					],
+					"sid": 969245474810785
+				}
+			],
+			"sid": 112642200895997
+		}
+	],
 	"sid": 465544461764587
 }

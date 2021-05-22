@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 540153334684008,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Coins",
+			"type": "number",
+			"desc": "",
+			"sid": 824483885992917
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
@@ -18,7 +25,7 @@
 		{
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
-			"sid": 119375933225052
+			"sid": 532280327398773
 		}
 	],
 	"effectTypes": [],

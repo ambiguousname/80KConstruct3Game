@@ -149,7 +149,7 @@
 					}
 				},
 				{
-					"type": "Pitfall",
+					"type": "Coin",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -157,16 +157,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 25,
+					"uid": 26,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 553.3294797687861,
-						"y": 276.6190476190476,
-						"width": 104,
-						"height": 56,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
+						"x": 312,
+						"y": 421.5,
+						"width": 38,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -187,7 +187,9 @@
 						"live-preview": false
 					},
 					"uid": 7,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Coins": 0
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {

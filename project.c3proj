@@ -92,7 +92,8 @@
 			"Pitfall",
 			"Balloon",
 			"Text",
-			"Sprite"
+			"Sprite",
+			"Coin"
 		],
 		"subfolders": []
 	},
