@@ -1,0 +1,20 @@
+{
+	"name": "ui_trap",
+	"plugin-id": "Spritefont2",
+	"sid": 666152966884342,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1354224,
+		"useCollisionPoly": true
+	}
+}

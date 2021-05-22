@@ -1,0 +1,213 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "total_time",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 148115807659941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 901990836742753
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 592778926564662,
+					"parameters": {
+						"variable": "total_time",
+						"value": "-0.02"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ui_time",
+					"sid": 961511083435239,
+					"parameters": {
+						"text": "\"TIME: \"&total_time"
+					}
+				}
+			],
+			"sid": 671110482127501
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 377212377916348,
+					"parameters": {
+						"key": 50
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 477308540694435,
+					"parameters": {
+						"instance-variable": "firework"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 945539465114013,
+					"parameters": {
+						"animation": "\"trap2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ui_trap",
+					"sid": 898198398620724,
+					"parameters": {
+						"text": "\"YOUR TRAP: firework\""
+					}
+				}
+			],
+			"sid": 984075230194171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 713012773582179,
+					"parameters": {
+						"key": 51
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 248898049280129,
+					"parameters": {
+						"animation": "\"trap3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ui_trap",
+					"sid": 549207422618415,
+					"parameters": {
+						"text": "\"YOUR TRAP: trapdoor\""
+					}
+				}
+			],
+			"sid": 749932387643652
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 301344970943941,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 827507182945339,
+					"parameters": {
+						"animation": "\"trap1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ui_trap",
+					"sid": 753608004242838,
+					"parameters": {
+						"text": "\"YOUR TRAP: regular\""
+					}
+				}
+			],
+			"sid": 832695231072436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Purchase",
+					"sid": 189906730549283
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 429455860695352,
+					"parameters": {
+						"instance-variable": "Coins",
+						"comparison": 5,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 340658645547791
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 338001774433635,
+					"parameters": {
+						"object": "coins"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 701849885141913,
+					"parameters": {
+						"instance-variable": "Coins",
+						"value": "5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "coins",
+					"sid": 125646225919341
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ui_coins",
+					"sid": 162007055081528,
+					"parameters": {
+						"text": "\"COINS: \"&Player.Coins"
+					}
+				}
+			],
+			"sid": 676690814411427
+		}
+	],
+	"sid": 805001182301451
+}

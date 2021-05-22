@@ -1,0 +1,39 @@
+{
+	"name": "Shop",
+	"plugin-id": "Spritefont2",
+	"sid": 688717928227137,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "regular",
+			"type": "boolean",
+			"desc": "",
+			"sid": 121455158579590
+		},
+		{
+			"name": "firework",
+			"type": "boolean",
+			"desc": "",
+			"sid": 620036088551242
+		},
+		{
+			"name": "trapdoor",
+			"type": "boolean",
+			"desc": "",
+			"sid": 704052066612158
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1288640,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,144 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 995620521948600,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Coins",
+			"type": "number",
+			"desc": "",
+			"sid": 165338824363435
+		},
+		{
+			"name": "firework",
+			"type": "boolean",
+			"desc": "",
+			"sid": 262125899178689
+		},
+		{
+			"name": "trapdoor",
+			"type": "boolean",
+			"desc": "",
+			"sid": 448889829747168
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 573816551008295
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2399437,
+						"collisionPoly": {
+							"points": [
+								0.09569677734374991,
+								0.27468261718750003,
+								0.9196289062499999,
+								0.25992749023437534,
+								0.9256733398437496,
+								0.6512412109375002,
+								0.0515869140625,
+								0.658775146484375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 449300493756111,
+				"name": "trap1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8329443,
+						"collisionPoly": {
+							"points": [
+								0.08610107421874999,
+								0.3213208007812501,
+								0.8961679687499998,
+								0.33346850585937493,
+								0.9788735351562498,
+								0.6173679199218755,
+								0.07389013671874994,
+								0.6584914550781249
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 501920958888123,
+				"name": "trap2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8783999,
+						"collisionPoly": {
+							"points": [
+								0.060703125000000004,
+								0.2720407714843751,
+								0.9432001953124999,
+								0.24289526367187497,
+								0.9218286132812497,
+								0.640070556640625,
+								0.07511474609374999,
+								0.65779541015625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 604079008207054,
+				"name": "trap3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
