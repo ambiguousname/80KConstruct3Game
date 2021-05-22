@@ -113,7 +113,8 @@
 			"UI_coins",
 			"Snake",
 			"Block",
-			"lion"
+			"lion",
+			"UI_time"
 		],
 		"subfolders": []
 	},

@@ -12,6 +12,16 @@
 			"sid": 542603376522304
 		},
 		{
+			"eventType": "variable",
+			"name": "Total_time",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 803673545521980
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Coins",
@@ -95,6 +105,36 @@
 						}
 					],
 					"sid": 789242398339242
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 429036089517641
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 490093393962788,
+							"parameters": {
+								"variable": "Total_time",
+								"value": "-0.02"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UI_time",
+							"sid": 676646272996848,
+							"parameters": {
+								"text": "\"TIME: \"&Total_time"
+							}
+						}
+					],
+					"sid": 301451234685555
 				}
 			],
 			"sid": 492111919029372

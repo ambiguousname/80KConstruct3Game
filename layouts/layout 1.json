@@ -103,8 +103,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 55,
-						"y": 43,
+						"x": 35.19383969289632,
+						"y": 69.24700843550107,
 						"width": 356,
 						"height": 146,
 						"originX": 0,
@@ -132,8 +132,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 305,
-						"y": 208,
+						"x": 277.41975540676094,
+						"y": 253.31874122886956,
 						"width": 96.99765256922433,
 						"height": 96.99765256922433,
 						"originX": 0.5,
@@ -955,15 +955,15 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 389,
-						"y": 13,
+						"x": 252.5859080881117,
+						"y": 11.82014808514009,
 						"width": 228,
 						"height": 39,
 						"originX": 0,
 						"originY": 0,
 						"color": [
-							0,
-							0,
+							1,
+							1,
 							1,
 							1
 						],
@@ -990,6 +990,44 @@
 						"height": 42,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_time",
+					"properties": {
+						"text": "TIME: ",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 441.08642170167553,
+						"y": 8.956889422828226,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
