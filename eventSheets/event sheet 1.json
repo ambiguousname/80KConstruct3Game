@@ -59,6 +59,45 @@
 				}
 			],
 			"sid": 112642200895997
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 700540625865280
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "UI_coins",
+							"sid": 680690800135538,
+							"parameters": {
+								"unique-id": "27"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UI_coins",
+							"sid": 918140850774463,
+							"parameters": {
+								"text": "Player.Coins & \" / 15 COINS\""
+							}
+						}
+					],
+					"sid": 789242398339242
+				}
+			],
+			"sid": 492111919029372
 		}
 	],
 	"sid": 465544461764587

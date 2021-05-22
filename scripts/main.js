@@ -51,7 +51,7 @@ async function OnBeforeProjectStart(runtime)
 	});
 	runtime.globalVars.Selected = 0;
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
-	runtime.objects.SelectionText.getFirstInstance().text = "Trap: Pitfall. Count: " + inv[Object.keys(inv)[0]] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
+	runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + inv[Object.keys(inv)[0]] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
