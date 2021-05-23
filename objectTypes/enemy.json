@@ -21,17 +21,7 @@
 		{
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
-			"sid": 583860230820250
-		},
-		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 876502935607964
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 125943113024770
+			"sid": 987964464673871
 		}
 	],
 	"effectTypes": [],

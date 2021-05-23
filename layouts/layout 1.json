@@ -174,7 +174,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 1
 					}
 				},
 				{
@@ -250,44 +250,16 @@
 								"max-speed": 200,
 								"acceleration": 600,
 								"deceleration": 600,
-								"rotate-speed": 200,
+								"rotate-speed": 300,
 								"set-angle": true,
 								"stop-on-solids": false,
 								"enabled": true
 							}
-						},
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"jump-strength": 650,
-								"gravity": 0,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
 						}
 					},
 					"world": {
-						"x": 547,
-						"y": 85,
+						"x": 821,
+						"y": 227,
 						"width": 40.0830537758789,
 						"height": 58.78847887128906,
 						"originX": 0.5,
@@ -322,38 +294,10 @@
 								"max-speed": 200,
 								"acceleration": 600,
 								"deceleration": 600,
-								"rotate-speed": 200,
+								"rotate-speed": 300,
 								"set-angle": true,
 								"stop-on-solids": false,
 								"enabled": true
-							}
-						},
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"jump-strength": 650,
-								"gravity": 0,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
 							}
 						}
 					},
@@ -394,38 +338,10 @@
 								"max-speed": 200,
 								"acceleration": 600,
 								"deceleration": 600,
-								"rotate-speed": 200,
+								"rotate-speed": 300,
 								"set-angle": true,
 								"stop-on-solids": false,
 								"enabled": true
-							}
-						},
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"jump-strength": 650,
-								"gravity": 0,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
 							}
 						}
 					},
