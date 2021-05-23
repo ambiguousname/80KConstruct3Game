@@ -3,7 +3,26 @@
 	"plugin-id": "Sprite",
 	"sid": 793656021758397,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "firework",
+			"type": "boolean",
+			"desc": "",
+			"sid": 779330205358818
+		},
+		{
+			"name": "regular",
+			"type": "boolean",
+			"desc": "",
+			"sid": 533144682743292
+		},
+		{
+			"name": "trapdoor",
+			"type": "boolean",
+			"desc": "",
+			"sid": 958480044905262
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
