@@ -21,6 +21,7 @@ async function OnBeforeProjectStart(runtime)
 	runtime.globalVars.Selected = 0;
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
 	runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
+	Object.keys(inv).forEach((trapName)=> runtime.globalVars[trapName + "Placed"] = 0);
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
@@ -36,7 +37,7 @@ function Tick(runtime){
 		var trap = runtime.objects[Object.keys(inv)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv[Object.keys(inv)[runtime.globalVars.Selected]] -= 1;
-		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + ".";
+		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(inv)[runtime.globalVars.Selected] + "Placed"] += 1;
 	}
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
 }
