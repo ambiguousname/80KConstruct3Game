@@ -23,11 +23,11 @@ class Enemy {
 	update(self){
 		if (!self.dead){
 			if(self.instance.width <= 0 && self.instance.height <= 0) {self.instance.destroy(); self.dead = true;}
-			if (self.dying) {self.instance.width -= 2; self.instance.height -= 2; self.instance.behaviors.MoveTo.stop();}
+			if (self.dying) {self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; self.instance.behaviors.MoveTo.stop();}
 		}
 	}
 	getCollision(self, trapInstance){
-		if (!self.dying && self.instance.x - 20 > trapInstance.x - trapInstance.width/2 && self.instance.x + 20 < trapInstance.x + trapInstance.width/2 && self.instance.y - 20 > trapInstance.y - trapInstance.height/2 && self.instance.y + 20 < trapInstance.y + trapInstance.height/2 && !self.trapImmunity.includes(trapInstance.objectType.name)){
+		if (!self.dying && self.instance.x > trapInstance.x - (3 * trapInstance.width/8) && self.instance.x < trapInstance.x + (3 * trapInstance.width/8) && self.instance.y > trapInstance.y - (3 * trapInstance.height/8) && self.instance.y < trapInstance.y + (3 * trapInstance.height/8) && !self.trapImmunity.includes(trapInstance.objectType.name)){
 			if(trapInstance.objectType.name === "Pitfall") self.dying = true;
 		}
 	}
