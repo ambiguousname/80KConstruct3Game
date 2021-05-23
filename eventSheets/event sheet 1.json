@@ -32,9 +32,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
+							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 155248634544649,
+							"sid": 568082436204675,
 							"parameters": {
 								"object": "Coin"
 							}
