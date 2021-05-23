@@ -2,8 +2,12 @@ For the Construct 3 Demo, we need:
 - Placeholder art (with the general style that our final game is going to have) - Wendi
 - Buying traps - Wendi
 - Mission Timer - Wendi
-- Add more trap types to fall into - Tyler
-- Add more enemy types - Tyler
+- Add winning layout and connection from level
+- Add losing layout and connection from level
+- Replacing demo art with more cohesive style? (Do this when demo is finished, the demo art looks somewhat disparate)
+- Add all the trap types (After the demo is done) - Tyler
+- Add all the enemy types (After demo is done) - Tyler
+- Add more visual indicators to show when enemies are and aren't immune to traps (After demo is done) - Tyler
 - Credits screen with all of the assets we used
 - Refunding Traps and Adding rewards for getting rid of enemies - Tyler (Wait for Buying traps to be done)
 - Maybe some sound effects and/or music? - Tyler

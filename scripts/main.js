@@ -1,5 +1,5 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
-import {Enemy, Jumper, enemies, obstacles, paths} from "./enemies.js";
+import {Enemy, Jumper, enemies, obstacles, paths} from "./utility.js";
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime)));
 async function OnBeforeProjectStart(runtime)
 {
@@ -12,7 +12,10 @@ async function OnBeforeProjectStart(runtime)
 	});
 	runtime.objects.Enemy.getAllInstances().forEach(function(e){
 		var enemy_class = Enemy;
-		var enemy = new enemy_class(e.instVars.EnemyName, e.instVars.EnemyType, e, []); enemy.initializePathing();
+		switch(e.instVars.EnemyType){
+			case "Jumper": enemy_class = Jumper; break;
+		}
+		var enemy = new enemy_class(e.instVars.EnemyName, e); enemy.initializePathing();
 		enemies.push(enemy);
 	});
 	runtime.globalVars.Selected = 0;
