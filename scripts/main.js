@@ -32,8 +32,8 @@ function Tick(runtime){
 			runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[i] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";
 		}
 	}
-	if (runtime.keyboard.isKeyDown("Space") && inv.get(Object.keys(invTemp)[runtime.globalVars.Selected]) > 0) {
-		var trap = runtime.objects[Object.keys(invTtemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
+	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0) {
+		var trap = runtime.objects[Object.keys(invTemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
 		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(invTemp)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
