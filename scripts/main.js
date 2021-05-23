@@ -1,5 +1,5 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
-import {Enemy, Jumper, enemies, obstacles, paths} from "./enemies.js";
+import {Enemy, Jumper, enemies, obstacles, paths} from "./utility.js";
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime)));
 async function OnBeforeProjectStart(runtime)
 {
@@ -12,12 +12,16 @@ async function OnBeforeProjectStart(runtime)
 	});
 	runtime.objects.Enemy.getAllInstances().forEach(function(e){
 		var enemy_class = Enemy;
-		var enemy = new enemy_class(e.instVars.EnemyName, e.instVars.EnemyType, e, []); enemy.initializePathing();
+		switch(e.instVars.EnemyType){
+			case "Jumper": enemy_class = Jumper; break;
+		}
+		var enemy = new enemy_class(e.instVars.EnemyName, e); enemy.initializePathing();
 		enemies.push(enemy);
 	});
 	runtime.globalVars.Selected = 0;
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
 	runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
+	Object.keys(inv).forEach((trapName)=> runtime.globalVars[trapName + "Placed"] = 0);
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
@@ -31,9 +35,9 @@ function Tick(runtime){
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv[Object.keys(inv)[runtime.globalVars.Selected]] > 0) {
 		var trap = runtime.objects[Object.keys(inv)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
-		obstacles.push(trap);
+		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv[Object.keys(inv)[runtime.globalVars.Selected]] -= 1;
-		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + ".";
+		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(inv)[runtime.globalVars.Selected] + "Placed"] += 1;
 	}
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
 }
