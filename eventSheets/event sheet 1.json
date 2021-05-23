@@ -220,11 +220,13 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "evaluate-expression",
-									"objectClass": "System",
-									"sid": 798942242861683,
+									"id": "compare-value",
+									"objectClass": "Inventory",
+									"sid": 671972395808255,
 									"parameters": {
-										"value": "int(Inventory.Get(SelectedName)) > 0"
+										"key": "SelectedName",
+										"comparison": 4,
+										"value": "0"
 									}
 								}
 							],
@@ -241,7 +243,7 @@
 								{
 									"id": "set-text",
 									"objectClass": "UI_trap",
-									"sid": 570456174168048,
+									"sid": 182273668275360,
 									"parameters": {
 										"text": "\"CURRENT TRAP: \" & SelectedName"
 									}
@@ -277,18 +279,10 @@
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "Player",
-							"sid": 994434273564997,
+							"sid": 506266500676709,
 							"parameters": {
 								"instance-variable": "Coins",
-								"value": "int(InventoryCost.Get(SelectedName))"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Shop_text",
-							"sid": 130628561925590,
-							"parameters": {
-								"text": "\"TESTING\" & InventoryCost.Get(\"Pitfall\")"
+								"value": "InventoryCost.Get(SelectedName)"
 							}
 						},
 						{
@@ -302,10 +296,10 @@
 						{
 							"id": "set-key",
 							"objectClass": "Inventory",
-							"sid": 376146411455772,
+							"sid": 806203922984336,
 							"parameters": {
 								"key": "SelectedName",
-								"value": "str(int(Inventory.Get(SelectedName)) + 1)"
+								"value": "Inventory.Get(SelectedName)+ 1"
 							}
 						}
 					],
