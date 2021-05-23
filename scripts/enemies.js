@@ -27,7 +27,7 @@ class Enemy {
 				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; if (self.instance.width <= 0) self.kill(); break;
 			case "Balloon":
 				self.killer.zElevation += 1; self.instance.zElevation += 1; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y);
-				if (self.instance.zElevation > 100) {self.kill(self);}
+				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
 				break;
 		}
 	}

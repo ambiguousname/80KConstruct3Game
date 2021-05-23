@@ -31,7 +31,7 @@ function Tick(runtime){
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv[Object.keys(inv)[runtime.globalVars.Selected]] > 0) {
 		var trap = runtime.objects[Object.keys(inv)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
-		obstacles.push(trap);
+		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv[Object.keys(inv)[runtime.globalVars.Selected]] -= 1;
 		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + ".";
 	}
