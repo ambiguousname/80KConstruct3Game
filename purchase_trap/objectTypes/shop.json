@@ -1,39 +1,129 @@
 {
 	"name": "Shop",
-	"plugin-id": "Spritefont2",
-	"sid": 688717928227137,
+	"plugin-id": "Sprite",
+	"sid": 793656021758397,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "regular",
-			"type": "boolean",
-			"desc": "",
-			"sid": 121455158579590
-		},
-		{
-			"name": "firework",
-			"type": "boolean",
-			"desc": "",
-			"sid": 620036088551242
-		},
-		{
-			"name": "trapdoor",
-			"type": "boolean",
-			"desc": "",
-			"sid": 704052066612158
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
-	"image": {
-		"width": 128,
-		"height": 256,
-		"originX": 0.5,
-		"originY": 0.5,
-		"originalSource": "",
-		"exportFormat": "png",
-		"exportQuality": 0.8,
-		"imageSpriteId": 1288640,
-		"useCollisionPoly": true
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8883811,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 370727685208614,
+				"name": "cover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1914327,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 967150972062058,
+				"name": "trap1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9102360,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 908111026983729,
+				"name": "trap2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5068066,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 338385482969248,
+				"name": "trap3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 875822,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 602158817980824,
+				"name": "snake",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
 	}
 }

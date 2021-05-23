@@ -66,8 +66,9 @@
 			"Purchase",
 			"Text",
 			"coins",
-			"Shop",
-			"Text2"
+			"Shop_text",
+			"Enemy_regular",
+			"Shop"
 		],
 		"subfolders": []
 	},
