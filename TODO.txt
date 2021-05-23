@@ -4,5 +4,6 @@ For the Construct 3 Demo, we need:
 - Mission Timer - Wendi
 - Add more trap types to fall into - Tyler
 - Add more enemy types - Tyler
+- Credits screen with all of the assets we used
 - Refunding Traps and Adding rewards for getting rid of enemies - Tyler (Wait for Buying traps to be done)
 - Maybe some sound effects and/or music? - Tyler

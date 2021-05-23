@@ -50,14 +50,14 @@
 					"uid": 11,
 					"instanceVariables": {
 						"Pitfall": 1,
+						"Block": 1,
 						"Balloon": 0,
 						"Trapdoor": 0,
 						"Wind": 0,
 						"Rocket": 0,
 						"Firework": 0,
-						"Snake": 1,
-						"Lion": 0,
-						"Block": 1
+						"Snake": 0,
+						"Lion": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -252,7 +252,12 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": true,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"Tween": {
+							"properties": {
 								"enabled": true
 							}
 						}
@@ -296,7 +301,12 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": true,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"Tween": {
+							"properties": {
 								"enabled": true
 							}
 						}
@@ -340,7 +350,12 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": true,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"Tween": {
+							"properties": {
 								"enabled": true
 							}
 						}
