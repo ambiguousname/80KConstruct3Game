@@ -17,17 +17,17 @@ class Enemy {
 	}
 	update(self){
 		if (!self.dead){
-			if(self.instance.width <= 0 && self.instance.height <= 0) {self.instance.destroy(); self.dead = true;}
-			if (self.dying) self.dyingUpdate(self, self.killer);
+			if (self.dying && !self.shouldKill) self.dyingUpdate(self, self.killer);
 		}
 	}
+	kill(self){ self.instance.destroy(); self.dead = true;}
 	dyingUpdate(self){
 		switch (self.killer.objectType.name) {
 			case "Pitfall":
-				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16;
-				break;
+				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; if (self.instance.width <= 0) self.kill(); break;
 			case "Balloon":
-				self.killer.y -= 5; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y); self.instance.behaviors.MoveTo.maxSpeed = 1000;
+				self.killer.zElevation += 1; self.instance.zElevation += 1; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y);
+				if (self.instance.zElevation > 100) {self.kill(self);}
 				break;
 		}
 	}
