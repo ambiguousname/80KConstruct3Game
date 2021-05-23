@@ -1,54 +1,55 @@
 {
-	"name": "Player",
+	"name": "Shop",
 	"plugin-id": "Sprite",
-	"sid": 540153334684008,
+	"sid": 498120853238812,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "Coins",
-			"type": "number",
+			"name": "balloon",
+			"type": "boolean",
 			"desc": "",
-			"sid": 824483885992917
+			"sid": 331026387437152
 		},
 		{
 			"name": "regular",
-			"type": "number",
+			"type": "boolean",
 			"desc": "",
-			"sid": 899575197152836
-		},
-		{
-			"name": "balloon",
-			"type": "number",
-			"desc": "",
-			"sid": 440792649063373
+			"sid": 345427721089873
 		},
 		{
 			"name": "trapdoor",
-			"type": "number",
+			"type": "boolean",
 			"desc": "",
-			"sid": 607121477949886
+			"sid": 460907147781103
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 408134527039176
-		},
-		{
-			"behaviorId": "bound",
-			"name": "BoundToLayout",
-			"sid": 621309268656603
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 532280327398773
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5221036,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 137231701858511,
+				"name": "cover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
 			{
 				"frames": [
 					{
@@ -59,7 +60,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2612880,
+						"imageSpriteId": 6052906,
 						"collisionPoly": {
 							"points": [
 								0.125,
@@ -84,7 +85,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 646262113534923,
+				"sid": 259908178644270,
 				"name": "trap1",
 				"isLooping": false,
 				"isPingPong": false,
@@ -102,12 +103,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2073256,
+						"imageSpriteId": 5760256,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 396674509806061,
+				"sid": 506302152692882,
 				"name": "trap2",
 				"isLooping": false,
 				"isPingPong": false,
@@ -125,13 +126,36 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7540452,
+						"imageSpriteId": 2079511,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 845882248925485,
+				"sid": 332559807400451,
 				"name": "trap3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8804279,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 129321757391104,
+				"name": "snake",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

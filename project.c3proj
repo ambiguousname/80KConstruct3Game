@@ -56,14 +56,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -115,7 +107,11 @@
 			"Block",
 			"lion",
 			"UI_time",
-			"Text_time"
+			"Text_time",
+			"Trees",
+			"UI_trap",
+			"Shop",
+			"Shop_text"
 		],
 		"subfolders": []
 	},
@@ -146,14 +142,6 @@
 					"sid": 843353167382767,
 					"script-info": {
 						"purpose": "main"
-					}
-				},
-				{
-					"name": "enemies.js",
-					"type": "application/javascript",
-					"sid": 721792568167891,
-					"script-info": {
-						"purpose": "none"
 					}
 				}
 			],

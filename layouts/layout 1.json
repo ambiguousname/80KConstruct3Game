@@ -50,14 +50,14 @@
 					"uid": 11,
 					"instanceVariables": {
 						"Pitfall": 1,
-						"Block": 1,
-						"Balloon": 1,
+						"Balloon": 0,
 						"Trapdoor": 0,
 						"Wind": 0,
 						"Rocket": 0,
 						"Firework": 0,
-						"Snake": 0,
-						"Lion": 0
+						"Snake": 1,
+						"Lion": 0,
+						"Block": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -181,14 +181,17 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "trap1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"Coins": 0
+						"Coins": 100,
+						"regular": 2,
+						"balloon": 0,
+						"trapdoor": 0
 					},
 					"behaviors": {
 						"8Direction": {
@@ -251,13 +254,8 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"Tween": {
-							"properties": {
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
@@ -300,13 +298,8 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"Tween": {
-							"properties": {
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
@@ -349,13 +342,8 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"Tween": {
-							"properties": {
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
@@ -886,8 +874,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 252,
-						"y": 11,
+						"x": 201,
+						"y": 12,
 						"width": 228,
 						"height": 39,
 						"originX": 0,
@@ -924,7 +912,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 482,
+						"x": 386,
 						"y": 11,
 						"width": 200,
 						"height": 30,
@@ -970,6 +958,159 @@
 						"y": -88,
 						"width": 200,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Trees",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 10,
+						"y": 495,
+						"width": 479,
+						"height": 65,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_trap",
+					"properties": {
+						"text": "CURRENT TRAP: REGULAR",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 467,
+						"y": 449,
+						"width": 394,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "cover",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {
+						"balloon": false,
+						"regular": false,
+						"trapdoor": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 805,
+						"y": 379,
+						"width": 68,
+						"height": 65,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shop_text",
+					"properties": {
+						"text": "INVENTORY: regular trap",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 32,
+					"instanceVariables": {
+						"regular": false,
+						"firework": false,
+						"trapdoor": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 467,
+						"y": 417,
+						"width": 425,
+						"height": 28,
 						"originX": 0,
 						"originY": 0,
 						"color": [
