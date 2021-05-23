@@ -184,7 +184,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "pitfall",
+						"initial-animation": "Pitfall",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -255,7 +255,7 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": false,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
 								"enabled": true
 							}
 						}
@@ -299,7 +299,7 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": false,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
 								"enabled": true
 							}
 						}
@@ -343,7 +343,7 @@
 								"deceleration": 600,
 								"rotate-speed": 300,
 								"set-angle": false,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
 								"enabled": true
 							}
 						}
@@ -1029,7 +1029,7 @@
 				{
 					"type": "UI_trap",
 					"properties": {
-						"text": "CURRENT TRAP: Pitfall",
+						"text": "Trap Cost: 0",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -1191,12 +1191,12 @@
 				"Pitfall": 10,
 				"Balloon": 15,
 				"Block": 15,
-				"Trapdoor": 15,
-				"Wind": 15,
-				"Rocket": 15,
-				"Firework": 15,
-				"Snake": 15,
-				"Lion": 15
+				"Trapdoor": 500,
+				"Wind": 500,
+				"Rocket": 500,
+				"Firework": 500,
+				"Snake": 500,
+				"Lion": 500
 			}
 		}
 	],

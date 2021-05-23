@@ -86,7 +86,7 @@
 					}
 				],
 				"sid": 259908178644270,
-				"name": "pitfall",
+				"name": "Pitfall",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -109,7 +109,7 @@
 					}
 				],
 				"sid": 506302152692882,
-				"name": "balloon",
+				"name": "Balloon",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -132,7 +132,7 @@
 					}
 				],
 				"sid": 332559807400451,
-				"name": "block",
+				"name": "Block",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -155,7 +155,7 @@
 					}
 				],
 				"sid": 129321757391104,
-				"name": "snake",
+				"name": "Snake",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
