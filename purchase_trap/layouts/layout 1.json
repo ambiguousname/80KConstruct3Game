@@ -72,8 +72,8 @@
 						}
 					},
 					"world": {
-						"x": 189,
-						"y": 477,
+						"x": 142,
+						"y": 395,
 						"width": 115,
 						"height": 103,
 						"originX": 0.5,
@@ -142,8 +142,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 567,
-						"y": 234,
+						"x": 583,
+						"y": 395,
 						"width": 98,
 						"height": 31,
 						"originX": 0,
@@ -182,8 +182,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 398,
-						"y": 291,
+						"x": 535,
+						"y": 656,
 						"width": 288,
 						"height": 30,
 						"originX": 0,
@@ -249,8 +249,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 345,
-						"y": 422,
+						"x": 257,
+						"y": 356,
 						"width": 91,
 						"height": 95,
 						"originX": 0.5,
@@ -278,8 +278,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 312,
-						"y": 534,
+						"x": 260,
+						"y": 440,
 						"width": 91,
 						"height": 95,
 						"originX": 0.5,
@@ -307,8 +307,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 585,
-						"y": 453,
+						"x": 121,
+						"y": 496,
 						"width": 91,
 						"height": 95,
 						"originX": 0.5,
@@ -336,8 +336,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 445,
-						"y": 636,
+						"x": 104,
+						"y": 606,
 						"width": 91,
 						"height": 95,
 						"originX": 0.5,
@@ -365,8 +365,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 511,
-						"y": 550,
+						"x": 228,
+						"y": 536,
 						"width": 66,
 						"height": 73,
 						"originX": 0.5,
@@ -382,9 +382,9 @@
 					}
 				},
 				{
-					"type": "Shop",
+					"type": "Shop_text",
 					"properties": {
-						"text": "CURRENT TRAP: regular",
+						"text": "INVENTORY: regular trap",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -407,8 +407,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 215,
-						"y": 239,
+						"x": 446,
+						"y": 358,
 						"width": 379,
 						"height": 30,
 						"originX": 0,
@@ -424,37 +424,53 @@
 					}
 				},
 				{
-					"type": "Text2",
+					"type": "Enemy_regular",
 					"properties": {
-						"text": "NOTE: this is a test project for purchasing traps. Still working on it ... (And maybe we can't make the script and event sheet work together. )",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 15,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 63,
-						"y": 285,
-						"width": 267,
-						"height": 116,
-						"originX": 0,
-						"originY": 0,
+						"x": 122,
+						"y": 282,
+						"width": 44,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "cover",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 16,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 624,
+						"y": 297,
+						"width": 95,
+						"height": 92,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

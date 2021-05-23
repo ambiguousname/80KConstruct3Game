@@ -98,7 +98,8 @@
 			"Snake",
 			"Block",
 			"lion",
-			"UI_time"
+			"UI_time",
+			"Text_time"
 		],
 		"subfolders": []
 	},
