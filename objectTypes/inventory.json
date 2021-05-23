@@ -17,6 +17,12 @@
 			"sid": 155382921429953
 		},
 		{
+			"name": "Block",
+			"type": "number",
+			"desc": "",
+			"sid": 649487292490776
+		},
+		{
 			"name": "Trapdoor",
 			"type": "number",
 			"desc": "",
@@ -51,12 +57,6 @@
 			"type": "number",
 			"desc": "",
 			"sid": 989354059090965
-		},
-		{
-			"name": "Block",
-			"type": "number",
-			"desc": "",
-			"sid": 649487292490776
 		}
 	]
 }

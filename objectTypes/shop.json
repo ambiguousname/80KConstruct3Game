@@ -119,20 +119,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 200,
+						"height": 156,
+						"originX": 0.509090909090909,
+						"originY": 0.5116279069767442,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2079511,
+						"imageSpriteId": 7267070,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 332559807400451,
-				"name": "trapdoor",
+				"name": "block",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

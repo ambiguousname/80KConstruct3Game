@@ -1172,15 +1172,15 @@
 			"properties": {},
 			"uid": 34,
 			"instanceVariables": {
-				"Pitfall": 1,
-				"Balloon": 0,
+				"Pitfall": 2,
+				"Balloon": 1,
+				"Block": 1,
 				"Trapdoor": 0,
 				"Wind": 0,
 				"Rocket": 0,
 				"Firework": 0,
 				"Snake": 0,
-				"Lion": 0,
-				"Block": 0
+				"Lion": 0
 			}
 		},
 		{
@@ -1190,13 +1190,13 @@
 			"instanceVariables": {
 				"Pitfall": 10,
 				"Balloon": 15,
+				"Block": 15,
 				"Trapdoor": 15,
 				"Wind": 15,
 				"Rocket": 15,
 				"Firework": 15,
 				"Snake": 15,
-				"Lion": 15,
-				"Block": 15
+				"Lion": 15
 			}
 		}
 	],
