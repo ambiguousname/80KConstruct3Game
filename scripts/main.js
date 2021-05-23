@@ -27,7 +27,7 @@ class Enemy {
 		}
 	}
 	getCollision(self, trapInstance){
-		if (!self.dying && self.instance.x > trapInstance.x - (3 * trapInstance.width/8) && self.instance.x < trapInstance.x + (3 * trapInstance.width/8) && self.instance.y > trapInstance.y - (3 * trapInstance.height/8) && self.instance.y < trapInstance.y + (3 * trapInstance.height/8) && !self.trapImmunity.includes(trapInstance.objectType.name)){
+		if (!self.dying && self.instance.x > trapInstance.x - (4 * trapInstance.width/9) && self.instance.x < trapInstance.x + (4 * trapInstance.width/9) && self.instance.y > trapInstance.y - (4 * trapInstance.height/9) && self.instance.y < trapInstance.y + (4 * trapInstance.height/9) && !self.trapImmunity.includes(trapInstance.objectType.name)){
 			if(trapInstance.objectType.name === "Pitfall") self.dying = true;
 		}
 	}

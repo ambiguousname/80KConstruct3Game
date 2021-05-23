@@ -155,37 +155,6 @@
 				}
 			],
 			"sid": 492111919029372
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Player",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Pitfall",
-							"sid": 801414963723782,
-							"parameters": {
-								"object": "Enemy"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "Enemy",
-							"sid": 844704521094131
-						}
-					],
-					"sid": 130916001688269
-				}
-			],
-			"sid": 715468224797210
 		}
 	],
 	"sid": 465544461764587

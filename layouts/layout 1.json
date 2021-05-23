@@ -251,7 +251,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -295,7 +295,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -339,7 +339,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 300,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
