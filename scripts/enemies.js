@@ -26,6 +26,9 @@ class Enemy {
 			case "Pitfall":
 				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16;
 				break;
+			case "Balloon":
+				self.killer.y -= 5; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y); self.instance.behaviors.MoveTo.maxSpeed = 1000;
+				break;
 		}
 	}
 	getCollision(self, trapInstance){

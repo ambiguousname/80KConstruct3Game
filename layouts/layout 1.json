@@ -51,7 +51,7 @@
 					"instanceVariables": {
 						"Pitfall": 1,
 						"Block": 1,
-						"Balloon": 0,
+						"Balloon": 1,
 						"Trapdoor": 0,
 						"Wind": 0,
 						"Rocket": 0,
