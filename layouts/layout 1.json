@@ -811,6 +811,64 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "UIBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 644.685,
+						"y": 443,
+						"width": 428.73,
+						"height": 78,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
+					"type": "UIBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 194.445,
+						"y": 15.445,
+						"width": 417.62,
+						"height": 56.79,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
 					"type": "UI_coins",
 					"properties": {
 						"text": "COINS: ",
@@ -832,8 +890,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 110,
-						"y": 9,
+						"x": 15,
+						"y": 13,
 						"width": 228,
 						"height": 39,
 						"originX": 0,
@@ -870,8 +928,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 386,
-						"y": 11,
+						"x": 221,
+						"y": 15,
 						"width": 200,
 						"height": 30,
 						"originX": 0,

@@ -234,10 +234,10 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "UI_trap",
-							"sid": 981615307528106,
+							"objectClass": "Shop_text",
+							"sid": 411164841476971,
 							"parameters": {
-								"text": "\"Trap: \" & SelectedName & \". Count: \" & Inventory.Get(SelectedName)"
+								"text": "\"Trap: \" & SelectedName & \". Count: \" & Inventory.Get(SelectedName) & \".\""
 							}
 						}
 					],

@@ -32,11 +32,11 @@ function Tick(runtime){
 			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.objects.Shop.getFirstInstance().setAnimation(runtime.globalVars.SelectedName);
 		}
 	}
-	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0) {
+	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0 && !runtime.spaceDown) { runtime.spaceDown = true;
 		var trap = runtime.objects[Object.keys(invTemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
-		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(invTemp)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
-	}
+		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
+	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown == true) runtime.spaceDown = false;
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
 }

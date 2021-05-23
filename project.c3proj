@@ -120,7 +120,8 @@
 			"Shop",
 			"Shop_text",
 			"Inventory",
-			"InventoryCost"
+			"InventoryCost",
+			"UIBackground"
 		],
 		"subfolders": []
 	},
