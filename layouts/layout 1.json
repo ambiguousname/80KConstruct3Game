@@ -39,45 +39,6 @@
 					}
 				},
 				{
-					"type": "Inventory",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {
-						"Pitfall": 1,
-						"Balloon": 0,
-						"Trapdoor": 0,
-						"Wind": 0,
-						"Rocket": 0,
-						"Firework": 0,
-						"Snake": 1,
-						"Lion": 0,
-						"Block": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 70,
-						"y": 84,
-						"width": 67.9926466612383,
-						"height": 67.9926466612383,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Text",
 					"properties": {
 						"text": "Use arrow keys to move around.\n\nUse the number keys or numpad to switch between traps.\n\nPress SPACE to place down a trap.",
@@ -199,12 +160,12 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 28,
+					"uid": 33,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 388,
-						"y": 457,
+						"x": 349,
+						"y": 566,
 						"width": 356,
 						"height": 152,
 						"originX": 0,
@@ -223,17 +184,14 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "trap1",
+						"initial-animation": "pitfall",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"Coins": 100,
-						"regular": 2,
-						"balloon": 0,
-						"trapdoor": 0
+						"Coins": 100
 					},
 					"behaviors": {
 						"8Direction": {
@@ -1192,7 +1150,40 @@
 		}
 	],
 	"sid": 941762947010654,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Inventory",
+			"properties": {},
+			"uid": 34,
+			"instanceVariables": {
+				"Pitfall": 1,
+				"Balloon": 0,
+				"Trapdoor": 0,
+				"Wind": 0,
+				"Rocket": 0,
+				"Firework": 0,
+				"Snake": 0,
+				"Lion": 0,
+				"Block": 0
+			}
+		},
+		{
+			"type": "InventoryCost",
+			"properties": {},
+			"uid": 11,
+			"instanceVariables": {
+				"Pitfall": 10,
+				"Balloon": 15,
+				"Trapdoor": 15,
+				"Wind": 15,
+				"Rocket": 15,
+				"Firework": 15,
+				"Snake": 15,
+				"Lion": 15,
+				"Block": 15
+			}
+		}
+	],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,

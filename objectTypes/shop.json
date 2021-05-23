@@ -86,7 +86,7 @@
 					}
 				],
 				"sid": 259908178644270,
-				"name": "trap1",
+				"name": "pitfall",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -109,7 +109,7 @@
 					}
 				],
 				"sid": 506302152692882,
-				"name": "trap2",
+				"name": "balloon",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -132,7 +132,7 @@
 					}
 				],
 				"sid": 332559807400451,
-				"name": "trap3",
+				"name": "trapdoor",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

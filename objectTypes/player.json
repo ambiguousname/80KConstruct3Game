@@ -9,24 +9,6 @@
 			"type": "number",
 			"desc": "",
 			"sid": 824483885992917
-		},
-		{
-			"name": "regular",
-			"type": "number",
-			"desc": "",
-			"sid": 899575197152836
-		},
-		{
-			"name": "balloon",
-			"type": "number",
-			"desc": "",
-			"sid": 440792649063373
-		},
-		{
-			"name": "trapdoor",
-			"type": "number",
-			"desc": "",
-			"sid": 607121477949886
 		}
 	],
 	"behaviorTypes": [
@@ -85,7 +67,7 @@
 					}
 				],
 				"sid": 646262113534923,
-				"name": "trap1",
+				"name": "pitfall",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -108,7 +90,7 @@
 					}
 				],
 				"sid": 396674509806061,
-				"name": "trap2",
+				"name": "balloon",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -131,7 +113,7 @@
 					}
 				],
 				"sid": 845882248925485,
-				"name": "trap3",
+				"name": "trapdoor",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

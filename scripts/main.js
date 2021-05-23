@@ -11,33 +11,32 @@ async function OnBeforeProjectStart(runtime)
 		}
 	});
 	runtime.objects.Enemy.getAllInstances().forEach(function(e){
-		var enemy_class = Enemy;
+		var enemyClass = Enemy;
 		switch(e.instVars.EnemyType){
-			case "Jumper": enemy_class = Jumper; break;
+			case "Jumper": enemyClass = Jumper; break;
 		}
-		var enemy = new enemy_class(e.instVars.EnemyName, e); enemy.initializePathing();
+		var enemy = new enemyClass(e.instVars.EnemyName, e); enemy.initializePathing();
 		enemies.push(enemy);
 	});
-	runtime.globalVars.Selected = 0;
-	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
+	var inv = runtime.objects.Inventory.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance(); runtime.globalVars.SelectedName = Object.keys(inv)[0];
 	runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
-	Object.keys(inv).forEach((trapName)=> runtime.globalVars[trapName + "Placed"] = 0);
+	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.getDataMap().set(trapName, invCost.instVars[trapName]);});
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 
 function Tick(runtime){
-	var inv = runtime.objects.Inventory.getFirstInstance().instVars;
-	for (var i = 0; i < Object.keys(inv).length; i++){
+	var inv = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invTemp = runtime.objects.Inventory.getFirstInstance().instVars;
+	for (var i = 0; i < Object.keys(invTemp).length; i++){
 		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
-			runtime.globalVars.Selected = i;
-			runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[i] + ". Count: " + inv[Object.keys(inv)[i]] + ".";
+			runtime.globalVars.SelectedName = Object.keys(invTemp)[i]; runtime.globalVars.Selected = i;
+			runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[i] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";
 		}
 	}
-	if (runtime.keyboard.isKeyDown("Space") && inv[Object.keys(inv)[runtime.globalVars.Selected]] > 0) {
-		var trap = runtime.objects[Object.keys(inv)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
+	if (runtime.keyboard.isKeyDown("Space") && inv.get(Object.keys(invTemp)[runtime.globalVars.Selected]) > 0) {
+		var trap = runtime.objects[Object.keys(invTtemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y);
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
-		inv[Object.keys(inv)[runtime.globalVars.Selected]] -= 1;
-		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(inv)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(inv)[runtime.globalVars.Selected] + "Placed"] += 1;
+		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
+		runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv[Object.keys(invTemp)[runtime.globalVars.Selected]] + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
 	}
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
 }

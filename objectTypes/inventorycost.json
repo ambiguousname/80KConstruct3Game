@@ -1,62 +1,62 @@
 {
-	"name": "Inventory",
+	"name": "InventoryCost",
 	"plugin-id": "Dictionary",
-	"sid": 754561556420353,
+	"sid": 147638766477854,
 	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "Pitfall",
 			"type": "number",
 			"desc": "",
-			"sid": 691315609593937
+			"sid": 516752246045356
 		},
 		{
 			"name": "Balloon",
 			"type": "number",
 			"desc": "",
-			"sid": 155382921429953
+			"sid": 590938203512202
 		},
 		{
 			"name": "Trapdoor",
 			"type": "number",
 			"desc": "",
-			"sid": 434976832360974
+			"sid": 837278273764487
 		},
 		{
 			"name": "Wind",
 			"type": "number",
 			"desc": "",
-			"sid": 722934935952305
+			"sid": 280798507946302
 		},
 		{
 			"name": "Rocket",
 			"type": "number",
 			"desc": "",
-			"sid": 895645183900380
+			"sid": 686561894201211
 		},
 		{
 			"name": "Firework",
 			"type": "number",
 			"desc": "",
-			"sid": 916667249264313
+			"sid": 416784411246375
 		},
 		{
 			"name": "Snake",
 			"type": "number",
 			"desc": "",
-			"sid": 668670327210416
+			"sid": 956759074804388
 		},
 		{
 			"name": "Lion",
 			"type": "number",
 			"desc": "",
-			"sid": 989354059090965
+			"sid": 977137990992622
 		},
 		{
 			"name": "Block",
 			"type": "number",
 			"desc": "",
-			"sid": 649487292490776
+			"sid": 288211069449542
 		}
 	]
 }
