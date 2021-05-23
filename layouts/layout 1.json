@@ -811,48 +811,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "SelectionText",
-					"properties": {
-						"text": "Trap: None. Count: 0",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 16,
-						"y": 9,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "UI_coins",
 					"properties": {
 						"text": "COINS: ",
@@ -874,8 +832,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 201,
-						"y": 12,
+						"x": 110,
+						"y": 9,
 						"width": 228,
 						"height": 39,
 						"originX": 0,
@@ -1013,7 +971,7 @@
 				{
 					"type": "UI_trap",
 					"properties": {
-						"text": "CURRENT TRAP: REGULAR",
+						"text": "CURRENT TRAP: Pitfall",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -1022,7 +980,7 @@
 						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -1032,8 +990,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 467,
-						"y": 449,
+						"x": 445,
+						"y": 448,
 						"width": 394,
 						"height": 30,
 						"originX": 0,
@@ -1084,7 +1042,7 @@
 				{
 					"type": "Shop_text",
 					"properties": {
-						"text": "INVENTORY: regular trap",
+						"text": "Trap: Pitfall. Count: 0",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -1093,7 +1051,7 @@
 						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -1107,8 +1065,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 467,
-						"y": 417,
+						"x": 422,
+						"y": 418,
 						"width": 425,
 						"height": 28,
 						"originX": 0,

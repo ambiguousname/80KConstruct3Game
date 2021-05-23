@@ -19,7 +19,7 @@ async function OnBeforeProjectStart(runtime)
 		enemies.push(enemy);
 	});
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance(); runtime.globalVars.SelectedName = Object.keys(inv)[0];
-	runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
+	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
 	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.getDataMap().set(trapName, invCost.instVars[trapName]);});
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
@@ -29,7 +29,7 @@ function Tick(runtime){
 	for (var i = 0; i < Object.keys(invTemp).length; i++){
 		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
 			runtime.globalVars.SelectedName = Object.keys(invTemp)[i]; runtime.globalVars.Selected = i;
-			runtime.objects.SelectionText.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[i] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";
+			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.objects.Shop.getFirstInstance().setAnimation(runtime.globalVars.SelectedName);
 		}
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0) {

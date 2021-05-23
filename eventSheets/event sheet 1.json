@@ -187,76 +187,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-code-pressed",
-							"objectClass": "Keyboard",
-							"sid": 212779711827569,
-							"parameters": {
-								"keycode": "(Selected + 49)"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Shop",
-							"sid": 432981085052469,
-							"parameters": {
-								"animation": "(SelectedName)",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Shop_text",
-							"sid": 340448022254036,
-							"parameters": {
-								"text": "\"INVENTORY: \" & SelectedName"
-							}
-						}
-					],
-					"sid": 464923041647553,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-value",
-									"objectClass": "Inventory",
-									"sid": 671972395808255,
-									"parameters": {
-										"key": "SelectedName",
-										"comparison": 4,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 553024027896572,
-									"parameters": {
-										"animation": "SelectedName",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "UI_trap",
-									"sid": 182273668275360,
-									"parameters": {
-										"text": "\"CURRENT TRAP: \" & SelectedName"
-									}
-								}
-							],
-							"sid": 762799996237273
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
 							"sid": 348798375636134,
@@ -300,6 +230,14 @@
 							"parameters": {
 								"key": "SelectedName",
 								"value": "Inventory.Get(SelectedName)+ 1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UI_trap",
+							"sid": 981615307528106,
+							"parameters": {
+								"text": "\"Trap: \" & SelectedName & \". Count: \" & Inventory.Get(SelectedName)"
 							}
 						}
 					],
