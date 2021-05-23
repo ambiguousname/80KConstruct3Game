@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "TutorialLevel",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use arrow keys to move around.\n\nUse the number keys or numpad to switch between traps.\n\nPress SPACE to place down a trap.\n\nPress R when very close to any trap to refund it for 50% of its original cost.\n\nTry placing a trap here.",
+						"text": "Use arrow keys to move, and use the arrow keys to select traps.\n\nPress P to buy the trap you have selected.\n\nPress SPACE to place down a trap.\n\nPress R when very close to any trap to refund it for 50% of its original cost.\n\nTry placing a trap here.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -64,10 +64,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 30,
-						"y": 47,
-						"width": 413,
-						"height": 211,
+						"x": 53,
+						"y": 45,
+						"width": 441,
+						"height": 248,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -94,9 +94,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 305,
-						"y": 274,
-						"width": 49.43447794670881,
-						"height": 49.43447794670881,
+						"y": 285,
+						"width": 38.43447794670881,
+						"height": 38.43447794670881,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

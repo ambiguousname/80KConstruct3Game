@@ -1,8 +1,8 @@
 export {Enemy, Jumper, paths, enemies, obstacles};
 var paths = new Map(); var enemies = []; var obstacles = [];
 class Enemy {
-	constructor(enemyName, enemyInstance) {
-		this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false;
+	constructor(enemyName, enemyInstance, index) {
+		this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index;
 		this.trapImmunity = [];
 	}
 	initializePathing(){
@@ -20,11 +20,12 @@ class Enemy {
 			if (self.dying) self.dyingUpdate(self, self.killer);
 		}
 	}
-	kill(self){ self.instance.destroy(); self.dead = true;}
+	kill(self){ self.dead = true; enemies.splice(self.index, 1); self.instance.destroy();}
 	dyingUpdate(self){
 		switch (self.killer.objectType.name) {
 			case "Pitfall":
-				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; self.instance.angle += 0.5; if (self.instance.width <= 0) self.kill(); break;
+				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; self.instance.angle += 0.5; 
+				if (self.instance.width <= 0.1) {self.kill(self);} break;
 			case "Balloon":
 				self.killer.zElevation += 1; self.instance.zElevation += 1; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y);
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}

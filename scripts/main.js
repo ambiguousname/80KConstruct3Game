@@ -1,6 +1,6 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
 import {Enemy, Jumper, enemies, obstacles, paths} from "./utility.js";
-runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime)));
+runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime); }}));
 async function OnBeforeProjectStart(runtime)
 {
 	runtime.objects.PathObj.getAllInstances().forEach(function(p){
@@ -15,7 +15,7 @@ async function OnBeforeProjectStart(runtime)
 		switch(e.instVars.EnemyType){
 			case "Jumper": enemyClass = Jumper; break;
 		}
-		var enemy = new enemyClass(e.instVars.EnemyName, e); enemy.initializePathing();
+		var enemy = new enemyClass(e.instVars.EnemyName, e, enemies.length); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1;
 		enemies.push(enemy);
 	});
 	var inv = runtime.objects.Inventory.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance(); runtime.globalVars.SelectedName = Object.keys(inv)[0]; runtime.objects.Shop.getFirstInstance().setAnimation(Object.keys(inv)[0]);
@@ -37,7 +37,7 @@ function Tick(runtime){
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
 		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
-	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown == true) runtime.spaceDown = false;
+	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) {
