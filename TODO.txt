@@ -18,3 +18,7 @@ Cannot refund blocks. It's because refunding traps requires the player to be ove
 whatever trap they placed. Also, blocks have to be solid for them to stop enemies,
 and the player must have collision enabled. My solution would be to disable player
 collisions, but that means we'd have to get rid of coins.
+
+Enemies stop moving if player scrolls to them, but only sometimes? Probably something to do with how
+MoveTo and the player's Scroll work together, as well as the fact that the enemy will only start moving
+again after they arrive at their destination.
