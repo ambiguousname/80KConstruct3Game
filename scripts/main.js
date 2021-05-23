@@ -39,4 +39,10 @@ function Tick(runtime){
 		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown == true) runtime.spaceDown = false;
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
+	if (runtime.keyboard.isKeyDown("KeyR")){
+		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) {
+			o.destroy(); obstacles.splice(o.trapIndex, 1);
+			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
+		}});
+	}
 }
