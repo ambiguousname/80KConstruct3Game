@@ -55,8 +55,9 @@
 					"uid": 3,
 					"instanceVariables": {
 						"Coins": 10,
-						"firework": false,
-						"trapdoor": false
+						"firework": 0,
+						"trapdoor": 0,
+						"regular": 2
 					},
 					"behaviors": {
 						"8Direction": {
@@ -124,36 +125,6 @@
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "Purchase",
-					"properties": {
-						"type": "button",
-						"text": "PURCHASE",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 6,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 583,
-						"y": 395,
-						"width": 98,
-						"height": 31,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				},
 				{
@@ -462,15 +433,61 @@
 						"live-preview": false
 					},
 					"uid": 16,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"firework": false,
+						"regular": false,
+						"trapdoor": false
+					},
 					"behaviors": {},
 					"world": {
-						"x": 624,
-						"y": 297,
+						"x": 613,
+						"y": 298,
 						"width": 95,
 						"height": 92,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "press 'P' to purchase. Then press the number key again to use your purchased item.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 556,
+						"y": 382,
+						"width": 170,
+						"height": 164,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

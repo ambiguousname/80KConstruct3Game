@@ -70,6 +70,33 @@
 					"parameters": {
 						"text": "\"INVENTORY: firework trap\""
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 986955941255885,
+					"parameters": {
+						"instance-variable": "firework",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 354147708300235,
+					"parameters": {
+						"instance-variable": "regular",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 538028922883173,
+					"parameters": {
+						"instance-variable": "trapdoor",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 984075230194171,
@@ -78,11 +105,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-boolean-instance-variable-set",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 854318510429173,
+							"sid": 850167938311435,
 							"parameters": {
-								"instance-variable": "firework"
+								"instance-variable": "firework",
+								"comparison": 1,
+								"value": "0"
 							}
 						}
 					],
@@ -90,10 +119,10 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Player",
-							"sid": 983878613333770,
+							"sid": 714408109489162,
 							"parameters": {
 								"animation": "\"trap2\"",
-								"from": "beginning"
+								"from": "current-frame"
 							}
 						},
 						{
@@ -138,6 +167,33 @@
 					"parameters": {
 						"text": "\"INVENTORY: trapdoor\""
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 367797117424425,
+					"parameters": {
+						"instance-variable": "firework",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 739710475816456,
+					"parameters": {
+						"instance-variable": "regular",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 313353873077065,
+					"parameters": {
+						"instance-variable": "trapdoor",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 749932387643652,
@@ -146,11 +202,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-boolean-instance-variable-set",
+							"id": "compare-instance-variable",
 							"objectClass": "Player",
-							"sid": 760803205462140,
+							"sid": 635976102407278,
 							"parameters": {
-								"instance-variable": "trapdoor"
+								"instance-variable": "trapdoor",
+								"comparison": 1,
+								"value": "0"
 							}
 						}
 					],
@@ -192,45 +250,87 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 827507182945339,
+					"objectClass": "Shop",
+					"sid": 457251317343556,
 					"parameters": {
 						"animation": "\"trap1\"",
-						"from": "beginning"
+						"from": "current-frame"
 					}
 				},
 				{
 					"id": "set-text",
-					"objectClass": "ui_trap",
-					"sid": 753608004242838,
+					"objectClass": "Shop_text",
+					"sid": 232316699142316,
 					"parameters": {
-						"text": "\"YOUR TRAP: regular\""
+						"text": "\"INVENTORY: regular\""
 					}
-				}
-			],
-			"sid": 832695231072436
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Purchase",
-					"sid": 189906730549283
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player",
-					"sid": 429455860695352,
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 844652861922623,
 					"parameters": {
-						"instance-variable": "Coins",
-						"comparison": 5,
-						"value": "10"
+						"instance-variable": "firework",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 706544707670141,
+					"parameters": {
+						"instance-variable": "regular",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shop",
+					"sid": 779406431644661,
+					"parameters": {
+						"instance-variable": "trapdoor",
+						"value": "false"
 					}
 				}
 			],
-			"actions": [],
-			"sid": 340658645547791
+			"sid": 832695231072436,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 974792543909497,
+							"parameters": {
+								"instance-variable": "regular",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 827507182945339,
+							"parameters": {
+								"animation": "\"trap1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ui_trap",
+							"sid": 753608004242838,
+							"parameters": {
+								"text": "\"YOUR TRAP: regular\""
+							}
+						}
+					],
+					"sid": 586940280266445
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -269,6 +369,127 @@
 				}
 			],
 			"sid": 676690814411427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 794538816951989,
+					"parameters": {
+						"key": 80
+					}
+				}
+			],
+			"actions": [],
+			"sid": 729581723353139,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Shop",
+							"sid": 297630022768285,
+							"parameters": {
+								"instance-variable": "firework"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 879783738598607,
+							"parameters": {
+								"instance-variable": "Coins",
+								"comparison": 5,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Player",
+							"sid": 387528340269595,
+							"parameters": {
+								"instance-variable": "firework",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Player",
+							"sid": 740988588879069,
+							"parameters": {
+								"instance-variable": "Coins",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ui_coins",
+							"sid": 952861402975305,
+							"parameters": {
+								"text": "\"COINS: \"&Player.Coins"
+							}
+						}
+					],
+					"sid": 469939989526292
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Shop",
+							"sid": 877229608047449,
+							"parameters": {
+								"instance-variable": "trapdoor"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 346100986285596,
+							"parameters": {
+								"instance-variable": "Coins",
+								"comparison": 5,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Player",
+							"sid": 376343076825600,
+							"parameters": {
+								"instance-variable": "trapdoor",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Player",
+							"sid": 478482837096242,
+							"parameters": {
+								"instance-variable": "Coins",
+								"value": "20"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ui_coins",
+							"sid": 852180156047246,
+							"parameters": {
+								"text": "\"COINS: \"&Player.Coins"
+							}
+						}
+					],
+					"sid": 918683316625448
+				}
+			]
 		}
 	],
 	"sid": 805001182301451

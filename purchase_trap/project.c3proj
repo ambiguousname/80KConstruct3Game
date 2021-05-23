@@ -32,14 +32,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -63,7 +55,6 @@
 			"Keyboard",
 			"ui_trap",
 			"ui_coins",
-			"Purchase",
 			"Text",
 			"coins",
 			"Shop_text",

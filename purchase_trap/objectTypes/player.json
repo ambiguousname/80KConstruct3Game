@@ -12,15 +12,21 @@
 		},
 		{
 			"name": "firework",
-			"type": "boolean",
+			"type": "number",
 			"desc": "",
-			"sid": 262125899178689
+			"sid": 546239268492299
 		},
 		{
 			"name": "trapdoor",
-			"type": "boolean",
+			"type": "number",
 			"desc": "",
-			"sid": 448889829747168
+			"sid": 692285888864971
+		},
+		{
+			"name": "regular",
+			"type": "number",
+			"desc": "",
+			"sid": 978278639170177
 		}
 	],
 	"behaviorTypes": [
