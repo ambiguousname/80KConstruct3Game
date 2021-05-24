@@ -221,6 +221,48 @@
 					}
 				},
 				{
+					"type": "Text",
+					"properties": {
+						"text": "CREDIT(art):\n\n- William.Thompsonj, https://opengameart.org/content/lpc-plant-repack \n\n- yolkati, https://opengameart.org/content/isometric-snakes \n\n- Shepardskin, https://opengameart.org/content/dog-sprites \n\n- https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/50d88c04f9b5e14.png  ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 37,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 611,
+						"y": 29,
+						"width": 605,
+						"height": 248,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
