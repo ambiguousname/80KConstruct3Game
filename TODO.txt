@@ -4,10 +4,10 @@ For the Construct 3 Demo, we need:
 - Mission Timer - Wendi
 - Replacing demo art with more cohesive style? (Do this when demo is finished, the demo art looks somewhat disparate)
 - Add enemy animations to show stuff like jumping and swinging.
-- Add all the trap types (After the demo is done) - Tyler
-- Add all the enemy types (After demo is done) - Tyler
-- Add more visual indicators to show when enemies are and aren't immune to traps (After demo is done) - Tyler
-- Credits screen with all of the assets we used (MUST HAVE)
+- Add more levels
+- Add all the trap types - Tyler
+- Add all the enemy types - Tyler
+- Add more visual indicators to show when enemies are and aren't immune to traps - Tyler
 - Rewards for defeating enemies? - Tyler
 - Maybe some sound effects and/or music? - Tyler
 
