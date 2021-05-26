@@ -21,3 +21,10 @@ collisions, but that means we'd have to get rid of coins.
 Enemies stop moving if player scrolls to them, but only sometimes? Probably something to do with how
 MoveTo and the player's Scroll work together, as well as the fact that the enemy will only start moving
 again after they arrive at their destination.
+
+Playtest Notes:
+Replace "press arrow keys to select traps" with "press number keys"
+Liked the balloon animation
+Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?)
+Don't have a timer for the tutorial.
+Liked experimenting with different traps
