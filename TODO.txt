@@ -11,7 +11,11 @@ For the Construct 3 Demo, we need:
 - Add more visual indicators to show when enemies are and aren't immune to traps - Tyler
 - Rewards for defeating enemies? - Tyler
 - Maybe some sound effects and/or music? - Tyler
+
+
+Feedback from play testing:
 - Add a tutorial section before the game starts.
+
 
 Known bugs:
 Cannot refund blocks. It's because refunding traps requires the player to be over 
