@@ -6,6 +6,7 @@ For the Construct 3 Demo, we need:
 - Add enemy animations to show stuff like jumping and swinging.
 - Start screen, functional (and nice looking) win and lose screens
 - Add more levels
+- Polish background
 - Add all the trap types - Tyler
 - Add all the enemy types - Tyler
 - Add more visual indicators to show when enemies are and aren't immune to traps - Tyler
@@ -15,6 +16,7 @@ For the Construct 3 Demo, we need:
 
 Feedback from play testing:
 - Add a tutorial section before the game starts.
+- Maybe increase countdown.
 
 
 Known bugs:
