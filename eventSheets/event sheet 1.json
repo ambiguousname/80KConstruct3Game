@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "Total_time",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "100000",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -159,10 +159,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 490093393962788,
+							"sid": 291291345403896,
 							"parameters": {
 								"variable": "Total_time",
-								"value": "-0.02"
+								"value": "-1"
 							}
 						},
 						{
