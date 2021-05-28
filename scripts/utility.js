@@ -30,7 +30,7 @@ class Enemy {
 		}
 	}
 	getCollision(self, trapInstance){
-		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.objectType.name === "Trapdoor" && trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
+		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
 			self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0;
 		}
 	}
@@ -43,7 +43,7 @@ class Jumper extends Enemy {
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; if (self.jumpTimer <= 0) self.instance.zElevation -= 30; } else {self.landTimer += self.instance.runtime.dt;}
 	}
 	getCollision(self, trapInstance){
-		if(!self.dying && (trapInstance.objectType.name == "Trapdoor" && trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
+		if(!self.dying && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpTimer <= 0 && self.landTimer >= 1){
 				self.instance.zElevation += 30; self.jumpTimer = 3; self.landTimer = 0;
 			} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || (self.jumpTimer <= 0 && self.landTimer < 1)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }
@@ -59,7 +59,7 @@ class Digger extends Enemy {
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.surfaceTimer > 0) {self.surfaceTimer -= self.instance.runtime.dt;} else if (self.surfaceTimer <= 0) {self.immuneTimer += self.instance.runtime.dt; } if (self.surfaceTimer <= 0) { self.instance.opacity = 0.5; self.immobile = false; self.instance.behaviors.MoveTo.moveToPosition(paths[self.name][self.pathIndex][0], paths[self.name][self.pathIndex][1]);}
 	}
 	getCollision(self, trapInstance){
-		if(!self.dying && (trapInstance.objectType.name == "Trapdoor" && trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
+		if(!self.dying && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.surfaceTimer <= 0 && self.immuneTimer > 4){
 				self.instance.opacity = 1; self.surfaceTimer = 5; self.immobile = true; self.instance.behaviors.MoveTo.stop(); self.immuneTimer = 0;
 			} else if ((self.surfaceTimer > 0) && !self.trapImmunity.includes(trapInstance.objectType.name)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }
