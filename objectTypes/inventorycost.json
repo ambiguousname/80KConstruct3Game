@@ -2,61 +2,6 @@
 	"name": "InventoryCost",
 	"plugin-id": "Dictionary",
 	"sid": 147638766477854,
-	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Pitfall",
-			"type": "number",
-			"desc": "",
-			"sid": 516752246045356
-		},
-		{
-			"name": "Balloon",
-			"type": "number",
-			"desc": "",
-			"sid": 590938203512202
-		},
-		{
-			"name": "Block",
-			"type": "number",
-			"desc": "",
-			"sid": 288211069449542
-		},
-		{
-			"name": "Trapdoor",
-			"type": "number",
-			"desc": "",
-			"sid": 837278273764487
-		},
-		{
-			"name": "Wind",
-			"type": "number",
-			"desc": "",
-			"sid": 280798507946302
-		},
-		{
-			"name": "Rocket",
-			"type": "number",
-			"desc": "",
-			"sid": 686561894201211
-		},
-		{
-			"name": "Firework",
-			"type": "number",
-			"desc": "",
-			"sid": 416784411246375
-		},
-		{
-			"name": "Snake",
-			"type": "number",
-			"desc": "",
-			"sid": 956759074804388
-		},
-		{
-			"name": "Lion",
-			"type": "number",
-			"desc": "",
-			"sid": 977137990992622
-		}
-	]
+	"isGlobal": true,
+	"instanceVariables": []
 }

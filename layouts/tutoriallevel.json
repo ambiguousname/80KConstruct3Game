@@ -841,33 +841,13 @@
 			"type": "Inventory",
 			"properties": {},
 			"uid": 34,
-			"instanceVariables": {
-				"Pitfall": 0,
-				"Balloon": 0,
-				"Block": 0,
-				"Trapdoor": 0,
-				"Wind": 0,
-				"Rocket": 0,
-				"Firework": 0,
-				"Snake": 0,
-				"Lion": 0
-			}
+			"instanceVariables": {}
 		},
 		{
 			"type": "InventoryCost",
 			"properties": {},
 			"uid": 11,
-			"instanceVariables": {
-				"Pitfall": 15,
-				"Balloon": 500,
-				"Block": 500,
-				"Trapdoor": 500,
-				"Wind": 500,
-				"Rocket": 500,
-				"Firework": 500,
-				"Snake": 500,
-				"Lion": 500
-			}
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],
