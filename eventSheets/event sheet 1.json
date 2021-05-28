@@ -138,9 +138,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "UI_coins",
-							"sid": 746702034701101,
+							"sid": 670002472569223,
 							"parameters": {
-								"text": "\"COINS: \"&Player.Coins"
+								"text": "\"COINS: \" & Player.Coins"
 							}
 						}
 					],

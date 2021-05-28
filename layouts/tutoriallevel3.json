@@ -70,7 +70,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nTry placing a pitfall trap with this enemy.",
+						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nTry placing a pitfall trap with this enemy.\n\nRemember that you can refund any placed trap by pressing R.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -96,7 +96,7 @@
 						"x": 147,
 						"y": 56,
 						"width": 356,
-						"height": 152,
+						"height": 207,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -161,7 +161,7 @@
 					"uid": 78,
 					"instanceVariables": {
 						"Coins": 100,
-						"NextLevel": "YouWin"
+						"NextLevel": "You Win"
 					},
 					"behaviors": {
 						"8Direction": {
@@ -433,7 +433,7 @@
 				{
 					"type": "UI_coins",
 					"properties": {
-						"text": "COINS: ",
+						"text": "COINS: 100",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,

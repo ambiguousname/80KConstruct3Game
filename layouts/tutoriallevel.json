@@ -231,9 +231,9 @@
 					},
 					"uid": 13,
 					"instanceVariables": {
-						"Pitfall": 100,
-						"Balloon": 0,
-						"Block": 0,
+						"Pitfall": 5,
+						"Balloon": 5,
+						"Block": 1,
 						"Trapdoor": 0,
 						"Wind": 0,
 						"Rocket": 0,
@@ -582,7 +582,7 @@
 				{
 					"type": "UI_coins",
 					"properties": {
-						"text": "COINS: ",
+						"text": "COINS: 100",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
