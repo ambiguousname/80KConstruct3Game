@@ -28,6 +28,9 @@ again after they arrive at their destination.
 
 Player coins don't update on collection or on the start of a layout.
 
+More of an aesthetic thing, but if you close the trapdoor while an enemy is falling in, they still
+remain on top of the trapdoor.
+
 Playtest Notes:
 Liked the balloon animation
 Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?)
