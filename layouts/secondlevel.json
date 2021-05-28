@@ -1,5 +1,5 @@
 {
-	"name": "FirstLevel",
+	"name": "SecondLevel",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 20,
+					"uid": 108,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -47,7 +47,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 109,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -76,7 +76,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 110,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -114,7 +114,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 23,
+					"uid": 111,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -152,7 +152,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 24,
+					"uid": 112,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,7 +190,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 33,
+					"uid": 113,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -219,7 +219,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 41,
+					"uid": 114,
 					"instanceVariables": {
 						"balloon": false,
 						"regular": false,
@@ -261,7 +261,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 43,
+					"uid": 115,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -294,7 +294,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 45,
+					"uid": 116,
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 15,
@@ -333,7 +333,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 48,
+					"uid": 117,
 					"instanceVariables": {
 						"Pitfall": 1,
 						"Balloon": 0,
@@ -372,7 +372,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 57,
+					"uid": 118,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -401,7 +401,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 58,
+					"uid": 119,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -430,7 +430,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 59,
+					"uid": 120,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -459,7 +459,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 60,
+					"uid": 121,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -488,7 +488,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 61,
+					"uid": 122,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -517,7 +517,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 62,
+					"uid": 123,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -546,10 +546,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
+					"uid": 124,
 					"instanceVariables": {
 						"Coins": 50,
-						"NextLevel": "SecondLevel",
+						"NextLevel": "YouWin",
 						"localScale": 0.28
 					},
 					"behaviors": {
@@ -601,7 +601,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 49,
+					"uid": 125,
 					"instanceVariables": {
 						"EnemyName": "Jim",
 						"EnemyType": ""
@@ -645,7 +645,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 53,
+					"uid": 126,
 					"instanceVariables": {
 						"EnemyName": "Bob",
 						"EnemyType": "Jumper"
@@ -689,7 +689,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 54,
+					"uid": 127,
 					"instanceVariables": {
 						"EnemyName": "Jimbo",
 						"EnemyType": "Jumper"
@@ -733,7 +733,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 55,
+					"uid": 128,
 					"instanceVariables": {
 						"EnemyName": "Dave",
 						"EnemyType": ""
@@ -777,7 +777,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 56,
+					"uid": 129,
 					"instanceVariables": {
 						"EnemyName": "Steve",
 						"EnemyType": ""
@@ -821,7 +821,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 72,
+					"uid": 130,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Dave"
@@ -853,7 +853,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 73,
+					"uid": 131,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Dave"
@@ -885,7 +885,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 77,
+					"uid": 132,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Dave"
@@ -917,7 +917,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 79,
+					"uid": 133,
 					"instanceVariables": {
 						"Position": 3,
 						"EnemyName": "Dave"
@@ -949,7 +949,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 81,
+					"uid": 134,
 					"instanceVariables": {
 						"Position": 4,
 						"EnemyName": "Dave"
@@ -981,7 +981,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 85,
+					"uid": 135,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Steve"
@@ -1013,7 +1013,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 86,
+					"uid": 136,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Steve"
@@ -1045,7 +1045,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 87,
+					"uid": 137,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Steve"
@@ -1077,7 +1077,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 88,
+					"uid": 138,
 					"instanceVariables": {
 						"Position": 3,
 						"EnemyName": "Steve"
@@ -1109,7 +1109,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 89,
+					"uid": 139,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Bob"
@@ -1141,7 +1141,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 90,
+					"uid": 140,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Bob"
@@ -1173,7 +1173,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 91,
+					"uid": 141,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Bob"
@@ -1205,7 +1205,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 92,
+					"uid": 142,
 					"instanceVariables": {
 						"Position": 3,
 						"EnemyName": "Bob"
@@ -1237,7 +1237,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 93,
+					"uid": 143,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Jim"
@@ -1269,7 +1269,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 94,
+					"uid": 144,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Jim"
@@ -1301,7 +1301,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 103,
+					"uid": 145,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Jim"
@@ -1333,7 +1333,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 104,
+					"uid": 146,
 					"instanceVariables": {
 						"Position": 3,
 						"EnemyName": "Jim"
@@ -1365,7 +1365,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 105,
+					"uid": 147,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Jimbo"
@@ -1397,7 +1397,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 106,
+					"uid": 148,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Jimbo"
@@ -1429,7 +1429,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 107,
+					"uid": 149,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Jimbo"
@@ -1453,7 +1453,7 @@
 					}
 				}
 			],
-			"sid": 307604169782793,
+			"sid": 576059695269838,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1478,7 +1478,7 @@
 			"global": false
 		}
 	],
-	"sid": 747015336829516,
+	"sid": 957992197005140,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,
