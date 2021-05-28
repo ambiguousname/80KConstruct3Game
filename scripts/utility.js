@@ -1,5 +1,6 @@
-export {Enemy, Jumper, paths, enemies, obstacles};
+
 var paths = new Map(); var enemies = []; var obstacles = [];
+export {Enemy, Jumper, paths, enemies, obstacles};
 class Enemy {
 	constructor(enemyName, enemyInstance, index) {
 		this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index;

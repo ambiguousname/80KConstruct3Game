@@ -280,7 +280,8 @@
 					},
 					"uid": 46,
 					"instanceVariables": {
-						"Coins": 100
+						"Coins": 100,
+						"NextLevel": "TutorialLevel3"
 					},
 					"behaviors": {
 						"8Direction": {

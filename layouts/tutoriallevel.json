@@ -309,7 +309,8 @@
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"Coins": 100
+						"Coins": 100,
+						"NextLevel": "TutorialLevel2"
 					},
 					"behaviors": {
 						"8Direction": {
@@ -841,7 +842,17 @@
 			"type": "Inventory",
 			"properties": {},
 			"uid": 34,
-			"instanceVariables": {}
+			"instanceVariables": {
+				"Pitfall": 0,
+				"Balloon": 0,
+				"Block": 0,
+				"Trapdoor": 0,
+				"Wind": 0,
+				"Rocket": 0,
+				"Firework": 0,
+				"Snake": 0,
+				"Lion": 0
+			}
 		},
 		{
 			"type": "InventoryCost",

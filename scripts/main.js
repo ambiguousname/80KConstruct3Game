@@ -3,6 +3,7 @@ import {Enemy, Jumper, enemies, obstacles, paths} from "./utility.js";
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime); }}));
 async function OnBeforeProjectStart(runtime)
 {
+	paths.clear(); enemies.splice(0, enemies.length); obstacles.splice(0, obstacles.length); //Reset global variables for a new scene load.
 	runtime.objects.PathObj.getAllInstances().forEach(function(p){
 		var enemyName = p.instVars.EnemyName; // Okay, arrays probably weren't meant to be constructed this way.
 		if (enemyName in paths) paths[enemyName][p.instVars.Position] = [p.x, p.y];
@@ -22,6 +23,7 @@ async function OnBeforeProjectStart(runtime)
 	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
 	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
 	runtime.addEventListener("tick", () => Tick(runtime));
+	runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime); }}); //This sets up the next scene to load this script again.
 }
 
 function Tick(runtime){
@@ -44,5 +46,8 @@ function Tick(runtime){
 			o.destroy(); obstacles.splice(o.trapIndex, 1);
 			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
 		}});
+	}
+	if(runtime.globalVars.EnemiesDestroyed == runtime.globalVars.ExistingEnemies) {
+		runtime.goToLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel);
 	}
 }

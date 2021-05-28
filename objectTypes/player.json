@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 824483885992917
+		},
+		{
+			"name": "NextLevel",
+			"type": "string",
+			"desc": "",
+			"sid": 408754179854648
 		}
 	],
 	"behaviorTypes": [

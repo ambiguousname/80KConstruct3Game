@@ -240,32 +240,6 @@
 						}
 					],
 					"sid": 491212245015866
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 612568606575492,
-							"parameters": {
-								"variable": "EnemiesDestroyed",
-								"comparison": 0,
-								"value": "ExistingEnemies"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 933095676847590,
-							"parameters": {
-								"layout": "You Win"
-							}
-						}
-					],
-					"sid": 902858029149055
 				}
 			],
 			"sid": 492111919029372

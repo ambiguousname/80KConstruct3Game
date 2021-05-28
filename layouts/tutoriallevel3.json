@@ -202,7 +202,8 @@
 					},
 					"uid": 78,
 					"instanceVariables": {
-						"Coins": 100
+						"Coins": 100,
+						"NextLevel": "YouWin"
 					},
 					"behaviors": {
 						"8Direction": {
