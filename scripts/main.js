@@ -27,7 +27,7 @@ async function OnBeforeProjectStart(runtime)
 }
 
 function Tick(runtime){
-	var inv = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invTemp = runtime.objects.Inventory.getFirstInstance().instVars;
+	var inv = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invTemp = runtime.objects.InventoryInit.getFirstInstance().instVars;
 	for (var i = 0; i < Object.keys(invTemp).length; i++){
 		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
 			runtime.globalVars.SelectedName = Object.keys(invTemp)[i]; runtime.globalVars.Selected = i;

@@ -29,16 +29,16 @@
 			"sid": 224619976239225
 		},
 		{
+			"name": "Snake",
+			"type": "number",
+			"desc": "",
+			"sid": 845622420488274
+		},
+		{
 			"name": "Wind",
 			"type": "number",
 			"desc": "",
 			"sid": 280527748710817
-		},
-		{
-			"name": "Rocket",
-			"type": "number",
-			"desc": "",
-			"sid": 831930494823223
 		},
 		{
 			"name": "Firework",
@@ -47,16 +47,16 @@
 			"sid": 528019981503683
 		},
 		{
-			"name": "Snake",
-			"type": "number",
-			"desc": "",
-			"sid": 845622420488274
-		},
-		{
 			"name": "Lion",
 			"type": "number",
 			"desc": "",
 			"sid": 554117789043980
+		},
+		{
+			"name": "Rocket",
+			"type": "number",
+			"desc": "",
+			"sid": 831930494823223
 		}
 	],
 	"behaviorTypes": [],

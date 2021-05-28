@@ -9,8 +9,19 @@ to update it per level?) - Wendi
 - Polish background ??
 - Add more levels - Tyler
 - Add all the trap types - Tyler
+- Snake
+- Wind
+- Dog
+- Rocket
+- Firework
+- Lion
 - Add all the enemy types - Tyler
 - Add digger enemy
+- Add destroyer enemy
+- Add whip enemy
+- Add animal handler enemy
+- Add boss' duplicate
+- Add Boss' Weakness Enemy
 - Rewards for defeating enemies? - Tyler
 - Maybe some sound effects and/or music
 

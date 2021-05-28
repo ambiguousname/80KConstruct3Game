@@ -70,7 +70,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Certain traps can only be placed once, and have to be activated remotely.\n\nTry placing a trapdoor (4). With the trapdoor still selected, press space again to activate the trapdoor.\n\nTo place the trapdoor again, press R whilst on top of the trapdoor.",
+						"text": "The Trapdoor is the only trap that can only be placed once, and that can be activated remotely.\n\nTry placing a trapdoor (4). With the trapdoor still selected, press space again to activate the trapdoor.\n\nTo place the trapdoor again, press R whilst on top of the trapdoor.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -677,11 +677,11 @@
 						"Balloon": 0,
 						"Block": 0,
 						"Trapdoor": 1,
-						"Wind": 0,
-						"Rocket": 0,
-						"Firework": 0,
 						"Snake": 0,
-						"Lion": 0
+						"Wind": 0,
+						"Firework": 0,
+						"Lion": 0,
+						"Rocket": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -716,11 +716,11 @@
 						"Balloon": 500,
 						"Block": 500,
 						"Trapdoor": 10,
-						"Wind": 500,
-						"Rocket": 500,
-						"Firework": 500,
 						"Snake": 500,
-						"Lion": 500
+						"Wind": 500,
+						"Firework": 500,
+						"Lion": 500,
+						"Rocket": 500
 					},
 					"behaviors": {},
 					"world": {
