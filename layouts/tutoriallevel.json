@@ -221,6 +221,84 @@
 					}
 				},
 				{
+					"type": "InventoryInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {
+						"Pitfall": 0,
+						"Balloon": 0,
+						"Block": 0,
+						"Trapdoor": 0,
+						"Wind": 0,
+						"Rocket": 0,
+						"Firework": 0,
+						"Snake": 0,
+						"Lion": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 114,
+						"y": 136,
+						"width": 95.86970324351694,
+						"height": 95.86970324351694,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InventoryCostInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"Pitfall": 0,
+						"Balloon": 0,
+						"Block": 0,
+						"Trapdoor": 0,
+						"Wind": 0,
+						"Rocket": 0,
+						"Firework": 0,
+						"Snake": 0,
+						"Lion": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 211,
+						"y": 358,
+						"width": 98.13256340277675,
+						"height": 98.13256340277675,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -780,7 +858,7 @@
 			"properties": {},
 			"uid": 11,
 			"instanceVariables": {
-				"Pitfall": 10,
+				"Pitfall": 15,
 				"Balloon": 500,
 				"Block": 500,
 				"Trapdoor": 500,
@@ -793,8 +871,8 @@
 		}
 	],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 854,
+	"height": 480,
 	"unboundedScrolling": false,
 	"eventSheet": "Event sheet 1"
 }

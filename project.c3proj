@@ -123,7 +123,9 @@
 			"InventoryCost",
 			"UIBackground",
 			"LoseText",
-			"SpriteFont"
+			"SpriteFont",
+			"InventoryInit",
+			"InventoryCostInit"
 		],
 		"subfolders": []
 	},

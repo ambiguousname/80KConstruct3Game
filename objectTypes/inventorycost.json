@@ -2,7 +2,7 @@
 	"name": "InventoryCost",
 	"plugin-id": "Dictionary",
 	"sid": 147638766477854,
-	"isGlobal": true,
+	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Pitfall",

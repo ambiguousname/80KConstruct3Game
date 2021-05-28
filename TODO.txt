@@ -2,16 +2,15 @@ For the Construct 3 Demo, we need:
 - Placeholder art (with the general style that our final game is going to have) - Wendi
 - Buying traps - Wendi
 - Mission Timer - Wendi
-- Replacing demo art with more cohesive style? (Do this when demo is finished, the demo art looks somewhat disparate)
-- Add enemy animations to show stuff like jumping and swinging.
-- Start screen, functional (and nice looking) win and lose screens
-- Add more levels
-- Polish background
+- Replacing demo art with different art? - Wendi
+- Add enemy animations to show stuff like jumping and swinging. - Wendi
+- Start screen, functional (and nice looking) win and lose screens - Wendi
+- Polish background ??
+- Add more levels - Tyler
 - Add all the trap types - Tyler
 - Add all the enemy types - Tyler
-- Add more visual indicators to show when enemies are and aren't immune to traps - Tyler
 - Rewards for defeating enemies? - Tyler
-- Maybe some sound effects and/or music? - Tyler
+- Maybe some sound effects and/or music
 
 
 Feedback from play testing:
@@ -20,10 +19,6 @@ Feedback from play testing:
 
 
 Known bugs:
-Cannot refund blocks. It's because refunding traps requires the player to be over 
-whatever trap they placed. Also, blocks have to be solid for them to stop enemies,
-and the player must have collision enabled. My solution would be to disable player
-collisions, but that means we'd have to get rid of coins.
 
 Enemies stop moving if player scrolls to them, but only sometimes? Probably something to do with how
 MoveTo and the player's Scroll work together, as well as the fact that the enemy will only start moving

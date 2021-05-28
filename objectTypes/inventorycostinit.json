@@ -1,0 +1,92 @@
+{
+	"name": "InventoryCostInit",
+	"plugin-id": "Sprite",
+	"sid": 582802194999624,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Pitfall",
+			"type": "number",
+			"desc": "",
+			"sid": 532789864949649
+		},
+		{
+			"name": "Balloon",
+			"type": "number",
+			"desc": "",
+			"sid": 253422707898641
+		},
+		{
+			"name": "Block",
+			"type": "number",
+			"desc": "",
+			"sid": 406934013024155
+		},
+		{
+			"name": "Trapdoor",
+			"type": "number",
+			"desc": "",
+			"sid": 968411894888918
+		},
+		{
+			"name": "Wind",
+			"type": "number",
+			"desc": "",
+			"sid": 142147630900961
+		},
+		{
+			"name": "Rocket",
+			"type": "number",
+			"desc": "",
+			"sid": 654000978016344
+		},
+		{
+			"name": "Firework",
+			"type": "number",
+			"desc": "",
+			"sid": 959921792527003
+		},
+		{
+			"name": "Snake",
+			"type": "number",
+			"desc": "",
+			"sid": 138459728809674
+		},
+		{
+			"name": "Lion",
+			"type": "number",
+			"desc": "",
+			"sid": 719391628402834
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9429942,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 858932035509224,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
