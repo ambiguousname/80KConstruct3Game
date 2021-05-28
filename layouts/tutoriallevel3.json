@@ -161,7 +161,8 @@
 					"uid": 78,
 					"instanceVariables": {
 						"Coins": 100,
-						"NextLevel": "You Win"
+						"NextLevel": "FirstLevel",
+						"localScale": 1
 					},
 					"behaviors": {
 						"8Direction": {
@@ -490,8 +491,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 221,
-						"y": 15,
+						"x": 194,
+						"y": 13,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -647,7 +648,7 @@
 					"world": {
 						"x": 422,
 						"y": 418,
-						"width": 425,
+						"width": 424.99999999999994,
 						"height": 28,
 						"originX": 0,
 						"originY": 0,

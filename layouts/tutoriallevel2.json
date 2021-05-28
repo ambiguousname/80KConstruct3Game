@@ -239,7 +239,8 @@
 					"uid": 46,
 					"instanceVariables": {
 						"Coins": 100,
-						"NextLevel": "TutorialLevel3"
+						"NextLevel": "TutorialLevel3",
+						"localScale": 1
 					},
 					"behaviors": {
 						"8Direction": {
@@ -568,8 +569,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 221,
-						"y": 15,
+						"x": 201,
+						"y": 10,
 						"width": 200,
 						"height": 30,
 						"originX": 0,

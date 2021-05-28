@@ -15,6 +15,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 408754179854648
+		},
+		{
+			"name": "localScale",
+			"type": "number",
+			"desc": "",
+			"sid": 491995941399675
 		}
 	],
 	"behaviorTypes": [
