@@ -1,0 +1,60 @@
+{
+	"name": "Trapdoor",
+	"plugin-id": "Sprite",
+	"sid": 777767752107542,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5142857142857142,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1702866,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 154812133172150,
+				"name": "Trapdoor",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 35,
+						"originX": 1.5121951219512195,
+						"originY": 3.4857142857142858,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 787109,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 736592535895891,
+				"name": "Open",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

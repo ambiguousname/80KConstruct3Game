@@ -125,7 +125,8 @@
 			"LoseText",
 			"SpriteFont",
 			"InventoryInit",
-			"InventoryCostInit"
+			"InventoryCostInit",
+			"Trapdoor"
 		],
 		"subfolders": []
 	},
