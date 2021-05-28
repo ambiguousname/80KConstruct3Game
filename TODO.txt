@@ -16,7 +16,6 @@ to update it per level?) - Wendi
 - Firework
 - Lion
 - Add all the enemy types - Tyler
-- Add digger enemy
 - Add destroyer enemy
 - Add whip enemy
 - Add animal handler enemy

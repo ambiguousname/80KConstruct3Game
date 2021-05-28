@@ -300,11 +300,11 @@
 						"Balloon": 15,
 						"Block": 15,
 						"Trapdoor": 20,
-						"Wind": 25,
-						"Rocket": 500,
-						"Firework": 500,
 						"Snake": 500,
-						"Lion": 500
+						"Wind": 25,
+						"Firework": 500,
+						"Lion": 500,
+						"Rocket": 500
 					},
 					"behaviors": {},
 					"world": {
@@ -339,11 +339,11 @@
 						"Balloon": 0,
 						"Block": 0,
 						"Trapdoor": 1,
-						"Wind": 1,
-						"Rocket": 0,
-						"Firework": 0,
 						"Snake": 0,
-						"Lion": 0
+						"Wind": 1,
+						"Firework": 0,
+						"Lion": 0,
+						"Rocket": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -375,7 +375,7 @@
 					"uid": 124,
 					"instanceVariables": {
 						"Coins": 50,
-						"NextLevel": "YouWin",
+						"NextLevel": "You Win",
 						"localScale": 0.28
 					},
 					"behaviors": {
@@ -416,6 +416,178 @@
 						],
 						"angle": 0,
 						"zElevation": 1
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "diggerforward",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {
+						"EnemyName": "",
+						"EnemyType": "Digger"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 56.00000000000001,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 84.00000000000001,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 218.1592732043483,
+						"y": 146.04510426123247,
+						"width": 19.504553168636274,
+						"height": 28.606677980666536,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 139,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 198.93732478407244,
+						"y": 175.7417817498321,
+						"width": 21.658680026669607,
+						"height": 21.658680026669607,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 150.026160857893,
+						"y": 247.9792908702231,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 141,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 73.43483242014096,
+						"y": 331.7106193079751,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 142,
+					"instanceVariables": {
+						"Position": 3,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 146.13650134556076,
+						"y": 396.9411644454754,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
 					}
 				}
 			],
