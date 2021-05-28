@@ -223,6 +223,116 @@
 				{
 					"type": "InventoryInit",
 					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 53,
+							"height": 30,
+							"max-width": 106,
+							"max-height": 60,
+							"data": "78x0,11h,51h,91h,131h,171h,0,5x206h,49x0,10h,50h,90h,130h,170h,0,5x205h,49x0,9h,49h,89h,129h,169h,0,5x204h,49x0,8h,48h,88h,128h,168h,0,5x206h,49x0,7h,47h,87h,127h,167h,0,5x205h,55x0,5x204h,43x0,45,85,10x0,5x206h,43x0,46,86,10x0,5x205h,49x0,451h,491h,4x0,5x204h,49x0,450h,490h,5740x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -7,
+						"y": -4,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 53,
+							"height": 30,
+							"max-width": 106,
+							"max-height": 60,
+							"data": "78x0,11h,51h,91h,131h,171h,0,5x206h,49x0,10h,50h,90h,130h,170h,0,5x205h,49x0,9h,49h,89h,129h,169h,0,5x204h,49x0,8h,48h,88h,128h,168h,0,5x206h,49x0,7h,47h,87h,127h,167h,0,5x205h,55x0,5x204h,43x0,45,85,10x0,5x206h,43x0,46,86,10x0,5x205h,49x0,451h,491h,4x0,5x204h,49x0,450h,490h,5740x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -7,
+						"y": -4,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
@@ -638,51 +748,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 221,
-						"y": 15,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text_time",
-					"properties": {
-						"text": "YOU ARE RUNNING OUT OF TIME",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 25,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 423,
-						"y": -88,
-						"width": 200,
+						"x": 219,
+						"y": 12,
+						"width": 337,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
