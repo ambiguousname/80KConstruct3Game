@@ -1,5 +1,5 @@
 {
-	"name": "TutorialLevel",
+	"name": "TutorialLevel3",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 6,
+					"uid": 71,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -39,9 +39,38 @@
 					}
 				},
 				{
+					"type": "Coin",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 74,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 312,
+						"y": 421.5,
+						"width": 38,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Text",
 					"properties": {
-						"text": "Use arrow keys to move, and use the number keys to select traps.\n\nPress SPACE to place down a trap.\n\nTry placing a trap here.",
+						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nTry placing a pitfall trap with this enemy.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -60,74 +89,16 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 12,
+					"uid": 75,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 53,
-						"y": 45,
-						"width": 441,
-						"height": 248,
+						"x": 207,
+						"y": 117,
+						"width": 356,
+						"height": 152,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 8,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 305,
-						"y": 285,
-						"width": 38.43447794670881,
-						"height": 38.43447794670881,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Coin",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 312,
-						"y": 421.5,
-						"width": 38,
-						"height": 39,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -151,7 +122,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 28,
+					"uid": 76,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -200,7 +171,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 37,
+					"uid": 77,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -229,7 +200,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 7,
+					"uid": 78,
 					"instanceVariables": {
 						"Coins": 100
 					},
@@ -277,15 +248,15 @@
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "forward",
+						"initial-animation": "jumperforward",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
+					"uid": 80,
 					"instanceVariables": {
 						"EnemyName": "",
-						"EnemyType": ""
+						"EnemyType": "Jumper"
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -301,8 +272,8 @@
 						}
 					},
 					"world": {
-						"x": 821,
-						"y": 227,
+						"x": 824,
+						"y": 224,
 						"width": 40.0830537758789,
 						"height": 58.78847887128906,
 						"originX": 0.5,
@@ -326,7 +297,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
+					"uid": 82,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": ""
@@ -358,7 +329,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
+					"uid": 83,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": ""
@@ -390,7 +361,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 5,
+					"uid": 84,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": ""
@@ -414,7 +385,7 @@
 					}
 				}
 			],
-			"sid": 537089655055689,
+			"sid": 408063785037582,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -451,7 +422,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 10,
+					"uid": 95,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -480,7 +451,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 35,
+					"uid": 96,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -518,7 +489,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 27,
+					"uid": 97,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -556,7 +527,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 29,
+					"uid": 98,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -598,7 +569,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 25,
+					"uid": 99,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -636,7 +607,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 30,
+					"uid": 100,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -665,7 +636,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 31,
+					"uid": 101,
 					"instanceVariables": {
 						"balloon": false,
 						"regular": false,
@@ -707,7 +678,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 32,
+					"uid": 102,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -732,7 +703,7 @@
 					}
 				}
 			],
-			"sid": 380310547989491,
+			"sid": 368596211164763,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -757,41 +728,8 @@
 			"global": false
 		}
 	],
-	"sid": 941762947010654,
-	"nonworld-instances": [
-		{
-			"type": "Inventory",
-			"properties": {},
-			"uid": 34,
-			"instanceVariables": {
-				"Pitfall": 0,
-				"Balloon": 0,
-				"Block": 0,
-				"Trapdoor": 0,
-				"Wind": 0,
-				"Rocket": 0,
-				"Firework": 0,
-				"Snake": 0,
-				"Lion": 0
-			}
-		},
-		{
-			"type": "InventoryCost",
-			"properties": {},
-			"uid": 11,
-			"instanceVariables": {
-				"Pitfall": 10,
-				"Balloon": 500,
-				"Block": 500,
-				"Trapdoor": 500,
-				"Wind": 500,
-				"Rocket": 500,
-				"Firework": 500,
-				"Snake": 500,
-				"Lion": 500
-			}
-		}
-	],
+	"sid": 777566982382319,
+	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,

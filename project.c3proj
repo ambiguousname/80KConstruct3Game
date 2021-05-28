@@ -136,6 +136,8 @@
 	"layouts": {
 		"items": [
 			"TutorialLevel",
+			"TutorialLevel2",
+			"TutorialLevel3",
 			"You Lose",
 			"You Win"
 		],

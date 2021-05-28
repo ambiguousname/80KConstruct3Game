@@ -30,7 +30,6 @@ MoveTo and the player's Scroll work together, as well as the fact that the enemy
 again after they arrive at their destination.
 
 Playtest Notes:
-Replace "press arrow keys to select traps" with "press number keys"
 Liked the balloon animation
 Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?)
 Don't have a timer for the tutorial.

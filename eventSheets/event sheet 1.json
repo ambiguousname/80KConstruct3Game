@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "Total_time",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "10000",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
