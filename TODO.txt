@@ -9,7 +9,6 @@ to update it per level?) - Wendi
 - Polish background ??
 - Add more levels - Tyler
 - Add all the trap types - Tyler
-- Add Trapdoor
 - Add all the enemy types - Tyler
 - Add digger enemy
 - Rewards for defeating enemies? - Tyler
