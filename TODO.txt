@@ -25,6 +25,8 @@ Enemies stop moving if player scrolls to them, but only sometimes? Probably some
 MoveTo and the player's Scroll work together, as well as the fact that the enemy will only start moving
 again after they arrive at their destination.
 
+Player coins don't update on collection or on the start of a layout.
+
 Playtest Notes:
 Liked the balloon animation
 Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?)
