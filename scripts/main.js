@@ -18,9 +18,9 @@ async function OnBeforeProjectStart(runtime)
 		var enemy = new enemyClass(e.instVars.EnemyName, e, enemies.length); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1;
 		enemies.push(enemy);
 	});
-	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.Inventory.getFirstInstance().instVars; runtime.globalVars.SelectedName = Object.keys(inv)[0]; runtime.objects.Shop.getFirstInstance().setAnimation(Object.keys(inv)[0]);
+	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars; runtime.globalVars.SelectedName = Object.keys(inv)[0]; runtime.objects.Shop.getFirstInstance().setAnimation(Object.keys(inv)[0]);
 	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
-	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.getDataMap().get(Object.keys(inv)[0]);
+	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
 	runtime.addEventListener("tick", () => Tick(runtime));
 }
 

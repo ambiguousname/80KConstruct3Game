@@ -701,6 +701,84 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "InventoryInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"Pitfall": 2,
+						"Balloon": 2,
+						"Block": 2,
+						"Trapdoor": 0,
+						"Wind": 0,
+						"Rocket": 0,
+						"Firework": 0,
+						"Snake": 0,
+						"Lion": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 95,
+						"y": 114,
+						"width": 95.86970324351694,
+						"height": 95.86970324351694,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InventoryCostInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"Pitfall": 10,
+						"Balloon": 10,
+						"Block": 10,
+						"Trapdoor": 500,
+						"Wind": 500,
+						"Rocket": 500,
+						"Firework": 500,
+						"Snake": 500,
+						"Lion": 500
+					},
+					"behaviors": {},
+					"world": {
+						"x": 192,
+						"y": 336,
+						"width": 98.13256340277675,
+						"height": 98.13256340277675,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 368596211164763,

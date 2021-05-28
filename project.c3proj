@@ -55,14 +55,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -122,6 +114,7 @@
 			"Block",
 			"lion",
 			"UI_time",
+			"Text_time",
 			"Trees",
 			"UI_trap",
 			"Shop",
@@ -133,7 +126,6 @@
 			"SpriteFont",
 			"InventoryInit",
 			"InventoryCostInit"
-			"Tilemap"
 		],
 		"subfolders": []
 	},
