@@ -1,7 +1,8 @@
 For the Construct 3 Demo, we need:
 - Placeholder art (with the general style that our final game is going to have) - Wendi
 - Buying traps - Wendi
-- Mission Timer - Wendi
+- Mission Timer (Currently missions have the same total time throughout. Maybe have something
+to update it per level?) - Wendi
 - Replacing demo art with different art? - Wendi
 - Add enemy animations to show stuff like jumping and swinging. - Wendi
 - Start screen, functional (and nice looking) win and lose screens - Wendi
