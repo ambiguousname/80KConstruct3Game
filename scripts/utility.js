@@ -24,6 +24,7 @@ class Enemy {
 	kill(self){ self.dead = true; enemies.splice(self.index, 1); self.instance.destroy();}
 	dyingUpdate(self){
 		switch (self.killer.objectType.name) {
+			case "Trapdoor":
 			case "Pitfall":
 				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; self.instance.angle += 0.5; 
 				if (self.instance.width <= 0.1) {self.kill(self);} break;
@@ -35,7 +36,7 @@ class Enemy {
 		}
 	}
 	getCollision(self, trapInstance){
-		if (!self.dying && trapInstance.objectType.name != "Block" && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
+		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.objectType.name === "Trapdoor" && trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
 			self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0;
 		}
 	}
@@ -48,7 +49,7 @@ class Jumper extends Enemy {
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; if (self.jumpTimer <= 0) self.instance.zElevation -= 30; } else {self.landTimer += self.instance.runtime.dt;}
 	}
 	getCollision(self, trapInstance){
-		if(!self.dying && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
+		if(!self.dying && (trapInstance.objectType.name == "Trapdoor" && trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpTimer <= 0 && self.landTimer >= 1){
 				self.instance.zElevation += 30; self.jumpTimer = 3; self.landTimer = 0;
 			} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || (self.jumpTimer <= 0 && self.landTimer < 1)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }

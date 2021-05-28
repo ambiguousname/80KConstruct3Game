@@ -161,6 +161,29 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 112,
+						"originX": 0.5,
+						"originY": 0.5142857142857142,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6826791,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 508858847982554,
+				"name": "Trapdoor",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

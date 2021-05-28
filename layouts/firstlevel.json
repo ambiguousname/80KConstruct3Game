@@ -549,7 +549,7 @@
 					"uid": 19,
 					"instanceVariables": {
 						"Coins": 50,
-						"NextLevel": "SecondLevel",
+						"NextLevel": "TutorialLevel4",
 						"localScale": 0.28
 					},
 					"behaviors": {
