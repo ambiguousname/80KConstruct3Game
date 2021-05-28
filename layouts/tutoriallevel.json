@@ -24,8 +24,8 @@
 					"world": {
 						"x": -10,
 						"y": -10,
-						"width": 1731.6726071316848,
-						"height": 979.8613416518863,
+						"width": 865.7986914155451,
+						"height": 494.5692167970266,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -204,8 +204,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 611,
-						"y": 29,
+						"x": 26,
+						"y": 298,
 						"width": 605,
 						"height": 248,
 						"originX": 0,
