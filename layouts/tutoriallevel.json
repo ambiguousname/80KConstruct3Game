@@ -54,7 +54,7 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "center",
+						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -64,9 +64,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 53,
-						"y": 45,
-						"width": 441,
+						"x": 186,
+						"y": 151,
+						"width": 539,
 						"height": 248,
 						"originX": 0,
 						"originY": 0,
@@ -235,11 +235,11 @@
 						"Balloon": 5,
 						"Block": 1,
 						"Trapdoor": 0,
-						"Wind": 0,
-						"Rocket": 0,
-						"Firework": 0,
 						"Snake": 0,
-						"Lion": 0
+						"Wind": 0,
+						"Firework": 0,
+						"Lion": 0,
+						"Rocket": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -274,11 +274,11 @@
 						"Balloon": 500,
 						"Block": 500,
 						"Trapdoor": 500,
-						"Wind": 500,
-						"Rocket": 500,
-						"Firework": 500,
 						"Snake": 500,
-						"Lion": 500
+						"Wind": 500,
+						"Firework": 500,
+						"Lion": 500,
+						"Rocket": 500
 					},
 					"behaviors": {},
 					"world": {
@@ -328,11 +328,6 @@
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge"
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
 							}
 						}
 					},
@@ -604,7 +599,7 @@
 					"world": {
 						"x": 15,
 						"y": 13,
-						"width": 228,
+						"width": 294,
 						"height": 39,
 						"originX": 0,
 						"originY": 0,
@@ -640,9 +635,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 185,
-						"y": 9,
-						"width": 200,
+						"x": 207,
+						"y": 10,
+						"width": 263,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,

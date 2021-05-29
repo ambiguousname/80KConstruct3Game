@@ -1,0 +1,30 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 569295602210533,
+					"parameters": {
+						"object": "PathObj"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 633775578843126,
+					"parameters": {
+						"layout": "Start2"
+					}
+				}
+			],
+			"sid": 795072121801170
+		}
+	],
+	"sid": 653716915789443
+}

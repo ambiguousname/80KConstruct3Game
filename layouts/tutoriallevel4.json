@@ -180,11 +180,6 @@
 							"properties": {
 								"bound-by": "edge"
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"world": {

@@ -1,0 +1,26 @@
+{
+	"name": "Setting",
+	"plugin-id": "Spritefont2",
+	"sid": 464410722271451,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 353186628936285
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3386646,
+		"useCollisionPoly": true
+	}
+}

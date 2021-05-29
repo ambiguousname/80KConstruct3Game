@@ -80,16 +80,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
@@ -126,7 +126,10 @@
 			"SpriteFont",
 			"InventoryInit",
 			"InventoryCostInit",
-			"Trapdoor"
+			"Trapdoor",
+			"SpriteFont2",
+			"Setting",
+			"Store"
 		],
 		"subfolders": []
 	},
@@ -145,13 +148,19 @@
 			"TutorialLevel4",
 			"SecondLevel",
 			"You Lose",
-			"You Win"
+			"You Win",
+			"Start1",
+			"Start2",
+			"Store"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Start",
+			"Event sheet 2",
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},

@@ -262,6 +262,32 @@
 						}
 					],
 					"sid": 390869604674343
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 248961218677914,
+							"parameters": {
+								"variable": "Total_time",
+								"comparison": 3,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-blend-mode",
+							"objectClass": "UI_time",
+							"sid": 794192031225783,
+							"parameters": {
+								"blend-mode": "normal"
+							}
+						}
+					],
+					"sid": 193027560177021
 				}
 			],
 			"sid": 492111919029372
