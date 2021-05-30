@@ -41,6 +41,12 @@
 			"sid": 728451641141354
 		},
 		{
+			"name": "Rocket",
+			"type": "number",
+			"desc": "",
+			"sid": 831930494823223
+		},
+		{
 			"name": "Firework",
 			"type": "number",
 			"desc": "",
@@ -51,12 +57,6 @@
 			"type": "number",
 			"desc": "",
 			"sid": 554117789043980
-		},
-		{
-			"name": "Rocket",
-			"type": "number",
-			"desc": "",
-			"sid": 831930494823223
 		}
 	],
 	"behaviorTypes": [],

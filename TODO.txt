@@ -9,13 +9,12 @@ to update it per level?) - Wendi
 - Polish background ??
 - Add more levels - Tyler
 - Add all the trap types - Tyler (Could not implement Wind, will explain later)
-- Dog
 - Rocket
 - Firework
 - Lion
 - Add all the enemy types - Tyler
-- Add destroyer enemy
 - Add whip enemy
+- Add destroyer enemy
 - Add animal handler enemy
 - Add boss' duplicate
 - Add Boss' Weakness Enemy
