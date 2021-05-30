@@ -19,7 +19,7 @@ class Enemy {
 				break;
 			case "Snake":
 				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y);
-				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(); self.isSnaked = false; }
+				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
 				break;
 		}
 	}

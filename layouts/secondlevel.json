@@ -597,7 +597,7 @@
 					"uid": 150,
 					"instanceVariables": {
 						"EnemyName": "Dave",
-						"EnemyType": ""
+						"EnemyType": "Whip"
 					},
 					"behaviors": {
 						"MoveTo": {
