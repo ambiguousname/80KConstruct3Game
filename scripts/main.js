@@ -1,5 +1,5 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
-import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {if (runtime.layout.name.includes("Level")) {setLoadNext(runtime); }});}};
+import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { console.log (runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel)); runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {setLoadNext(runtime);});}};
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {setLoadNext(runtime)}));
 async function OnBeforeProjectStart(runtime)
 {
