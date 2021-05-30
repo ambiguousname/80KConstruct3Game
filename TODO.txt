@@ -32,6 +32,8 @@ Feedback from play testing:
 
 Known bugs:
 
+Trapdoor can be bought multiple times if not placed.
+
 (In the first level, coins 
 
 Enemies stop moving if player scrolls to them, but only sometimes? Probably something to do with how

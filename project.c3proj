@@ -143,6 +143,8 @@
 	},
 	"layouts": {
 		"items": [
+			"Start1",
+			"Start2",
 			"TutorialLevel",
 			"TutorialLevel2",
 			"TutorialLevel3",
@@ -150,9 +152,7 @@
 			"TutorialLevel4",
 			"SecondLevel",
 			"You Lose",
-			"You Win",
-			"Start1",
-			"Start2"
+			"You Win"
 		],
 		"subfolders": []
 	},
