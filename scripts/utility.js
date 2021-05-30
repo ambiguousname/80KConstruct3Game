@@ -28,8 +28,8 @@ class Enemy {
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
 				break;
 			case "Snake":
-				self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.killer.x - self.instance.x) * 50 + self.killer.x, Math.sign(self.killer.y - self.instance.y) * 50 + self.killer.y);
-				if (self.instance.x == Math.sign(self.killer.x - self.instance.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.killer.y - self.instance.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(); }
+				self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y);
+				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(); }
 				break;
 		}
 	}

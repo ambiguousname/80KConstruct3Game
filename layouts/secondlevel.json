@@ -672,7 +672,7 @@
 					},
 					"uid": 152,
 					"instanceVariables": {
-						"Position": 0,
+						"Position": 1,
 						"EnemyName": "Dave"
 					},
 					"behaviors": {},
@@ -704,7 +704,7 @@
 					},
 					"uid": 157,
 					"instanceVariables": {
-						"Position": 0,
+						"Position": 2,
 						"EnemyName": "Dave"
 					},
 					"behaviors": {},
