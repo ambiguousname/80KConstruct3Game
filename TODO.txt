@@ -12,7 +12,6 @@ to update it per level?) - Wendi
 - Firework
 - Lion
 - Add all the enemy types - Tyler
-- Add whip enemy
 - Add animal handler enemy
 - Add boss' duplicate
 - Add Boss' Weakness Enemy
