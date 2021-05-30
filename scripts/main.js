@@ -1,6 +1,6 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
-import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js";
-runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime); }}));
+import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {if (runtime.layout.name.includes("Level")) {setLoadNext(runtime); }});}};
+runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {setLoadNext(runtime)}));
 async function OnBeforeProjectStart(runtime)
 {
 	paths.clear(); enemies.splice(0, enemies.length); obstacles.splice(0, obstacles.length); //Reset global variables for a new scene load.
@@ -23,7 +23,6 @@ async function OnBeforeProjectStart(runtime)
 	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
 	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
 	runtime.addEventListener("tick", () => Tick(runtime));
-	runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime); }}); //This sets up the next scene to load this script again.
 }
 
 function Tick(runtime){

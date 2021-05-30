@@ -223,7 +223,7 @@
 					"uid": 144,
 					"instanceVariables": {
 						"Coins": 100,
-						"NextLevel": "TutorialLevel2",
+						"NextLevel": "Start2",
 						"localScale": 1
 					},
 					"behaviors": {

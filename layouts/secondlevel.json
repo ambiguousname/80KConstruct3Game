@@ -300,8 +300,8 @@
 						"Balloon": 15,
 						"Block": 15,
 						"Trapdoor": 20,
-						"Snake": 500,
-						"Wind": 25,
+						"Snake": 13,
+						"Wind": 500,
 						"Firework": 500,
 						"Lion": 500,
 						"Rocket": 500
@@ -340,7 +340,7 @@
 						"Block": 0,
 						"Trapdoor": 1,
 						"Snake": 0,
-						"Wind": 1,
+						"Wind": 0,
 						"Firework": 0,
 						"Lion": 0,
 						"Rocket": 0
@@ -573,6 +573,146 @@
 						"y": 396.9411644454754,
 						"width": 16.67674169386384,
 						"height": 16.67674169386384,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "forward",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"instanceVariables": {
+						"EnemyName": "Dave",
+						"EnemyType": ""
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 56.00000000000001,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 84.00000000000001,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 415.9555377418806,
+						"y": 149.7511518650914,
+						"width": 24.14849439926396,
+						"height": 14.86061193800859,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 151,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 357.7371600300526,
+						"y": 183.66949661908345,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 152,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 432.0060105184072,
+						"y": 77.13410969196099,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 157,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Dave"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 492.11119459053344,
+						"y": 188.32870022539453,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
