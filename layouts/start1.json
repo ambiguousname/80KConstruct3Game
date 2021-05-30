@@ -183,6 +183,35 @@
 					}
 				},
 				{
+					"type": "go",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 153,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 808,
+						"y": 430,
+						"width": 103,
+						"height": 94,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -248,10 +277,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 832.0903797591902,
-						"y": 248,
-						"width": 18.90127771599839,
-						"height": 456.83940319623355,
+						"x": 811.799872029867,
+						"y": 430.58306672888955,
+						"width": 70.03405651208871,
+						"height": 93.01001560866786,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

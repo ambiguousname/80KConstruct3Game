@@ -24,6 +24,30 @@
 				}
 			],
 			"sid": 795072121801170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 223281131002267,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 294460832342744,
+					"parameters": {
+						"layout": "TutorialLevel"
+					}
+				}
+			],
+			"sid": 901285939356593
 		}
 	],
 	"sid": 653716915789443

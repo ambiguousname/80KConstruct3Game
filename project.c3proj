@@ -129,7 +129,9 @@
 			"Trapdoor",
 			"SpriteFont2",
 			"Setting",
-			"Store"
+			"Store",
+			"go",
+			"Sprite2"
 		],
 		"subfolders": []
 	},
@@ -150,17 +152,14 @@
 			"You Lose",
 			"You Win",
 			"Start1",
-			"Start2",
-			"Store"
+			"Start2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Start",
-			"Event sheet 2",
-			"Event sheet 3"
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},

@@ -8,7 +8,7 @@
 				{
 					"type": "Setting",
 					"properties": {
-						"text": "You are a pitfall, and you live in an abyss with many other pitfalls. \n\nYou and your family members are used to roaming your abyss peacefully. \n\nOne day saw the arrival of a group of selfish people who have now occupied your homeland and filled your world with earth. \n\nYou remained underground until you and your family found yourselves awakened with a new stream of power. \n\nThis power helps you to capture your enemies.\n\n......",
+						"text": "You are a pitfall, and you live in an abyss with many other pitfalls. \n\nYou and your family members are used to roaming your abyss peacefully. \n\nOne day saw the arrival of a group of selfish people who have now occupied your homeland and filled your world with earth. \n\nYou remained underground until you and your family found yourselves awakened with a new stream of power. \n\nThis power helps you to capture your enemies.\n\n......\n\nYou and your fellow pitfalls are all able to exchange spirits. \n\nThis means that you, a regular pitfall, can also control other pitfalls’ bodies. You are able to place your fellow pitfalls, and you are able to capture each of your enemies.\n",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -33,10 +33,10 @@
 						}
 					},
 					"world": {
-						"x": 117,
-						"y": 70,
+						"x": 97,
+						"y": 10,
 						"width": 636,
-						"height": 332,
+						"height": 505,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -50,25 +50,22 @@
 					}
 				},
 				{
-					"type": "PathObj",
+					"type": "go",
 					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initially-visible": true,
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 152,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": ""
-					},
+					"uid": 154,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 855,
-						"y": 245,
-						"width": 26.764366293941933,
-						"height": 446.2043662939419,
+						"x": 824,
+						"y": 428,
+						"width": 103,
+						"height": 94,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -78,7 +75,86 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 156,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 830,
+						"y": 426,
+						"width": 72,
+						"height": 104,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Pitfall",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 155,
+					"instanceVariables": {
+						"Coins": 100,
+						"NextLevel": "TutorialLevel2",
+						"localScale": 1
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 54,
+						"y": 432,
+						"width": 61.853923737373535,
+						"height": 39.29514349159821,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
 					}
 				}
 			],
@@ -113,5 +189,5 @@
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": "Event sheet 3"
+	"eventSheet": "Event sheet 2"
 }
