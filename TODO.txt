@@ -21,8 +21,8 @@ to update it per level?) - Wendi
 - Add animal handler enemy
 - Add boss' duplicate
 - Add Boss' Weakness Enemy
-- Rewards for defeating enemies? - Tyler
-- Maybe some sound effects and/or music
+- Rewards for defeating enemies - Tyler
+- Add sound effects and music - After first draft is done
 
 
 Feedback from play testing:
@@ -31,8 +31,6 @@ Feedback from play testing:
 
 
 Known bugs:
-
-Trapdoor can be bought multiple times if not placed.
 
 (In the first level, coins 
 

@@ -70,7 +70,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "The Trapdoor is the only trap that can only be placed once, and that can be activated remotely.\n\nTry placing a trapdoor (4). With the trapdoor still selected, press space again to activate the trapdoor.\n\nTo place the trapdoor again, press R whilst on top of the trapdoor.",
+						"text": "Certain traps can only be placed once and can then be activated remotely.\n\nTry placing a trapdoor (4). With the trapdoor still selected, press space again to activate the trapdoor.\n\nTo place the trapdoor again, press R whilst on top of the trapdoor.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
