@@ -184,6 +184,29 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 149,
+						"originX": 0.5,
+						"originY": 0.5066666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 648204,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 844247875014212,
+				"name": "Dog",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

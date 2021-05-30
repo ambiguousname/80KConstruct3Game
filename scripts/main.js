@@ -1,5 +1,5 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
-import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { console.log (runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel)); runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {setLoadNext(runtime);});}};
+import {Enemy, Jumper, Digger, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {setLoadNext(runtime);});}};
 runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {setLoadNext(runtime)}));
 async function OnBeforeProjectStart(runtime)
 {
@@ -34,16 +34,18 @@ function Tick(runtime){
 		}
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0 && !runtime.spaceDown) { runtime.spaceDown = true;
-		var trap = runtime.objects[Object.keys(invTemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y); trap.isOpen = true;
-		if (runtime.globalVars.SelectedName == "Trapdoor") { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set("Trapdoor", 1000); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName); trap.isOpen = false; }
+		if (runtime.globalVars.SelectedName === "Dog") { inv.set("Dog", inv.get("Dog") - 1 ); for (var i = 0; i < 3; i++){ 
+			var random = Object.keys(invTemp)[Math.floor(Math.random() * Object.keys(invTemp).length)]; if (random === "Dog") { random = "Pitfall"; } inv.set(random, inv.get(random) + 1);
+		} runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";} else {var trap = runtime.objects[Object.keys(invTemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y); trap.isOpen = true;
+		if (runtime.globalVars.SelectedName === "Trapdoor") { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set("Trapdoor", 1000); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName); trap.isOpen = false; }
 		trap.width = trap.width * runtime.objects.Player.getFirstInstance().instVars.localScale; trap.height = trap.height * runtime.objects.Player.getFirstInstance().instVars.localScale;
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
-		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
+		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;}
 	} else if (runtime.keyboard.isKeyDown("Space") && runtime.globalVars.SelectedName == "Trapdoor" && inv.get(runtime.globalVars.SelectedName) <= 0 && !runtime.spaceDown) {
 		runtime.spaceDown = true; var trap = runtime.objects.Trapdoor.getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open"); } else { trap.setAnimation("Trapdoor"); }
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;
-	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> e.getCollision(e, o));});
+	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o);})});
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) {
 			o.destroy(); obstacles.splice(o.trapIndex, 1);

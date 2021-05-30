@@ -673,7 +673,7 @@
 						"Block": 0,
 						"Trapdoor": 1,
 						"Snake": 0,
-						"Wind": 0,
+						"Dog": 0,
 						"Firework": 0,
 						"Lion": 0,
 						"Rocket": 0
@@ -712,7 +712,7 @@
 						"Block": 500,
 						"Trapdoor": 10,
 						"Snake": 500,
-						"Wind": 500,
+						"Dog": 0,
 						"Firework": 500,
 						"Lion": 500,
 						"Rocket": 500

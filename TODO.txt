@@ -8,9 +8,7 @@ to update it per level?) - Wendi
 - Start screen, functional (and nice looking) win and lose screens - Wendi
 - Polish background ??
 - Add more levels - Tyler
-- Add all the trap types - Tyler
-- Snake
-- Wind
+- Add all the trap types - Tyler (Could not implement Wind, will explain later)
 - Dog
 - Rocket
 - Firework
