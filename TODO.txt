@@ -7,15 +7,13 @@ to update it per level?) - Wendi
 - Add enemy animations to show stuff like jumping and swinging. - Wendi
 - Start screen, functional (and nice looking) win and lose screens - Wendi
 - Polish background ??
-- Add more levels - Tyler
-- Add all the trap types - Tyler (Could not implement Wind or Rocket, will explain later)
-- Firework
-- Lion
-- Add all the enemy types - Tyler
+- Add more levels - Tyler (Do Monday)
+- Add all the enemy types (Finish Sunday) - Tyler
 - Add animal handler enemy
 - Add boss' duplicate
 - Add Boss' Weakness Enemy
-- Rewards for defeating enemies - Tyler
+- Add Enemy type skins (Do Monday) - Tyler
+- Rewards for defeating enemies (Finish Sunday) - Tyler
 - Add sound effects and music - After first draft is done
 
 
@@ -28,10 +26,6 @@ Known bugs:
 
 (In the first level, coins 
 
-Enemies stop moving if player scrolls to them, but only sometimes? Probably something to do with how
-MoveTo and the player's Scroll work together, as well as the fact that the enemy will only start moving
-again after they arrive at their destination.
-
 Player coins don't update on collection or on the start of a layout.
 
 More of an aesthetic thing, but if you close the trapdoor while an enemy is falling in, they still
@@ -39,6 +33,6 @@ remain on top of the trapdoor.
 
 Playtest Notes:
 Liked the balloon animation
-Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?)
+Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?) (Done)
 Don't have a timer for the tutorial.
 Liked experimenting with different traps

@@ -112,7 +112,6 @@
 			"UI_coins",
 			"Snake",
 			"Block",
-			"lion",
 			"UI_time",
 			"Text_time",
 			"Trees",
@@ -132,7 +131,8 @@
 			"Store",
 			"go",
 			"Sprite2",
-			"Dog"
+			"Dog",
+			"Sprite3"
 		],
 		"subfolders": []
 	},
