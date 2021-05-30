@@ -299,6 +299,64 @@
 					}
 				},
 				{
+					"type": "Whip",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "jump",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 158,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 519,
+						"y": 356,
+						"width": 45,
+						"height": 69,
+						"originX": 0.4888888888888889,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Boss",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 159,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 613,
+						"y": 319,
+						"width": 112,
+						"height": 76,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -635,8 +693,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 207,
-						"y": 10,
+						"x": 232,
+						"y": 8,
 						"width": 263,
 						"height": 30,
 						"originX": 0,
@@ -750,10 +808,10 @@
 					"world": {
 						"x": 805,
 						"y": 379,
-						"width": 68,
-						"height": 65,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 36.720000000000006,
+						"height": 42.9,
+						"originX": 21.962962962962962,
+						"originY": -5.757575757575758,
 						"color": [
 							1,
 							1,

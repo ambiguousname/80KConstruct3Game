@@ -132,7 +132,9 @@
 			"go",
 			"Sprite2",
 			"Dog",
-			"Sprite3"
+			"Sprite3",
+			"Whip",
+			"Boss"
 		],
 		"subfolders": []
 	},
