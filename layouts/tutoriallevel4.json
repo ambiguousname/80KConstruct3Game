@@ -162,6 +162,7 @@
 					"instanceVariables": {
 						"Coins": 100,
 						"NextLevel": "SecondLevel",
+						"TimeLimit": 500,
 						"localScale": 1
 					},
 					"behaviors": {

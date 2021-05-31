@@ -246,10 +246,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 550065956977963,
+							"sid": 650764087508040,
 							"parameters": {
 								"variable": "Total_time",
-								"value": "500"
+								"value": "Player.TimeLimit"
 							}
 						}
 					],

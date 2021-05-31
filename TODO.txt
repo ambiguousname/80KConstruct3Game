@@ -14,7 +14,6 @@ can't place a trap directly underneath them).
 - Get all Enemy types actually working in the code. (Boss' Duplicate isn't actually moved by any traps.
 Need to get it working with the Piston and Wind)
 - Add sound effects and music - After first draft is done
-- Set different coin and time limit amounts per level (Do Monday)
 
 Enemy Types left to test:
 Destroyer

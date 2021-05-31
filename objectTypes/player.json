@@ -17,6 +17,12 @@
 			"sid": 408754179854648
 		},
 		{
+			"name": "TimeLimit",
+			"type": "number",
+			"desc": "",
+			"sid": 713774491875372
+		},
+		{
 			"name": "localScale",
 			"type": "number",
 			"desc": "",

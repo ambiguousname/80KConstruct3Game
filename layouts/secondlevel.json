@@ -413,8 +413,9 @@
 					},
 					"uid": 124,
 					"instanceVariables": {
-						"Coins": 50,
+						"Coins": 20,
 						"NextLevel": "You Win",
+						"TimeLimit": 200,
 						"localScale": 0.28
 					},
 					"behaviors": {
@@ -792,10 +793,138 @@
 						}
 					},
 					"world": {
-						"x": 487.3636363636364,
-						"y": 287.6636363636364,
+						"x": 461.71941421563963,
+						"y": 247.22467066871843,
 						"width": 19.504553168636274,
 						"height": 29.906981525242287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Whip_Intro"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 395.30538784413613,
+						"y": 331.4119924287913,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 69,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "Whip_Intro"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 557.8958555232243,
+						"y": 384.218767598724,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 101,
+					"instanceVariables": {
+						"Position": 3,
+						"EnemyName": "Whip_Intro"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 625.1195690114469,
+						"y": 277.481879006737,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Whip_Intro"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 455.2642318770829,
+						"y": 248.74502438581743,
+						"width": 14.126154601407457,
+						"height": 14.126154601407457,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

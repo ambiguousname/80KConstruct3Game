@@ -513,8 +513,9 @@
 					},
 					"uid": 19,
 					"instanceVariables": {
-						"Coins": 50,
+						"Coins": 20,
 						"NextLevel": "TutorialLevel4",
+						"TimeLimit": 100,
 						"localScale": 0.28
 					},
 					"behaviors": {
