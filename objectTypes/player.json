@@ -48,7 +48,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2612880,
+						"imageSpriteId": 1249730,
 						"collisionPoly": {
 							"points": [
 								0.125,
@@ -75,6 +75,72 @@
 				],
 				"sid": 646262113534923,
 				"name": "Pitfall",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 327,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9770995,
+						"collisionPoly": {
+							"points": [
+								0.27522935779816515,
+								0.3,
+								0.5,
+								0,
+								0.7217125382262997,
+								0.3,
+								0.9969418960244648,
+								0.5,
+								0.7217125382262997,
+								0.6966666666666667,
+								0.5,
+								0.9966666666666667,
+								0.27522935779816515,
+								0.6966666666666667,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 803103027920537,
+				"name": "Cross",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4497549,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 961545350285181,
+				"name": "Arrow",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

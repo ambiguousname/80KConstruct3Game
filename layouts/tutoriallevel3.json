@@ -227,10 +227,10 @@
 						}
 					},
 					"world": {
-						"x": 824,
-						"y": 224,
-						"width": 38.174336929408476,
-						"height": 24.813319004115513,
+						"x": 799.5,
+						"y": 222.19076923076923,
+						"width": 87.17433692940847,
+						"height": 48.33331900411551,
 						"originX": 0.5,
 						"originY": 0.9230769230769231,
 						"color": [
@@ -572,39 +572,6 @@
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Shop",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "cover",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 101,
-					"instanceVariables": {
-						"balloon": false,
-						"regular": false,
-						"trapdoor": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 805,
-						"y": 379,
-						"width": 36.720000000000006,
-						"height": 42.9,
-						"originX": 21.962962962962962,
-						"originY": -5.757575757575758,
 						"color": [
 							1,
 							1,

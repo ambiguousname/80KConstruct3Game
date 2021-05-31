@@ -211,39 +211,6 @@
 					}
 				},
 				{
-					"type": "Shop",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "cover",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 114,
-					"instanceVariables": {
-						"balloon": false,
-						"regular": false,
-						"trapdoor": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 804,
-						"y": 379,
-						"width": 36.720000000000006,
-						"height": 42.9,
-						"originX": 21.962962962962962,
-						"originY": -5.757575757575758,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Shop_text",
 					"properties": {
 						"text": "Trap: Pitfall. Count: 0",
@@ -469,10 +436,10 @@
 						}
 					},
 					"world": {
-						"x": 108.92427964332755,
-						"y": 56.78217763283888,
-						"width": 21.23662741467023,
-						"height": 8.210596809348814,
+						"x": 99,
+						"y": 77,
+						"width": 95.48662741467024,
+						"height": 49.79059680934881,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -513,10 +480,10 @@
 						}
 					},
 					"world": {
-						"x": 218.1592732043483,
-						"y": 146.04510426123247,
-						"width": 20.804856713212025,
-						"height": 13.003035445757517,
+						"x": 208.39427320434828,
+						"y": 142.19510426123247,
+						"width": 38.444856713212026,
+						"height": 23.783035445757516,
 						"originX": 0.44642857142857145,
 						"originY": 0.6428571428571429,
 						"color": [
