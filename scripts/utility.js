@@ -49,7 +49,7 @@ class Digger extends Enemy {
 class Destroyer extends Enemy {
 	constructor(enemyName, enemyInstance, index, scale){ super(enemyName, enemyInstance, index, scale); this.destructionLeft = 3; this.coinDrop = 15; }
 	updatePath(self) { if (!self.dying && !self.dead && !self.immobile){self.instance.behaviors.MoveTo.moveToPosition(Math.floor(Math.random() * self.instance.runtime.layout.width), Math.floor(Math.random() * self.instance.runtime.layout.height))}}
-	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0) { self.instance.behaviors.MoveTo.stop(); self.instance.setAnimation("destroyer_through_bomb"); self.instance.setTimeout(function(){self.destructionLeft -= 1; obstacles.splice(trapInstance.trapIndex, 1); trapInstance.destroy(); self.instance.setAnimation("destroyer_move");}, 3000); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance)) {
+	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0) { self.instance.behaviors.MoveTo.stop(); self.instance.setAnimation("destroyer_through_bomb"); self.instance.setTimeout(function(){self.destructionLeft -= 1; obstacles.splice(trapInstance.trapIndex, 1); if (trapInstance.objectType.name === "Wind") {trapInstance.wind.destroy();} trapInstance.destroy(); self.instance.setAnimation("destroyer_move");}, 3000); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance)) {
 		self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);
 	}}
 }
