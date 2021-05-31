@@ -513,7 +513,7 @@
 					},
 					"uid": 19,
 					"instanceVariables": {
-						"Coins": 20,
+						"Coins": 50,
 						"NextLevel": "TutorialLevel4",
 						"TimeLimit": 100,
 						"localScale": 0.28
@@ -578,12 +578,6 @@
 								"stop-on-solids": true,
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -627,12 +621,6 @@
 								"set-angle": false,
 								"stop-on-solids": true,
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -678,12 +666,6 @@
 								"stop-on-solids": true,
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -728,12 +710,6 @@
 								"stop-on-solids": true,
 								"enabled": true
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
@@ -777,12 +753,6 @@
 								"set-angle": false,
 								"stop-on-solids": true,
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},

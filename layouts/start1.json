@@ -143,7 +143,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use arrow keys to move your pitfall",
+						"text": "Use arrow keys or WASD to move.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
