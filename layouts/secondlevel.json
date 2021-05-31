@@ -340,7 +340,7 @@
 						"Trapdoor": 1,
 						"Snake": 0,
 						"Dog": 0,
-						"Wind": 1,
+						"Wind": 0,
 						"Piston": 0
 					},
 					"behaviors": {},

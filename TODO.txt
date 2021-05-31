@@ -11,15 +11,18 @@ to update it per level?) - Wendi
 - (For Boss' duplicate, give them the solid property so the player
 can't place a trap directly underneath them).
 - Add Enemy (and trap) type skins (Do Monday) - Tyler
-- Get all Enemy types actually working in the code. (Boss' Weakness isn't actually moved by any traps.
+- Get all Enemy types actually working in the code. (Boss' Duplicate isn't actually moved by any traps.
 Need to get it working with the Piston and Wind)
 - Add sound effects and music - After first draft is done
 - Set different coin and time limit amounts per level (Do Monday)
 
+Enemy Types left to test:
+Destroyer
+Whip
+AnimalHandler
+Boss' Duplicate
+
 Trap reconfigurations:
-- Wind Trap - How to tell the player is facing in a specific direction? Answer: Get player to rotate
-towards mouse cursor?
-How to get wind to come out? Answer: Can use particles, but have the sprite extend outward, invisibly.
 
 - Rocket Trap - Instead of this, maybe a piston trap (easier to model)? Also, make it a stronger version
 of the wind trap (gives good reason to use it)
