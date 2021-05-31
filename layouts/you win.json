@@ -6,9 +6,38 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "Win",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 410,
+						"y": 439,
+						"width": 230,
+						"height": 119,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
-						"text": "YOU WIN",
+						"text": "YOU WIN !!!",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -27,9 +56,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 290,
-						"y": 181,
-						"width": 280,
+						"x": 215,
+						"y": 180,
+						"width": 461,
 						"height": 44,
 						"originX": 0,
 						"originY": 0,

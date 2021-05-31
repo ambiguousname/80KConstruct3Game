@@ -154,7 +154,9 @@
 			"WeaknessText",
 			"Mouse",
 			"Wind",
-			"WindParticles"
+			"WindParticles",
+			"Win",
+			"Sprite4"
 		],
 		"subfolders": []
 	},
