@@ -153,7 +153,8 @@
 			"Wind",
 			"WindParticles",
 			"Win",
-			"Sprite4"
+			"Sprite4",
+			"Piston"
 		],
 		"subfolders": []
 	},
@@ -173,6 +174,7 @@
 			"FirstLevel",
 			"TutorialLevel4",
 			"SecondLevel",
+			"TutorialLevel5",
 			"You Lose",
 			"You Win"
 		],

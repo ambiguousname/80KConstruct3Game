@@ -1,0 +1,72 @@
+{
+	"name": "Piston",
+	"plugin-id": "Sprite",
+	"sid": 776790198559524,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 102,
+						"height": 308,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5884689,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 722682836623932,
+				"name": "Piston",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 102,
+						"height": 308,
+						"originX": 0.5098039215686274,
+						"originY": 0.18506493506493507,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8332236,
+						"collisionPoly": {
+							"points": [
+								0.00980392156862745,
+								0,
+								0.9901960784313726,
+								0,
+								0.9901960784313726,
+								0.9967532467532467,
+								0.00980392156862745,
+								0.9967532467532467
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 783447407701903,
+				"name": "PistonExtend",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
