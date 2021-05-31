@@ -124,14 +124,6 @@
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 700540625865280
-						},
-						{
-							"id": "pick-by-unique-id",
-							"objectClass": "UI_coins",
-							"sid": 680690800135538,
-							"parameters": {
-								"unique-id": "27"
-							}
 						}
 					],
 					"actions": [
