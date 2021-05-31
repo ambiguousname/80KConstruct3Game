@@ -20,9 +20,7 @@ class Enemy {
 			case "Snake":
 				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y);
 				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
-				break;
-		}
-	}
+				break;}}
 	getCollision(self, trapInstance){
 		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
 			self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);}}}
@@ -49,6 +47,7 @@ class Digger extends Enemy {
 				self.instance.opacity = 1; self.surfaceTimer = 5; self.immobile = true; self.instance.behaviors.MoveTo.stop(); self.immuneTimer = 0;} else if ((self.surfaceTimer > 0) && !self.trapImmunity.includes(trapInstance.objectType.name)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0;}}}}
 class Destroyer extends Enemy {
 	constructor(enemyName, enemyInstance, index, scale){ super(enemyName, enemyInstance, index, scale); this.destructionLeft = 3; this.coinDrop = 15; }
+	updatePath(self) { if (!self.dying && !self.dead && !self.immobile){self.instance.behaviors.MoveTo.moveToPosition(Math.floor(Math.random() * self.instance.runtime.layout.width), Math.floor(Math.random() * self.instance.runtime.layout.height))}}
 	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0) { this.destructionLeft -= 1; obstacles.splice(trapInstance.trapIndex, 1); trapInstance.destroy(); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance)) {
 		self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);
 	}}
