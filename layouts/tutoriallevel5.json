@@ -39,35 +39,6 @@
 					}
 				},
 				{
-					"type": "Coin",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 167,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 312,
-						"y": 421.5,
-						"width": 38,
-						"height": 39,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Text",
 					"properties": {
 						"text": "Some traps only face in one direction, and must be rotated in order to be placed properly.\n\nTry placing the piston trap (8). Use your mouse cursor to face the direction you'd like to place the piston trap in.\n\nPress space to activate or de-activate the piston trap.",

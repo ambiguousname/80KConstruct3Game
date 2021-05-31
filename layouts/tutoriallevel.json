@@ -110,35 +110,6 @@
 					}
 				},
 				{
-					"type": "Coin",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 312,
-						"y": 421.5,
-						"width": 38,
-						"height": 39,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Trees",
 					"properties": {
 						"initially-visible": true,
@@ -204,8 +175,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 26,
-						"y": 298,
+						"x": 11,
+						"y": 274,
 						"width": 605,
 						"height": 248,
 						"originX": 0,
@@ -274,7 +245,7 @@
 						"Block": 500,
 						"Trapdoor": 500,
 						"Snake": 500,
-						"Dog": 0,
+						"Dog": 500,
 						"Wind": 500,
 						"Piston": 500
 					},

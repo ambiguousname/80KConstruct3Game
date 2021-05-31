@@ -268,7 +268,7 @@
 						"Block": 15,
 						"Trapdoor": 500,
 						"Snake": 500,
-						"Dog": 0,
+						"Dog": 500,
 						"Wind": 500,
 						"Piston": 500
 					},
