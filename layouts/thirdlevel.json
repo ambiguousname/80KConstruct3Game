@@ -406,7 +406,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Cross",
+						"initial-animation": "Arrow",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -415,7 +415,7 @@
 					"instanceVariables": {
 						"Coins": 20,
 						"NextLevel": "You Win",
-						"TimeLimit": 100,
+						"TimeLimit": 180,
 						"localScale": 0.28
 					},
 					"behaviors": {
@@ -439,8 +439,8 @@
 					"world": {
 						"x": 96.4053981968445,
 						"y": 72.9227685950413,
-						"width": 25,
-						"height": 23,
+						"width": 33.86244425666614,
+						"height": 33.95725910058479,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
