@@ -41,7 +41,9 @@ function Tick(runtime){
 		trap.width = trap.width * runtime.objects.Player.getFirstInstance().instVars.localScale; trap.height = trap.height * runtime.objects.Player.getFirstInstance().instVars.localScale;
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
-		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;}
+		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
+		if(runtime.globalVars.SelectedName === "Wind") { trap.angleDegrees = runtime.objects.Player.getFirstInstance().angleDegrees + 180; trap.y -= trap.height/2 * Math.cos(trap.angle); trap.x += trap.height/2 * Math.sin(trap.angle); trap.wind = runtime.objects.WindParticles.createInstance(0, trap.x - trap.height/2 * Math.sin(trap.angle), trap.y + trap.height/2 * Math.cos(trap.angle)); trap.wind.width = trap.wind.width * runtime.objects.Player.getFirstInstance().localScale; trap.wind.height *= runtime.objects.Player.getFirstInstance().localScale; trap.wind.angleDegrees = trap.angleDegrees - 90; }
+		}
 	} else if (runtime.keyboard.isKeyDown("Space") && runtime.globalVars.SelectedName == "Trapdoor" && inv.get(runtime.globalVars.SelectedName) <= 0 && !runtime.spaceDown) {
 		runtime.spaceDown = true; var trap = runtime.objects.Trapdoor.getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open"); } else { trap.setAnimation("Trapdoor"); }
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;

@@ -166,9 +166,8 @@
 						"Trapdoor": 0,
 						"Snake": 0,
 						"Dog": 0,
-						"Rocket": 0,
-						"Firework": 0,
-						"Lion": 0
+						"Wind": 0,
+						"Piston": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -205,9 +204,8 @@
 						"Trapdoor": 500,
 						"Snake": 500,
 						"Dog": 0,
-						"Rocket": 500,
-						"Firework": 500,
-						"Lion": 500
+						"Wind": 500,
+						"Piston": 500
 					},
 					"behaviors": {},
 					"world": {

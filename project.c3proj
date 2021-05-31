@@ -55,6 +55,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -135,7 +151,10 @@
 			"Sprite3",
 			"Whip",
 			"Boss",
-			"WeaknessText"
+			"WeaknessText",
+			"Mouse",
+			"Wind",
+			"WindParticles"
 		],
 		"subfolders": []
 	},

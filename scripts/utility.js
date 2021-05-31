@@ -18,16 +18,17 @@ class Enemy {
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
 				break;
 			case "Snake":
-				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y);
-				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
+				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 * self.scale + self.killer.y);
+				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 * self.scale + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
+				break;
+			case "Wind":
+				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 100 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 100 * self.scale + self.killer.y); if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 100 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 100 * self.scale + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
 				break;}}
 	getCollision(self, trapInstance){
 		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
 			self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);}}}
 class Jumper extends Enemy {
-	constructor(enemyName, enemyInstance, index, scale){
-		super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.jumpTimer = 0; this.landTimer = 0; this.coinDrop = 6;
-	}
+	constructor(enemyName, enemyInstance, index, scale){super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.jumpTimer = 0; this.landTimer = 0; this.coinDrop = 6;}
 	update(self){
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; if (self.jumpTimer <= 0) self.instance.zElevation -= 30; } else {self.landTimer += self.instance.runtime.dt;}}
 	getCollision(self, trapInstance){
@@ -70,4 +71,4 @@ class BossDuplicate extends Enemy { constructor(enemyName, enemyInstance, index,
 	initializePathing() { this.originalPosition = [this.instance.x, this.instance.y]; } updatePath(self){ return; }
 	update(self) { if(self.instance.x != self.prevPosition[0] && self.instance.y != self.prevPosition[1]) { self.moveTimer = 3; } if (!self.dead){if (self.dying) self.dyingUpdate(self, self.killer);} self.prevPosition = [self.x, self.y]; }
 	getCollision(self) {if (self.moveTimer > 0 && Math.sqrt(Math.pow(self.instance.x - self.originalPosition[0], 2) + Math.pow(self.instance.y - self.originalPosition[1], 2)) > 4 * self.scale) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); } }}
-class Boss extends Enemy { constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.coinDrop = 0; this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon", "Snake"]; this.weakness = this.trapImmunity.splice(Math.floor(Math.random() * this.trapImmunity.llength), 1);} }
+class Boss extends Enemy { constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.coinDrop = 0; this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon", "Snake", "Wind", "Piston"]; this.weakness = this.trapImmunity.splice(Math.floor(Math.random() * this.trapImmunity.llength), 1);} }
