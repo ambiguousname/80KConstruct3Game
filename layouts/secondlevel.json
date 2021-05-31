@@ -416,7 +416,7 @@
 						"Coins": 100,
 						"NextLevel": "You Win",
 						"TimeLimit": 100,
-						"localScale": 0.28
+						"localScale": 0.4
 					},
 					"behaviors": {
 						"8Direction": {
@@ -949,7 +949,7 @@
 					"uid": 134,
 					"instanceVariables": {
 						"EnemyName": "Steve",
-						"EnemyType": ""
+						"EnemyType": "Jumper"
 					},
 					"behaviors": {
 						"MoveTo": {

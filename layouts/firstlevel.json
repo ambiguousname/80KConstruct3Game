@@ -516,7 +516,7 @@
 						"Coins": 50,
 						"NextLevel": "TutorialLevel4",
 						"TimeLimit": 100,
-						"localScale": 0.28
+						"localScale": 0.4
 					},
 					"behaviors": {
 						"8Direction": {
