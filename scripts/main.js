@@ -37,7 +37,7 @@ function Tick(runtime){
 		if (runtime.globalVars.SelectedName === "Dog") { inv.set("Dog", inv.get("Dog") - 1 ); for (var i = 0; i < 3; i++){ 
 			var random = Object.keys(invTemp)[Math.floor(Math.random() * Object.keys(invTemp).length)]; if (random === "Dog" || random === "Trapdoor" || random === "Piston") { random = "Pitfall"; } inv.set(random, inv.get(random) + 1);
 		} runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";} else {var trap = runtime.objects[Object.keys(invTemp)[runtime.globalVars.Selected]].createInstance(0, runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y); trap.isOpen = true;
-		if (runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(runtime.globalVars.SelectedName, 1000); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName); trap.isOpen = false; }
+		if (runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(runtime.globalVars.SelectedName, 1000); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName); trap.isOpen = false; trap.openTimer = 0; }
 		if(runtime.globalVars.SelectedName === "Piston") {trap.angleDegrees = runtime.objects.Player.getFirstInstance().angleDegrees + 180; trap.y -= trap.height/2 * Math.cos(trap.angle); trap.x += trap.height/2 * Math.sin(trap.angle); trap.actualPos = [runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y]; }
 		trap.width = trap.width * runtime.objects.Player.getFirstInstance().instVars.localScale; trap.height = trap.height * runtime.objects.Player.getFirstInstance().instVars.localScale;
 		trap.trapIndex = obstacles.length; obstacles.push(trap);
@@ -46,15 +46,15 @@ function Tick(runtime){
 		if(runtime.globalVars.SelectedName === "Wind") { trap.angleDegrees = runtime.objects.Player.getFirstInstance().angleDegrees + 180; trap.y -= trap.height/2 * Math.cos(trap.angle); trap.x += trap.height/2 * Math.sin(trap.angle); trap.wind = runtime.objects.WindParticles.createInstance(0, trap.x - trap.height/2 * Math.sin(trap.angle), trap.y + trap.height/2 * Math.cos(trap.angle)); trap.wind.width = trap.wind.width * runtime.objects.Player.getFirstInstance().instVars.localScale; trap.wind.height *= runtime.objects.Player.getFirstInstance().instVars.localScale; trap.wind.angleDegrees = trap.angleDegrees - 90; trap.actualPos = [runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y]; }
 		}
 	} else if (runtime.keyboard.isKeyDown("Space") && (runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") && inv.get(runtime.globalVars.SelectedName) <= 0 && !runtime.spaceDown) {
-		runtime.spaceDown = true; var trap = runtime.objects[runtime.globalVars.SelectedName].getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open");} else { trap.setAnimation(runtime.globalVars.SelectedName); }
+		runtime.spaceDown = true; var trap = runtime.objects[runtime.globalVars.SelectedName].getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open"); if(runtime.globalVars.SelectedName === "Piston") {trap.openTimer = 0.25;} } else { trap.setAnimation(runtime.globalVars.SelectedName); trap.openTimer = 0; }
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;
-	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o);})});
+	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o); if(o.openTimer > 0) { o.openTimer -= runtime.dt; } else if (o.openTimer <= 0) { o.isOpen = false }})});
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
-			o.destroy(); obstacles.splice(o.trapIndex, 1);
 			if(o.objectType.name === "Trapdoor" || o.objectType.name === "Piston") {
 				runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(o.objectType.name, runtime.objects.InventoryCostInit.getFirstInstance().instVars[o.objectType.name]); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
 			}
+			o.destroy(); obstacles.splice(o.trapIndex, 1);
 			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
 		}});
 	}

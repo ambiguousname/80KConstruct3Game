@@ -21,12 +21,6 @@ Whip
 AnimalHandler
 Boss' Duplicate
 
-Trap reconfigurations:
-
-- Rocket Trap - Instead of this, maybe a piston trap (easier to model)? Also, make it a stronger version
-of the wind trap (gives good reason to use it)
-
-
 Feedback from play testing:
 - Add a tutorial section before the game starts.
 - Maybe increase countdown.
@@ -37,6 +31,8 @@ Known bugs:
 (In the first level, coins 
 
 While enemies are being pushed by wind or trapdoor, they won't collide with other traps.
+
+Maybe set it so refunding the trapdoor or piston just gives the piston and trapdoor back?
 
 More of an aesthetic thing, but if you close the trapdoor while an enemy is falling in, they still
 remain on top of the trapdoor.
