@@ -8,15 +8,7 @@ to update it per level?) - Wendi
 - Start screen, functional (and nice looking) win and lose screens - Wendi
 - Polish background ??
 - Add more levels - Tyler (Do Monday)
-- (For Boss' duplicate, give them the solid property so the player
-can't place a trap directly underneath them).
-- Get all Enemy types actually working in the code. (Boss' Duplicate isn't actually moved by any traps.
-Need to get it working with the Piston and Wind)
 - Add sound effects and music - After first draft is done
-
-Enemy Types left to test:
-AnimalHandler
-Boss' Duplicate
 
 Feedback from play testing:
 - Add a tutorial section before the game starts.
@@ -26,9 +18,6 @@ Feedback from play testing:
 Known bugs:
 
 (In the first level, coins 
-
-While enemies are being pushed by wind or trapdoor, they won't collide with other traps.
-Same goes for the snake trap. (Potentially fixed)
 
 Wind trap sometimes causes enemies to bug out?
 
