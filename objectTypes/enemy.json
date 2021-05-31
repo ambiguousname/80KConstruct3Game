@@ -22,6 +22,11 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 987964464673871
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 791713532420992
 		}
 	],
 	"effectTypes": [],
@@ -1138,6 +1143,29 @@
 				],
 				"sid": 539273076452246,
 				"name": "boss",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 56,
+						"height": 36,
+						"originX": 0.44642857142857145,
+						"originY": 2.25,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4458761,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 192848762330747,
+				"name": "dog",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

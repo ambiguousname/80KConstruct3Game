@@ -80,6 +80,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -90,14 +98,6 @@
 			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
@@ -177,6 +177,7 @@
 			"TutorialLevel5",
 			"ThirdLevel",
 			"Fourthlevel",
+			"LastLevel",
 			"You Lose",
 			"You Win"
 		],

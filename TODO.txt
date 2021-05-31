@@ -28,7 +28,9 @@ Known bugs:
 (In the first level, coins 
 
 While enemies are being pushed by wind or trapdoor, they won't collide with other traps.
-Same goes for the snake trap. (Potentially fixed?)
+Same goes for the snake trap. (Potentially fixed)
+
+Wind trap sometimes causes enemies to bug out?
 
 Maybe set it so refunding the trapdoor or piston just gives the piston and trapdoor back?
 

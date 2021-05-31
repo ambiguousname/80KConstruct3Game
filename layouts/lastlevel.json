@@ -1,5 +1,5 @@
 {
-	"name": "ThirdLevel",
+	"name": "LastLevel",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 185,
+					"uid": 224,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -47,7 +47,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 186,
+					"uid": 225,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -76,7 +76,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 187,
+					"uid": 226,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -114,7 +114,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 188,
+					"uid": 227,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -152,7 +152,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 189,
+					"uid": 228,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,7 +190,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 190,
+					"uid": 229,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -228,7 +228,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 191,
+					"uid": 230,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -261,7 +261,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 192,
+					"uid": 231,
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 15,
@@ -299,7 +299,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 193,
+					"uid": 232,
 					"instanceVariables": {
 						"Pitfall": 0,
 						"Balloon": 0,
@@ -337,7 +337,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 194,
+					"uid": 233,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -382,7 +382,7 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1
 					},
-					"uid": 195,
+					"uid": 234,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -403,6 +403,44 @@
 					}
 				},
 				{
+					"type": "WeaknessText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 241,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 463,
+						"y": 5,
+						"width": 369,
+						"height": 43,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -411,10 +449,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 196,
+					"uid": 235,
 					"instanceVariables": {
-						"Coins": 30,
-						"NextLevel": "FourthLevel",
+						"Coins": 20,
+						"NextLevel": "You Win",
 						"TimeLimit": 180,
 						"localScale": 0.28
 					},
@@ -457,15 +495,15 @@
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "destroyer_move",
+						"initial-animation": "boss",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 197,
+					"uid": 236,
 					"instanceVariables": {
-						"EnemyName": "",
-						"EnemyType": "Destroyer"
+						"EnemyName": "Duplicate",
+						"EnemyType": "BossDuplicate"
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -487,42 +525,10 @@
 						}
 					},
 					"world": {
-						"x": 484,
-						"y": 185,
-						"width": 26.506521997936716,
-						"height": 48.04307112126031,
-						"originX": 0.5625,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 198,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 493,
-						"y": 169,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
+						"x": 605,
+						"y": 194,
+						"width": 43.03093006637558,
+						"height": 29.19955968789772,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -539,15 +545,15 @@
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "whip_move",
+						"initial-animation": "boss",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 199,
+					"uid": 237,
 					"instanceVariables": {
-						"EnemyName": "Whip",
-						"EnemyType": "Whip"
+						"EnemyName": "Boss",
+						"EnemyType": "Boss"
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -569,10 +575,10 @@
 						}
 					},
 					"world": {
-						"x": 264.5818332081142,
-						"y": 352,
-						"width": 19.894900679743966,
-						"height": 30.50551437560742,
+						"x": 248,
+						"y": 415,
+						"width": 72.48291104252797,
+						"height": 49.184832493143986,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -594,17 +600,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 200,
+					"uid": 238,
 					"instanceVariables": {
 						"Position": 0,
-						"EnemyName": "Whip"
+						"EnemyName": "Boss"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 261,
-						"y": 366,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
+						"x": 178,
+						"y": 276,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -626,17 +632,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 201,
+					"uid": 239,
 					"instanceVariables": {
 						"Position": 1,
-						"EnemyName": "Whip"
+						"EnemyName": "Boss"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 715.5967778581474,
-						"y": 205.55808473917105,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
+						"x": 249,
+						"y": 415,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -658,131 +664,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 202,
-					"instanceVariables": {
-						"Position": 2,
-						"EnemyName": "Whip"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 417.5957962944305,
-						"y": 99.22527135030094,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "Enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "dog",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 221,
-					"instanceVariables": {
-						"EnemyName": "Doggie",
-						"EnemyType": "AnimalHandler"
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 300,
-								"set-angle": false,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 512.3246021713367,
-						"y": 368.4027317637972,
-						"width": 45.76997686922626,
-						"height": 29.42355655878832,
-						"originX": 0.44642857142857145,
-						"originY": 2.25,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 222,
+					"uid": 240,
 					"instanceVariables": {
 						"Position": 0,
-						"EnemyName": "Doggie"
+						"EnemyName": "Duplicate"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 692.4948760330578,
-						"y": 299.64066115702485,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 223,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": "Doggie"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 429.7520661157026,
-						"y": 370.8981968444779,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
+						"x": 604,
+						"y": 194,
+						"width": 30.684366293941935,
+						"height": 30.684366293941935,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -796,7 +688,7 @@
 					}
 				}
 			],
-			"sid": 325297659890413,
+			"sid": 945241282639791,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -821,7 +713,7 @@
 			"global": false
 		}
 	],
-	"sid": 410653121664467,
+	"sid": 984191128097306,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,
