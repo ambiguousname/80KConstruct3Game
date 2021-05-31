@@ -711,8 +711,8 @@
 						"Trapdoor": 0,
 						"Snake": 0,
 						"Dog": 0,
-						"Wind": 100,
-						"Piston": 0
+						"Wind": 0,
+						"Piston": 1
 					},
 					"behaviors": {},
 					"world": {
