@@ -19,7 +19,7 @@ async function OnBeforeProjectStart(runtime)
 		var enemy = new enemyClass(e.instVars.EnemyName, e, enemies.length, runtime.objects.Player.getFirstInstance().instVars.localScale); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1; if(e.instVars.EnemyType === "Boss") { runtime.bossWeakness = enemy.weakness; }
 		enemies.push(enemy);
 	});
-	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars; runtime.globalVars.SelectedName = Object.keys(inv)[0]; runtime.objects.Shop.getFirstInstance().setAnimation(Object.keys(inv)[0]);
+	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars;
 	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";
 	Object.keys(inv).forEach((trapName)=> {invActual.set(trapName, inv[trapName]); runtime.globalVars[trapName + "Placed"] = 0; invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
 	runtime.addEventListener("tick", () => Tick(runtime));
@@ -30,7 +30,7 @@ function Tick(runtime){
 	for (var i = 0; i < Object.keys(invTemp).length; i++){
 		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
 			runtime.globalVars.SelectedName = Object.keys(invTemp)[i]; runtime.globalVars.Selected = i; if (runtime.globalVars.SelectedName == "Trapdoor" && inv.get(runtime.globalVars.SelectedName) > 0) { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set("Trapdoor", 1000); }
-			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.objects.Shop.getFirstInstance().setAnimation(runtime.globalVars.SelectedName); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
+			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";  runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
 		}
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0 && !runtime.spaceDown) { runtime.spaceDown = true;

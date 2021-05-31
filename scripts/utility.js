@@ -10,10 +10,10 @@ class Enemy {
 	kill(self){ self.dead = true; enemies.splice(self.index, 1); self.instance.destroy(); self.instance.runtime.Player.getFirstInstance().Coins += self.coinDrop; if(self.itemDrop) { if(self.itemDrop === "Weakness") { self.instance.runtime.WeaknessText.getFirstInstance().text = "The Boss' Weakness is: " + self.instance.runtime.bossWeakness; } else {self.instance.runtime.Inventory.getFirstInstance().getDataMap().set(self.itemDrop, self.instance.runtime.Inventory.getFirstInstance().getDataMap().get(self.itemDrop) + 1); runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; }}}
 	dyingUpdate(self){
 		switch (self.killer.objectType.name) {
-			case "Trapdoor": case "Pitfall":
+			case "Trapdoor": case "Pitfall": self.instance.behaviors.MoveTo.rotateSpeed = 0;
 				self.instance.width -= self.instance.width/16; self.instance.height -= self.instance.height/16; self.instance.angle += 0.5; if (self.instance.width <= 0.1) {self.kill(self);} break;
 			case "Balloon":
-				self.killer.inactive = true;
+				self.killer.inactive = true; self.instance.behaviors.MoveTo.rotateSpeed = 0;
 				self.killer.zElevation += 1; self.instance.zElevation += 1; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y);
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
 				break;

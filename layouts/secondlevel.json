@@ -406,7 +406,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Pitfall",
+						"initial-animation": "Arrow",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -436,10 +436,10 @@
 						}
 					},
 					"world": {
-						"x": 99,
-						"y": 77,
-						"width": 95.48662741467024,
-						"height": 49.79059680934881,
+						"x": 100.85328700225395,
+						"y": 74.40539819684446,
+						"width": 28.94339674501274,
+						"height": 26.794786786407435,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

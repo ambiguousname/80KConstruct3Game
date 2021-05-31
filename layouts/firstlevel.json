@@ -506,7 +506,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Pitfall",
+						"initial-animation": "Cross",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -538,8 +538,8 @@
 					"world": {
 						"x": 108.92427964332755,
 						"y": 56.78217763283888,
-						"width": 21.23662741467023,
-						"height": 8.210596809348814,
+						"width": 27.126473299207678,
+						"height": 21.992670025041466,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

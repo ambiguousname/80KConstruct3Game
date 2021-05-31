@@ -369,6 +369,14 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 765017385117229
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 260910462734961,
+					"parameters": {
+						"animation": "\"Arrow\""
+					}
 				}
 			],
 			"actions": [
