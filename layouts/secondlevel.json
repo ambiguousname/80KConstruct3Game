@@ -438,8 +438,8 @@
 					"world": {
 						"x": 96.4053981968445,
 						"y": 72.9227685950413,
-						"width": 34,
-						"height": 32,
+						"width": 25,
+						"height": 23,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -752,6 +752,50 @@
 						"y": 188.32870022539453,
 						"width": 14.126154601407457,
 						"height": 14.126154601407457,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "whip_move",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {
+						"EnemyName": "Whip_Intro",
+						"EnemyType": "Whip"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 56.00000000000001,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 84.00000000000001,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 487.3636363636364,
+						"y": 287.6636363636364,
+						"width": 19.504553168636274,
+						"height": 29.906981525242287,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
