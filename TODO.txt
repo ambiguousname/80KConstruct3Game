@@ -36,7 +36,7 @@ Known bugs:
 
 (In the first level, coins 
 
-Player coins don't update on collection or on the start of a layout.
+While enemies are being pushed by wind or trapdoor, they won't collide with other traps.
 
 More of an aesthetic thing, but if you close the trapdoor while an enemy is falling in, they still
 remain on top of the trapdoor.

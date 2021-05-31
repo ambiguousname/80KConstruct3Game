@@ -70,7 +70,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Some traps only face in one direction, and must be rotated in order to be placed properly.\n\nTry placing the wind trap (7). Use your mouse cursor to face the direction you'd like to place the wind trap in.",
+						"text": "Some traps only face in one direction, and must be rotated in order to be placed properly.\n\nTry placing the piston trap (8). Use your mouse cursor to face the direction you'd like to place the piston trap in.\n\nPress space to activate or de-activate the piston trap.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -93,8 +93,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 147,
-						"y": 56,
+						"x": 24,
+						"y": 54,
 						"width": 356,
 						"height": 207,
 						"originX": 0,
@@ -173,8 +173,8 @@
 						}
 					},
 					"world": {
-						"x": 565,
-						"y": -3,
+						"x": 476,
+						"y": -4,
 						"width": 488,
 						"height": 61,
 						"originX": 0,
@@ -202,8 +202,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 786,
-						"y": 232,
+						"x": 815,
+						"y": 235,
 						"width": 80,
 						"height": 35,
 						"originX": 0.5664739884393064,
@@ -297,8 +297,8 @@
 						}
 					},
 					"world": {
-						"x": 639,
-						"y": 231,
+						"x": 572,
+						"y": 232,
 						"width": 69.47729321152343,
 						"height": 42.7552573609375,
 						"originX": 0.5,
@@ -329,8 +329,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 637,
-						"y": 235,
+						"x": 577,
+						"y": 238,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
@@ -361,8 +361,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 706,
-						"y": 359,
+						"x": 649,
+						"y": 364,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
@@ -393,8 +393,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 695,
-						"y": 73,
+						"x": 633,
+						"y": 74,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
