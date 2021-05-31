@@ -10,14 +10,11 @@ to update it per level?) - Wendi
 - Add more levels - Tyler (Do Monday)
 - (For Boss' duplicate, give them the solid property so the player
 can't place a trap directly underneath them).
-- Add Enemy (and trap) type skins (Do Monday) - Tyler
 - Get all Enemy types actually working in the code. (Boss' Duplicate isn't actually moved by any traps.
 Need to get it working with the Piston and Wind)
 - Add sound effects and music - After first draft is done
 
 Enemy Types left to test:
-Destroyer
-Whip
 AnimalHandler
 Boss' Duplicate
 
@@ -31,6 +28,7 @@ Known bugs:
 (In the first level, coins 
 
 While enemies are being pushed by wind or trapdoor, they won't collide with other traps.
+Same goes for the snake trap. (Potentially fixed?)
 
 Maybe set it so refunding the trapdoor or piston just gives the piston and trapdoor back?
 

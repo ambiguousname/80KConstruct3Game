@@ -1,5 +1,5 @@
 {
-	"name": "ThirdLevel",
+	"name": "Fourthlevel",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 185,
+					"uid": 203,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -47,7 +47,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 186,
+					"uid": 204,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -76,7 +76,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 187,
+					"uid": 205,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -114,7 +114,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 188,
+					"uid": 206,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -152,7 +152,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 189,
+					"uid": 207,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,7 +190,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 190,
+					"uid": 208,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -228,7 +228,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 191,
+					"uid": 209,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -261,7 +261,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 192,
+					"uid": 210,
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 15,
@@ -299,7 +299,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 193,
+					"uid": 211,
 					"instanceVariables": {
 						"Pitfall": 0,
 						"Balloon": 0,
@@ -337,7 +337,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 194,
+					"uid": 212,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -382,7 +382,7 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1
 					},
-					"uid": 195,
+					"uid": 213,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -411,9 +411,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 196,
+					"uid": 214,
 					"instanceVariables": {
-						"Coins": 30,
+						"Coins": 20,
 						"NextLevel": "FourthLevel",
 						"TimeLimit": 180,
 						"localScale": 0.28
@@ -462,7 +462,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 197,
+					"uid": 215,
 					"instanceVariables": {
 						"EnemyName": "",
 						"EnemyType": "Destroyer"
@@ -506,7 +506,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 198,
+					"uid": 216,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": ""
@@ -538,7 +538,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 199,
+					"uid": 217,
 					"instanceVariables": {
 						"EnemyName": "Whip",
 						"EnemyType": "Whip"
@@ -582,7 +582,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 200,
+					"uid": 218,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Whip"
@@ -614,7 +614,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 201,
+					"uid": 219,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": "Whip"
@@ -646,7 +646,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 202,
+					"uid": 220,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": "Whip"
@@ -668,117 +668,9 @@
 						"angle": 0,
 						"zElevation": 2
 					}
-				},
-				{
-					"type": "Enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "whip_move",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 221,
-					"instanceVariables": {
-						"EnemyName": "Doggie",
-						"EnemyType": "AnimalHandler"
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 300,
-								"set-angle": false,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 530.5735086401203,
-						"y": 320.7201051840722,
-						"width": 24.00789439682242,
-						"height": 36.812104741794386,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 222,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": "Doggie"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 692.4948760330578,
-						"y": 299.64066115702485,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 223,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": "Doggie"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 429.7520661157026,
-						"y": 370.8981968444779,
-						"width": 17.8554115496362,
-						"height": 17.8554115496362,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
 				}
 			],
-			"sid": 325297659890413,
+			"sid": 158127457490035,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -803,7 +695,7 @@
 			"global": false
 		}
 	],
-	"sid": 410653121664467,
+	"sid": 865458765345231,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,
