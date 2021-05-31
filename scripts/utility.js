@@ -1,4 +1,4 @@
-var paths = new Map(); var enemies = []; var obstacles = []; export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, paths, enemies, obstacles};
+var paths = new Map(); var enemies = []; var obstacles = []; export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, Boss, paths, enemies, obstacles};
 class Enemy {
 	constructor(enemyName, enemyInstance, index, scale) { this.scale = scale; this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = [];}
 	initializePathing(){ this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this)); this.instance.behaviors.MoveTo.moveToPosition(paths[this.name][this.pathIndex][0], paths[this.name][this.pathIndex][1]);
@@ -71,3 +71,4 @@ class BossDuplicate extends Enemy { constructor(enemyName, enemyInstance, index,
 	initializePathing() { this.originalPosition = [this.instance.x, this.instance.y]; } updatePath(self){ return; }
 	update(self) { if(self.instance.x != self.prevPosition[0] && self.instance.y != self.prevPosition[1]) { self.moveTimer = 3; } if (!self.dead){if (self.dying) self.dyingUpdate(self, self.killer);} self.prevPosition = [self.x, self.y]; }
 	getCollision(self) {if (self.moveTimer > 0 && Math.sqrt(Math.pow(self.instance.x - self.originalPosition[0], 2) + Math.pow(self.instance.y - self.originalPosition[1], 2)) > 4 * self.scale) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); } }}
+class Boss extends Enemy { constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon", "Snake"]; this.trapImmunity.splice(Math.floor(Math.random() * this.trapImmunity.llength), 1);} }
