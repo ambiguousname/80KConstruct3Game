@@ -64,7 +64,7 @@ class Whip extends Enemy {
 			if (self.trapImmunity.includes(trapInstance.objectType.name)){
 				self.instance.zElevation = 30; self.jumpTimer = 3;} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.isSnaked === true ) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);}}}}
 class AnimalHandler extends Enemy {
-	constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon"]; this.isSnaked = false; this.coinDrop = 10; this.itemDrop = "Dog"; }
+	constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon", "Wind"]; this.isSnaked = false; this.coinDrop = 10; this.itemDrop = "Dog"; }
 	getCollision(self, trapInstance) { if (!self.dying && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) { if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.isSnaked) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); }
 	}}}
 class BossDuplicate extends Enemy { constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.moveTimer = 0; this.prevPosition = []; this.coinDrop = 0; this.itemDrop = "Weakness";}
