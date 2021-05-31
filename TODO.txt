@@ -10,8 +10,11 @@ to update it per level?) - Wendi
 - Add more levels - Tyler (Do Monday)
 - Add all the enemy types (Finish Sunday) - Tyler
 - Add animal handler enemy
-- Add boss' duplicate
-- Add Boss' Weakness Enemy
+- Add boss' duplicate (For Boss' duplicate, give them the solid property so the player
+can't place a trap directly underneath them).
+- Make destroyer enemy wander randomly.
+- Add Boss' Weakness Revelation Text
+- Add Boss
 - Add Enemy type skins (Do Monday) - Tyler
 - Rewards for defeating enemies (Finish Sunday) - Tyler
 - Add sound effects and music - After first draft is done

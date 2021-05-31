@@ -1,6 +1,6 @@
-var paths = new Map(); var enemies = []; var obstacles = []; export {Enemy, Jumper, Digger, Destroyer, Whip, paths, enemies, obstacles};
+var paths = new Map(); var enemies = []; var obstacles = []; export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, paths, enemies, obstacles};
 class Enemy {
-	constructor(enemyName, enemyInstance, index) { this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = [];}
+	constructor(enemyName, enemyInstance, index, scale) { this.scale = scale; this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = [];}
 	initializePathing(){ this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this)); this.instance.behaviors.MoveTo.moveToPosition(paths[this.name][this.pathIndex][0], paths[this.name][this.pathIndex][1]);
 	}
 	updatePath(self){
@@ -27,8 +27,8 @@ class Enemy {
 		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
 			self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);}}}
 class Jumper extends Enemy {
-	constructor(enemyName, enemyInstance){
-		super(enemyName, enemyInstance); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.jumpTimer = 0; this.landTimer = 0;
+	constructor(enemyName, enemyInstance, index, scale){
+		super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.jumpTimer = 0; this.landTimer = 0;
 	}
 	update(self){
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; if (self.jumpTimer <= 0) self.instance.zElevation -= 30; } else {self.landTimer += self.instance.runtime.dt;}}
@@ -37,8 +37,8 @@ class Jumper extends Enemy {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpTimer <= 0 && self.landTimer >= 1){
 				self.instance.zElevation += 30; self.jumpTimer = 3; self.landTimer = 0;} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || (self.jumpTimer <= 0 && self.landTimer < 1)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }}}}
 class Digger extends Enemy {
-	constructor(enemyName, enemyInstance){
-		super(enemyName, enemyInstance); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.surfaceTimer = 0; this.instance.opacity = 0.5; this.immuneTimer = 0;
+	constructor(enemyName, enemyInstance, index, scale){
+		super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.surfaceTimer = 0; this.instance.opacity = 0.5; this.immuneTimer = 0;
 	}
 	update(self){
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.surfaceTimer > 0) {self.surfaceTimer -= self.instance.runtime.dt;} else if (self.surfaceTimer <= 0) {self.immuneTimer += self.instance.runtime.dt; } if (self.surfaceTimer <= 0) { self.instance.opacity = 0.5; self.immobile = false; self.instance.behaviors.MoveTo.moveToPosition(paths[self.name][self.pathIndex][0], paths[self.name][self.pathIndex][1]);}
@@ -48,14 +48,14 @@ class Digger extends Enemy {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.surfaceTimer <= 0 && self.immuneTimer > 4){
 				self.instance.opacity = 1; self.surfaceTimer = 5; self.immobile = true; self.instance.behaviors.MoveTo.stop(); self.immuneTimer = 0;} else if ((self.surfaceTimer > 0) && !self.trapImmunity.includes(trapInstance.objectType.name)) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0;}}}}
 class Destroyer extends Enemy {
-	constructor(enemyName, enemyInstance){ super(enemyName, enemyInstance); this.destructionLeft = 3; }
+	constructor(enemyName, enemyInstance, index, scale){ super(enemyName, enemyInstance, index, scale); this.destructionLeft = 3; }
 	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0) { this.destructionLeft -= 1; obstacles.splice(trapInstance.trapIndex, 1); trapInstance.destroy(); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance)) {
 		self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);
 	}}
 }
 class Whip extends Enemy {
-	constructor(enemyName, enemyInstance){
-		super(enemyName, enemyInstance); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon"]; this.jumpTimer = 0; this.isSnaked = false;
+	constructor(enemyName, enemyInstance, index, scale){
+		super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon"]; this.jumpTimer = 0; this.isSnaked = false;
 	}
 	update(self){
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; if (self.jumpTimer <= 0) self.instance.zElevation = 2; }}
@@ -63,3 +63,11 @@ class Whip extends Enemy {
 		if(!self.dying && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name)){
 				self.instance.zElevation = 30; self.jumpTimer = 3;} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.isSnaked === true ) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);}}}}
+class AnimalHandler extends Enemy {
+	constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.trapImmunity = ["Pitfall", "Trapdoor", "Balloon"]; this.isSnaked = false; }
+	getCollision(self, trapInstance) { if (!self.dying && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) { if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.isSnaked) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); }
+	}}}
+class BossDuplicate extends Enemy { constructor(enemyName, enemyInstance, index, scale) { super(enemyName, enemyInstance, index, scale); this.moveTimer = 0; this.prevPosition = [];}
+	initializePathing() { this.originalPosition = [this.instance.x, this.instance.y]; } updatePath(self){ return; }
+	update(self) { if(self.instance.x != self.prevPosition[0] && self.instance.y != self.prevPosition[1]) { self.moveTimer = 3; } if (!self.dead){if (self.dying) self.dyingUpdate(self, self.killer);} self.prevPosition = [self.x, self.y]; }
+	getCollision(self) {if (self.moveTimer > 0 && Math.sqrt(Math.pow(self.instance.x - self.originalPosition[0], 2) + Math.pow(self.instance.y - self.originalPosition[1], 2)) > 4 * self.scale) { self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); } }}
