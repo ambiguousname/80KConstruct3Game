@@ -199,16 +199,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 826025371260965,
-							"parameters": {
-								"layout": "You Lose"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 332183538857648
 				},
 				{

@@ -1,5 +1,5 @@
 {
-	"name": "TutorialLevel",
+	"name": "TutorialLevel6",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,14 +18,14 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 242,
+					"uid": 167,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": -10,
 						"y": -10,
-						"width": 881.949936056434,
-						"height": 528.8906116589155,
+						"width": 869.2413524359673,
+						"height": 497.2625437555677,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use the number keys (1-8) to select traps.\n\nPress SPACE to place down a trap.\n\nTry placing a trap here.",
+						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with P.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -54,51 +54,22 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 243,
+					"uid": 203,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 186,
-						"y": 151,
-						"width": 539,
-						"height": 248,
+						"x": 147,
+						"y": 56,
+						"width": 356,
+						"height": 207,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 244,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 305,
-						"y": 285,
-						"width": 38.43447794670881,
-						"height": 38.43447794670881,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -122,7 +93,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 245,
+					"uid": 204,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -133,9 +104,9 @@
 						}
 					},
 					"world": {
-						"x": 0,
-						"y": 47,
-						"width": 477,
+						"x": 10,
+						"y": 495,
+						"width": 479,
 						"height": 61,
 						"originX": 0,
 						"originY": 0,
@@ -150,33 +121,24 @@
 					}
 				},
 				{
-					"type": "InventoryInit",
+					"type": "Pitfall",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 246,
-					"instanceVariables": {
-						"Pitfall": 5,
-						"Balloon": 5,
-						"Block": 1,
-						"Trapdoor": 0,
-						"Snake": 0,
-						"Dog": 0,
-						"Wind": 0,
-						"Piston": 0
-					},
+					"uid": 220,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 114,
-						"y": 136,
-						"width": 95.86970324351694,
-						"height": 95.86970324351694,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 101,
+						"y": 419,
+						"width": 80,
+						"height": 35,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
 						"color": [
 							1,
 							1,
@@ -188,33 +150,24 @@
 					}
 				},
 				{
-					"type": "InventoryCostInit",
+					"type": "Pitfall",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 247,
-					"instanceVariables": {
-						"Pitfall": 500,
-						"Balloon": 500,
-						"Block": 500,
-						"Trapdoor": 500,
-						"Snake": 500,
-						"Dog": 500,
-						"Wind": 500,
-						"Piston": 500
-					},
+					"uid": 219,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 211,
-						"y": 358,
-						"width": 98.13256340277675,
-						"height": 98.13256340277675,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 222,
+						"y": 199,
+						"width": 80,
+						"height": 35,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
 						"color": [
 							1,
 							1,
@@ -234,10 +187,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 248,
+					"uid": 205,
 					"instanceVariables": {
-						"Coins": 100,
-						"NextLevel": "UITutorialLevel",
+						"Coins": 5,
+						"NextLevel": "TutorialLevel3",
 						"TimeLimit": 500,
 						"localScale": 1
 					},
@@ -262,8 +215,8 @@
 					"world": {
 						"x": 116,
 						"y": 253,
-						"width": 70.03909743106126,
-						"height": 56.78389305026435,
+						"width": 64.48805063973941,
+						"height": 52.2834060526172,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -285,7 +238,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 249,
+					"uid": 206,
 					"instanceVariables": {
 						"EnemyName": "",
 						"EnemyType": ""
@@ -304,10 +257,10 @@
 						}
 					},
 					"world": {
-						"x": 809,
-						"y": 224,
-						"width": 69.47729321152343,
-						"height": 42.7552573609375,
+						"x": 795,
+						"y": 223,
+						"width": 83.09650423115943,
+						"height": 43.61882857682998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -329,7 +282,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 250,
+					"uid": 207,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": ""
@@ -361,7 +314,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 251,
+					"uid": 208,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": ""
@@ -393,7 +346,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 252,
+					"uid": 209,
 					"instanceVariables": {
 						"Position": 2,
 						"EnemyName": ""
@@ -417,7 +370,7 @@
 					}
 				}
 			],
-			"sid": 438039569905195,
+			"sid": 845791421864082,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -454,7 +407,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 253,
+					"uid": 210,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -483,7 +436,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 254,
+					"uid": 211,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -521,13 +474,13 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 255,
+					"uid": 212,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 15,
 						"y": 13,
-						"width": 294,
+						"width": 228,
 						"height": 39,
 						"originX": 0,
 						"originY": 0,
@@ -559,13 +512,13 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 256,
+					"uid": 213,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 232,
-						"y": 8,
-						"width": 263,
+						"x": 194,
+						"y": 13,
+						"width": 200,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -601,7 +554,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 257,
+					"uid": 214,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -639,7 +592,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 258,
+					"uid": 215,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -677,7 +630,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 259,
+					"uid": 216,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -687,7 +640,7 @@
 					"world": {
 						"x": 422,
 						"y": 418,
-						"width": 425,
+						"width": 424.99999999999994,
 						"height": 28,
 						"originX": 0,
 						"originY": 0,
@@ -700,9 +653,85 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "InventoryInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 217,
+					"instanceVariables": {
+						"Pitfall": 0,
+						"Balloon": 0,
+						"Block": 0,
+						"Trapdoor": 0,
+						"Snake": 0,
+						"Dog": 0,
+						"Wind": 0,
+						"Piston": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 95,
+						"y": 114,
+						"width": 95.86970324351694,
+						"height": 95.86970324351694,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InventoryCostInit",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 218,
+					"instanceVariables": {
+						"Pitfall": 10,
+						"Balloon": 500,
+						"Block": 500,
+						"Trapdoor": 500,
+						"Snake": 500,
+						"Dog": 500,
+						"Wind": 500,
+						"Piston": 500
+					},
+					"behaviors": {},
+					"world": {
+						"x": 192,
+						"y": 336,
+						"width": 98.13256340277675,
+						"height": 98.13256340277675,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 523456655562998,
+			"sid": 687868464619571,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -727,7 +756,7 @@
 			"global": false
 		}
 	],
-	"sid": 491109118527279,
+	"sid": 621968522685511,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

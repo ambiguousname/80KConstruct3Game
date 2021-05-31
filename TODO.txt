@@ -17,6 +17,8 @@ Feedback from play testing:
 
 Known bugs:
 
+In the first level, the jumper enemy in the top left won't collide with balloons
+
 (In the first level, coins 
 
 Wind trap sometimes causes enemies to bug out?

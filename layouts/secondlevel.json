@@ -413,7 +413,7 @@
 					},
 					"uid": 124,
 					"instanceVariables": {
-						"Coins": 20,
+						"Coins": 100,
 						"NextLevel": "You Win",
 						"TimeLimit": 100,
 						"localScale": 0.28

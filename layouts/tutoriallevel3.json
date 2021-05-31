@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nTry placing a pitfall trap with this enemy.\n\nRemember that you can refund any placed trap by pressing R.",
+						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nTry placing a balloon trap (2) with this enemy.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,

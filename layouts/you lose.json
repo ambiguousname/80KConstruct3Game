@@ -23,7 +23,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 36,
+					"uid": 26,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -52,7 +52,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 158,
+					"uid": 74,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -73,7 +73,7 @@
 					}
 				}
 			],
-			"sid": 575715754365387,
+			"sid": 735695699758789,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -98,11 +98,11 @@
 			"global": false
 		}
 	],
-	"sid": 600468973019757,
+	"sid": 580306825465903,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 3"
 }

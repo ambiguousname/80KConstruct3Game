@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use the number keys to select traps.\n\nPress P to buy the trap you have selected.\n\nAfter placing a trap, press R when very close to any trap to refund it for 50% of its original cost.",
+						"text": "Use the number keys (1-8) to select traps.\n\nPress P to buy the trap you have selected, and press space to place that trap.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -67,7 +67,7 @@
 						"x": 53,
 						"y": 45,
 						"width": 441,
-						"height": 199,
+						"height": 80,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -200,7 +200,7 @@
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 10,
-						"Block": 10,
+						"Block": 500,
 						"Trapdoor": 500,
 						"Snake": 500,
 						"Dog": 500,
@@ -237,7 +237,7 @@
 					"uid": 46,
 					"instanceVariables": {
 						"Coins": 19,
-						"NextLevel": "TutorialLevel3",
+						"NextLevel": "TutorialLevel6",
 						"TimeLimit": 500,
 						"localScale": 1
 					},

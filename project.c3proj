@@ -169,7 +169,9 @@
 			"Start1",
 			"Start2",
 			"TutorialLevel",
+			"UITutorialLevel",
 			"TutorialLevel2",
+			"TutorialLevel6",
 			"TutorialLevel3",
 			"FirstLevel",
 			"TutorialLevel4",
@@ -177,15 +179,16 @@
 			"TutorialLevel5",
 			"ThirdLevel",
 			"LastLevel",
-			"You Lose",
-			"You Win"
+			"You Win",
+			"You Lose"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Event sheet 2"
+			"Event sheet 2",
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},
