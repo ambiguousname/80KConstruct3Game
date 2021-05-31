@@ -18,11 +18,11 @@ class Enemy {
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
 				break;
 			case "Snake":
-				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 50 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 50 * self.scale + self.killer.y);
-				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 50 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 50 * self.scale + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
+				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 200 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 200 * self.scale + self.killer.y);
+				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 200 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 200 * self.scale + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
 				break;
-			case "Wind":
-				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 100 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 100 * self.scale + self.killer.y); if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 100 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 100 * self.scale + self.killer.y) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; }
+			case "Wind": var killerPos = self.killer.actualPos; self.initAcc = self.instance.behaviors.MoveTo.acceleration; self.instance.behaviors.MoveTo.acceleration = 1000; self.initDec = self.instance.behaviors.MoveTo.deceleration; self.instance.behaviors.MoveTo.deceleration = 1000;
+				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - killerPos[0]) * 600 * self.scale * Math.sin(self.killer.angle) + killerPos[0], Math.sign(self.instance.y - killerPos[1]) * 600 * self.scale * Math.cos(self.killer.angle) + killerPos[1]); if (self.instance.x == Math.sign(self.instance.x - killerPos[0]) * 600 * self.scale * Math.sin(self.killer.angle) + killerPos[0] && self.instance.y == Math.sign(self.instance.y - killerPos[1]) * 600 * self.scale * Math.cos(self.killer.angle) + killerPos[1]) { self.dying = false; self.pathIndex++; self.updatePath(self); self.isSnaked = false; self.instance.behaviors.MoveTo.deceleration = self.initDec; self.instance.behaviors.MoveTo.acceleration = self.initAcc;}
 				break;}}
 	getCollision(self, trapInstance){
 		if (!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen === true) && !self.trapImmunity.includes(trapInstance.objectType.name) && self.instance.testOverlap(trapInstance)) {
