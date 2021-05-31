@@ -134,7 +134,8 @@
 			"Dog",
 			"Sprite3",
 			"Whip",
-			"Boss"
+			"Boss",
+			"WeaknessText"
 		],
 		"subfolders": []
 	},

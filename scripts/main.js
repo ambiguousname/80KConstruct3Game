@@ -16,7 +16,7 @@ async function OnBeforeProjectStart(runtime)
 		switch(e.instVars.EnemyType){
 			case "Jumper": enemyClass = Jumper; break; case "Digger": enemyClass = Digger; break; case "Destroyer": enemyClass = Destroyer; break; case "Whip": enemyClass = Whip; break; case "AnimalHandler": enemyClass = AnimalHandler; break; case "BossDuplicate": enemyClass = BossDuplicate; break; case "Boss": enemyClass = Boss; break;
 		}
-		var enemy = new enemyClass(e.instVars.EnemyName, e, enemies.length, runtime.objects.Player.getFirstInstance().localScale); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1;
+		var enemy = new enemyClass(e.instVars.EnemyName, e, enemies.length, runtime.objects.Player.getFirstInstance().localScale); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1; if(e.instVars.EnemyType === "Boss") { runtime.bossWeakness = enemy.weakness; }
 		enemies.push(enemy);
 	});
 	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars; runtime.globalVars.SelectedName = Object.keys(inv)[0]; runtime.objects.Shop.getFirstInstance().setAnimation(Object.keys(inv)[0]);
