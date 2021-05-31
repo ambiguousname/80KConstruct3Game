@@ -21,8 +21,6 @@ In the first level, the jumper enemy in the top left won't collide with balloons
 
 Whip enemy will continually jump forever if it hits a block and a pitfall.
 
-(In the first level, coins 
-
 Wind trap sometimes causes enemies to bug out?
 
 Maybe set it so refunding the trapdoor or piston just gives the piston and trapdoor back?

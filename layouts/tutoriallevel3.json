@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nThis particular enemy is immune to pitfall traps, so try placing a balloon trap (2).",
+						"text": "Certain enemies will have immunities to certain kinds of traps, but only for a limited time.\n\nIt will then take them a little bit of time to recover before their immunity regenerates.\n\nThe jumper is immune to pitfall traps, so try placing a balloon trap (2).",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
