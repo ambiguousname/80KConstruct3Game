@@ -33,3 +33,12 @@ Tyler's Playtest Notes:
 Players didn't know how to restart the game from the game over screen, and
 had to start all the way back at the start screen. Maybe a way to transition to 
 previously unlocked levels from the game over screen?
+
+Hard to tell if the traps are going to be hit or not by enemies (generous hitboxes?)
+
+Need a better indicator of what trap is selected and if you have any
+
+Timer < 0 will no longer take you to game over.
+
+The jumper on the top right in the first level won't collide with anything after a while (try getting
+rid of all other enemies, then the jumper)?
