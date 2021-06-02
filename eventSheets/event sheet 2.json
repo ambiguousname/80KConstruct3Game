@@ -41,9 +41,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 294460832342744,
+					"sid": 682250808143919,
 					"parameters": {
-						"layout": "UITutorialLevel"
+						"layout": "TutorialLevel"
 					}
 				}
 			],

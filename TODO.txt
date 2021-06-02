@@ -28,3 +28,8 @@ Liked the balloon animation
 Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?) (Done)
 Don't have a timer for the tutorial.
 Liked experimenting with different traps
+
+Tyler's Playtest Notes:
+Players didn't know how to restart the game from the game over screen, and
+had to start all the way back at the start screen. Maybe a way to transition to 
+previously unlocked levels from the game over screen?
