@@ -414,7 +414,7 @@
 					"uid": 196,
 					"instanceVariables": {
 						"Coins": 100,
-						"NextLevel": "FourthLevel",
+						"NextLevel": "LastLevel",
 						"TimeLimit": 180,
 						"localScale": 0.4
 					},

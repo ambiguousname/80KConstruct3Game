@@ -42,7 +42,21 @@ Need a better indicator of what trap is selected and if you have any
 
 Timer < 0 will no longer take you to game over.
 
+Trapdoor hard ot use
+
+Block and pitfall combo still doesn't work on whip enemy
+
+Not clear that the digger moves underground
+
+Try one enemy per level, and try to give better clarity to the player for how to defeat those enemies.
+
+Sometimes you can't activate the piston trap
+
+Indicators to show what traps you get from doing stuff.
+
 The jumper on the top right in the first level won't collide with anything after a while (try getting
 rid of all other enemies, then the jumper)? (The only error I get from the console is sometimes
 the obstacle will be destroyed, but it will still be in the obstacles list? (I think I fixed it, I just 
 had to change how the enemies and obstacles are stored)
+
+Pitfalls and Trapdoors sometimes don't work on Digger enemy
