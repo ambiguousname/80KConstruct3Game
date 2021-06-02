@@ -48,13 +48,13 @@ function Tick(runtime){
 	} else if (runtime.keyboard.isKeyDown("Space") && (runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") && inv.get(runtime.globalVars.SelectedName) <= 0 && !runtime.spaceDown) {
 		runtime.spaceDown = true; var trap = runtime.objects[runtime.globalVars.SelectedName].getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open"); if(runtime.globalVars.SelectedName === "Piston") {trap.openTimer = 0.25;} } else { trap.setAnimation(runtime.globalVars.SelectedName); trap.openTimer = 0; }
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;
-	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o); if(o.openTimer > 0) { o.openTimer -= runtime.dt; } else if (o.openTimer <= 0) { o.isOpen = false }})});
+	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {console.log(" Enemy - " + e + " Trap - " + o); e.getCollision(e, o); if(o.openTimer > 0) { o.openTimer -= runtime.dt; } else if (o.openTimer <= 0) { o.isOpen = false }})});
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
 			if(o.objectType.name === "Trapdoor" || o.objectType.name === "Piston") {
 				runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(o.objectType.name, runtime.objects.InventoryCostInit.getFirstInstance().instVars[o.objectType.name]); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
 			}
-			o.destroy(); obstacles.splice(o.trapIndex, 1);
+			obstacles.splice(o.trapIndex, 1); o.destroy(); 
 			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
 		}});
 	}
