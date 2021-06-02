@@ -44,4 +44,5 @@ Timer < 0 will no longer take you to game over.
 
 The jumper on the top right in the first level won't collide with anything after a while (try getting
 rid of all other enemies, then the jumper)? (The only error I get from the console is sometimes
-the obstacle will be destroyed, but it will still be in the obstacles list?
+the obstacle will be destroyed, but it will still be in the obstacles list? (I think I fixed it, I just 
+had to change how the enemies and obstacles are stored)

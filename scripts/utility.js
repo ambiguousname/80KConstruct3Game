@@ -1,4 +1,4 @@
-var paths = new Map(); var enemies = []; var obstacles = []; export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, Boss, paths, enemies, obstacles};
+var paths = new Map(); var enemies = new Map(); var obstacles = new Map(); export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, Boss, paths, enemies, obstacles};
 class Enemy {
 	constructor(enemyName, enemyInstance, index, scale) { this.scale = scale; this.coinDrop = 10; this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = []; this.initAcc = this.instance.behaviors.MoveTo.acceleration; this.initDec = this.instance.behaviors.MoveTo.deceleration; this.initMax = this.instance.behaviors.MoveTo.maxSpeed; this.initRot = this.instance.behaviors.MoveTo.rotateSpeed; }
 	initializePathing(){ this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this)); this.instance.behaviors.MoveTo.moveToPosition(paths[this.name][this.pathIndex][0], paths[this.name][this.pathIndex][1]);
@@ -7,7 +7,7 @@ class Enemy {
 		if (!self.dying && !self.dead && !self.immobile){self.instance.behaviors.MoveTo.moveToPosition(paths[self.name][self.pathIndex][0], paths[self.name][self.pathIndex][1]); self.pathIndex += 1;
 			if (self.pathIndex >= paths[self.name].length) self.pathIndex = 0;}}
 	update(self){if (!self.dead){if (self.dying) self.dyingUpdate(self, self.killer);}}
-	kill(self){ self.dead = true; enemies.splice(self.index, 1); self.instance.destroy(); self.instance.runtime.objects.Player.getFirstInstance().instVars.Coins += self.coinDrop; if(self.itemDrop) { if(self.itemDrop === "Weakness") { self.instance.runtime.objects.WeaknessText.getFirstInstance().text = "The Boss' Weakness is: " + self.instance.runtime.bossWeakness; } else {self.instance.runtime.objects.Inventory.getFirstInstance().getDataMap().set(self.itemDrop, self.instance.runtime.Inventory.getFirstInstance().getDataMap().get(self.itemDrop) + 1); runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; }}}
+	kill(self){ self.dead = true; enemies.delete(self.name); self.instance.destroy();self.instance.runtime.objects.Player.getFirstInstance().instVars.Coins += self.coinDrop; if(self.itemDrop) { if(self.itemDrop === "Weakness") { self.instance.runtime.objects.WeaknessText.getFirstInstance().text = "The Boss' Weakness is: " + self.instance.runtime.bossWeakness; } else {self.instance.runtime.objects.Inventory.getFirstInstance().getDataMap().set(self.itemDrop, self.instance.runtime.Inventory.getFirstInstance().getDataMap().get(self.itemDrop) + 1); runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; }}}
 	dyingUpdate(self){
 		switch (self.killer.objectType.name) {
 			case "Trapdoor": case "Pitfall": self.instance.behaviors.MoveTo.rotateSpeed = 0;
@@ -15,7 +15,7 @@ class Enemy {
 			case "Balloon":
 				self.killer.inactive = true; self.instance.behaviors.MoveTo.rotateSpeed = 0;
 				self.killer.zElevation += 1; self.instance.zElevation += 1; self.instance.behaviors.MoveTo.moveToPosition(self.killer.x - self.killer.width/2, self.killer.y);
-				if (self.instance.zElevation > 100) {self.kill(self); obstacles.splice(self.killer.trapIndex, 1); self.killer.destroy();}
+				if (self.instance.zElevation > 100) {self.kill(self); obstacles.delete(self.killer.trapIndex); self.killer.destroy();}
 				break;
 			case "Snake":
 				self.isSnaked = true; self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 200 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 200 * self.scale + self.killer.y);
@@ -48,7 +48,7 @@ class Digger extends Enemy {
 class Destroyer extends Enemy {
 	constructor(enemyName, enemyInstance, index, scale){ super(enemyName, enemyInstance, index, scale); this.destructionLeft = 3; this.coinDrop = 20; }
 	updatePath(self) { if (!self.dying && !self.dead && !self.immobile){setTimeout(function() {var newX = (Math.floor(Math.random() * self.instance.runtime.layout.width)) - self.instance.x; var newY = (Math.floor(Math.random() * self.instance.runtime.layout.height)) - self.instance.y; self.instance.behaviors.MoveTo.moveToPosition(self.instance.x + Math.min(Math.max(newX, -200), 200), self.instance.y + Math.min(Math.max(newY, -200), 200))}, Math.floor(Math.random() * 2000) + 1000)}}
-	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0 && self.instance.animationName === "destroyer_move") { self.instance.behaviors.MoveTo.stop(); self.instance.setAnimation("destroyer_through_bomb"); setTimeout(function(){self.destructionLeft -= 1; obstacles.splice(trapInstance.trapIndex, 1); if (trapInstance.objectType.name === "Wind") {trapInstance.wind.destroy();} trapInstance.destroy(); self.instance.setAnimation("destroyer_move"); self.updatePath(self); }, 2000); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance) && self.instance.animationName != "destroyer_through_bomb") {
+	getCollision(self, trapInstance) { if (self.instance.testOverlap(trapInstance) && self.destructionLeft > 0 && self.instance.animationName === "destroyer_move") { self.instance.behaviors.MoveTo.stop(); self.instance.setAnimation("destroyer_through_bomb"); setTimeout(function(){self.destructionLeft -= 1; obstacles.delete(trapInstance.trapIndex); if (trapInstance.objectType.name === "Wind") {trapInstance.wind.destroy();} trapInstance.destroy(); self.instance.setAnimation("destroyer_move"); self.updatePath(self); }, 2000); } else if(!self.dying && trapInstance.objectType.name != "Block" && (trapInstance.isOpen) && self.instance.testOverlap(trapInstance) && self.instance.animationName != "destroyer_through_bomb") {
 		self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);
 	}}
 }
