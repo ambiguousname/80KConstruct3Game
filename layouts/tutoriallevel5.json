@@ -525,7 +525,11 @@
 					},
 					"uid": 178,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 194,
 						"y": 13,
@@ -567,7 +571,11 @@
 					},
 					"uid": 179,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 423,
 						"y": -88,

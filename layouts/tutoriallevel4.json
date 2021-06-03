@@ -159,8 +159,8 @@
 						}
 					},
 					"world": {
-						"x": 824,
-						"y": 224,
+						"x": 802,
+						"y": 225,
 						"width": 69.47729321152343,
 						"height": 42.7552573609375,
 						"originX": 0.5,
@@ -416,7 +416,11 @@
 					},
 					"uid": 131,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 194,
 						"y": 13,
@@ -458,7 +462,11 @@
 					},
 					"uid": 132,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 423,
 						"y": -88,
