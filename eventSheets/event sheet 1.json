@@ -190,14 +190,6 @@
 							"parameters": {
 								"layout": "You Lose"
 							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 703572202736030,
-							"parameters": {
-								"seconds": "100000000000"
-							}
 						}
 					],
 					"sid": 329609673624354,

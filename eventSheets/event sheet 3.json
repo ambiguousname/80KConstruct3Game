@@ -1,31 +1,5 @@
 {
 	"name": "Event sheet 3",
-	"events": [
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-time",
-					"objectClass": "System",
-					"sid": 475262492206154,
-					"parameters": {
-						"comparison": 5,
-						"time-seconds": "4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 760557194452716,
-					"parameters": {
-						"layout": "UITutorialLevel"
-					}
-				}
-			],
-			"sid": 513060035245870
-		}
-	],
+	"events": [],
 	"sid": 904044434489873
 }
