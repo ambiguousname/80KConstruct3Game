@@ -151,7 +151,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 888489415139927,
+							"sid": 627529422446471,
 							"parameters": {
 								"variable": "Total_time",
 								"value": "-0.02"
@@ -190,9 +190,43 @@
 							"parameters": {
 								"layout": "You Lose"
 							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 703572202736030,
+							"parameters": {
+								"seconds": "100000000000"
+							}
 						}
 					],
-					"sid": 329609673624354
+					"sid": 329609673624354,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 612296843190953,
+									"parameters": {
+										"key": 82
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 394971823767990,
+									"parameters": {
+										"which": "previous"
+									}
+								}
+							],
+							"sid": 293930200238888
+						}
+					]
 				},
 				{
 					"eventType": "block",
