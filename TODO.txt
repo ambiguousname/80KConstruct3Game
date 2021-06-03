@@ -8,6 +8,7 @@ What we need to do:
 Feedback from play testing:
 - Add a tutorial section before the game starts.
 - Maybe increase countdown.
+- 
 
 
 Known bugs:
@@ -62,3 +63,20 @@ the obstacle will be destroyed, but it will still be in the obstacles list? (I t
 had to change how the enemies and obstacles are stored)
 
 Pitfalls and Trapdoors sometimes don't work on Digger enemy
+
+
+Wendi's play testing note:
+
+- the crosshair image would confuse players (maybe we can write a reminder beforehand that the crosshair won't die when you have a collision with the NPCs)
+
+- The arrows in UITutorial level make player think that they should place the trap there
+
+- the lower right user interface sometimes would not be notice (player always forgot to buy the trap)
+
+- refund function doesn't work for both traps in tutorial level6
+
+- as the players use up all of the coins, they don't know how to do
+
+- no one use the block
+
+- sometimes it's hard to tell/remember each trap just from looking at their names (maybe we can add icons at top of the lower right UI, reminding players the traps' skins, just like we used to do)
