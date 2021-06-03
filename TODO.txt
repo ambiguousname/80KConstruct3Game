@@ -42,7 +42,7 @@ Need a better indicator of what trap is selected and if you have any
 
 Timer < 0 will no longer take you to game over.
 
-Trapdoor hard ot use
+Trapdoor hard to use
 
 Block and pitfall combo still doesn't work on whip enemy
 
