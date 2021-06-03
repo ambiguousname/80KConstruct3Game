@@ -145,15 +145,15 @@
 					"properties": {
 						"text": "Use arrow keys or WASD to move.",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Andale Mono",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							1,
-							0,
-							0,
+							0.21176470588235294,
+							0.5490196078431373,
+							0.03137254901960784,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -166,8 +166,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 23,
-						"y": 434,
+						"x": 495,
+						"y": 151,
 						"width": 299,
 						"height": 27,
 						"originX": 0,
@@ -237,8 +237,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 25,
-						"y": 263,
+						"x": 9,
+						"y": 311,
 						"width": 605,
 						"height": 162,
 						"originX": 0,

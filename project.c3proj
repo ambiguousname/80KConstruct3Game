@@ -162,7 +162,8 @@
 			"WindParticles",
 			"Win",
 			"Sprite4",
-			"Piston"
+			"Piston",
+			"Sprite5"
 		],
 		"subfolders": []
 	},
