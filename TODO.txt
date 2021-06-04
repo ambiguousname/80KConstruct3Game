@@ -14,7 +14,9 @@ Feedback from play testing:
 
 Known bugs:
 
-In the first level, the jumper enemy in the top left won't collide with balloons
+Balloon is really tiny when placed?
+
+Defeating all enemies won't start the next level (maybe exclusive to Balloon trap?)
 
 Whip enemy will continually jump forever if it hits a block and a pitfall.
 
