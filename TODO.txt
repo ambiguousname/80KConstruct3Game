@@ -4,6 +4,7 @@ What we need to do:
 - Level transitions?
 - Add sound effects and music - After first draft is done
 - Better looking wind and piston traps?
+- Make Jumper immune to Snake until it hits a pitfall
 
 
 Feedback from play testing:
@@ -14,11 +15,15 @@ Feedback from play testing:
 
 Known bugs:
 
-Balloon is really tiny when placed?
+Balloon and Snake traps are really tiny when placed?
+
+When you refund snake trap while enemy is snaked, they'll stop moving.
 
 Defeating all enemies won't start the next level (maybe exclusive to Balloon trap?)
 
 Whip enemy will continually jump forever if it hits a block and a pitfall.
+
+Whip enemy will also just sit on top of snake trap.
 
 Wind trap sometimes causes enemies to bug out?
 

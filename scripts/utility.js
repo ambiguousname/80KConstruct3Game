@@ -1,6 +1,6 @@
 var paths = new Map(); var enemies = new Map(); var obstacles = new Map(); export {Enemy, Jumper, Digger, Destroyer, Whip, AnimalHandler, BossDuplicate, Boss, paths, enemies, obstacles};
 class Enemy {
-	constructor(enemyName, enemyInstance, index, scale) { this.scale = scale; this.coinDrop = 10; this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = []; this.initAcc = this.instance.behaviors.MoveTo.acceleration; this.initDec = this.instance.behaviors.MoveTo.deceleration; this.initMax = this.instance.behaviors.MoveTo.maxSpeed; this.initRot = this.instance.behaviors.MoveTo.rotateSpeed; }
+	constructor(enemyName, enemyInstance, index, scale) { this.scale = scale; this.coinDrop = 10; this.name = enemyName; this.instance = enemyInstance; this.pathIndex = 0; this.dying = false; this.dead = false; this.index = index; this.trapImmunity = ["Balloon"]; this.initAcc = this.instance.behaviors.MoveTo.acceleration; this.initDec = this.instance.behaviors.MoveTo.deceleration; this.initMax = this.instance.behaviors.MoveTo.maxSpeed; this.initRot = this.instance.behaviors.MoveTo.rotateSpeed; }
 	initializePathing(){ this.instance.behaviors.MoveTo.addEventListener("arrived", () => this.updatePath(this)); this.instance.behaviors.MoveTo.moveToPosition(paths[this.name][this.pathIndex][0], paths[this.name][this.pathIndex][1]);
 	}
 	updatePath(self){
