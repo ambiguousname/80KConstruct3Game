@@ -17,40 +17,16 @@
 			"sid": 253422707898641
 		},
 		{
-			"name": "Block",
-			"type": "number",
-			"desc": "",
-			"sid": 406934013024155
-		},
-		{
-			"name": "Trapdoor",
-			"type": "number",
-			"desc": "",
-			"sid": 968411894888918
-		},
-		{
 			"name": "Snake",
 			"type": "number",
 			"desc": "",
 			"sid": 138459728809674
 		},
 		{
-			"name": "Dog",
-			"type": "number",
-			"desc": "",
-			"sid": 581079053918313
-		},
-		{
 			"name": "Wind",
 			"type": "number",
 			"desc": "",
 			"sid": 871180167501975
-		},
-		{
-			"name": "Piston",
-			"type": "number",
-			"desc": "",
-			"sid": 147366937385266
 		}
 	],
 	"behaviorTypes": [],

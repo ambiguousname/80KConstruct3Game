@@ -260,6 +260,15 @@
 								"variable": "Total_time",
 								"value": "Player.TimeLimit"
 							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "Enemy",
+							"sid": 179805902903348,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"playerhit\""
+							}
 						}
 					],
 					"sid": 390869604674343

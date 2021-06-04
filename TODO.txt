@@ -1,6 +1,7 @@
 What we need to do:
 - Polish background ??
 - Fix and polish existing levels.
+- Level transitions?
 - Add sound effects and music - After first draft is done
 - Better looking wind and piston traps?
 

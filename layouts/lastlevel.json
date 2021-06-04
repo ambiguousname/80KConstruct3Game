@@ -269,12 +269,8 @@
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 15,
-						"Block": 15,
-						"Trapdoor": 20,
 						"Snake": 13,
-						"Dog": 500,
-						"Wind": 500,
-						"Piston": 500
+						"Wind": 500
 					},
 					"behaviors": {},
 					"world": {
@@ -307,12 +303,8 @@
 					"instanceVariables": {
 						"Pitfall": 0,
 						"Balloon": 0,
-						"Block": 0,
-						"Trapdoor": 0,
 						"Snake": 0,
-						"Dog": 0,
-						"Wind": 5,
-						"Piston": 0
+						"Wind": 5
 					},
 					"behaviors": {},
 					"world": {
