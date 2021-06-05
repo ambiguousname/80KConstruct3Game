@@ -44,32 +44,24 @@ previously unlocked levels from the game over screen?
 
 Controls are somewhat difficult to use (maybe Q to purchase instead of P?).
 
-Hard to tell if the traps are going to be hit or not by enemies (generous hitboxes?)
+Hard to tell if the traps are going to be hit or not by enemies (generous hitboxes? Straigher enemy paths?)
 
 Need a better indicator of what trap is selected and if you have any
 
-Timer < 0 will no longer take you to game over.
-
-Trapdoor hard to use
-
-Block and pitfall combo still doesn't work on whip enemy
-
-Not clear that the digger moves underground
-
-Try one enemy per level, and try to give better clarity to the player for how to defeat those enemies.
-
-Sometimes you can't activate the piston trap
-
 Indicators to show what traps you get from doing stuff.
 
-Animal handler needs a better skin
-
-The jumper on the top right in the first level won't collide with anything after a while (try getting
-rid of all other enemies, then the jumper)? (The only error I get from the console is sometimes
-the obstacle will be destroyed, but it will still be in the obstacles list? (I think I fixed it, I just 
-had to change how the enemies and obstacles are stored)
-
 Pitfalls and Trapdoors sometimes don't work on Digger enemy
+
+Make it clearer that after the Jumper jumps, for a while they're vulnerable (new animation?)
+
+Make inventory more visual? (Player has to spend time seeing how many traps they have and of what type)
+
+Make it so that there's an "Unbuyable" option for inventory items
+
+Illustrate enemies are vulnerable to other traps after snake trap (new animation? Visual indicator?)
+
+Balloon in the fifth level makes it looks like you need to move the jumper enemy there instead 
+of using the pitfall.
 
 
 Wendi's play testing note:
