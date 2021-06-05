@@ -1,16 +1,15 @@
 What we need to do:
-- Polish background ??
 - Fix and polish existing levels.
 - Level transitions?
 - Add sound effects and music - After first draft is done
 - Better looking wind and piston traps?
 - Make Jumper immune to Snake until it hits a pitfall
+- Make animation for enemies' reactions to the snake
 
 
 Feedback from play testing:
 - Add a tutorial section before the game starts.
 - Maybe increase countdown.
-- 
 
 
 Known bugs:

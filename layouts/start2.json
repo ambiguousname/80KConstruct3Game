@@ -111,7 +111,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Cross",
+						"initial-animation": "Pitfall",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -142,10 +142,10 @@
 						}
 					},
 					"world": {
-						"x": 47,
-						"y": 422,
-						"width": -49.653400842916426,
-						"height": -45.55357875496918,
+						"x": 63,
+						"y": 417,
+						"width": -87.28875454088481,
+						"height": -41.099692747278425,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -154,7 +154,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 3.1496513912945674,
 						"zElevation": 1
 					}
 				}

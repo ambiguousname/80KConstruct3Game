@@ -1,5 +1,68 @@
 {
 	"name": "Event sheet 3",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "InventoryInit",
+					"sid": 123830836473762,
+					"parameters": {
+						"instance-variable": "Balloon",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "InventoryInit",
+					"sid": 365219965087744,
+					"parameters": {
+						"instance-variable": "Pitfall",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 437213375095614,
+					"parameters": {
+						"layout": "You Lose"
+					}
+				}
+			],
+			"sid": 866421820458981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 312333532538247,
+					"parameters": {
+						"instance-variable": "TimeLimit",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 746172533616187,
+					"parameters": {
+						"layout": "You Lose"
+					}
+				}
+			],
+			"sid": 418739835493610
+		}
+	],
 	"sid": 904044434489873
 }

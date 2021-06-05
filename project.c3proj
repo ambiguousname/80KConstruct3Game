@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -163,7 +171,8 @@
 			"Win",
 			"Sprite4",
 			"Piston",
-			"Sprite5"
+			"Sprite5",
+			"Tilemap"
 		],
 		"subfolders": []
 	},
@@ -183,6 +192,7 @@
 			"TutorialLevel6",
 			"FirstLevel",
 			"SecondLevel",
+			"ThirdLevel",
 			"FourthLevel",
 			"FifthLevel",
 			"LastLevel",
