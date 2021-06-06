@@ -131,10 +131,10 @@
 					},
 					"uid": 214,
 					"instanceVariables": {
-						"Coins": 5,
+						"Coins": 100,
 						"NextLevel": "SixLevel",
 						"TimeLimit": 500,
-						"localScale": 1
+						"localScale": 0.9
 					},
 					"behaviors": {
 						"8Direction": {
