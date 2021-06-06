@@ -16,6 +16,8 @@ Known bugs:
 
 Balloon and Snake traps are really tiny when placed?
 
+Tutorial level 7 sometimes the enemy won't fall into the pitfalls
+
 Whip enemy can't jump over pitfall?
 
 Digger sometimes just ignores pitfalls?
