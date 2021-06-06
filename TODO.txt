@@ -13,12 +13,12 @@ What we need to do:
 - Add visual effect while an enemy is being affected by the snake trap (Whip enemy already has animation,
 visual effect for other enemies?).
 
-
-- Add Visual Inventory (Need to add shop item to all levels, and make things unbuyable)
-
 Feedback from play testing:
 - Add a tutorial section before the game starts.
 - Maybe increase countdown.
+- Balloon is still too small
+- Visual inventory for wind and snake is broken
+
 
 
 Known bugs:
