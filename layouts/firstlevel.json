@@ -932,7 +932,7 @@
 			"global": false
 		},
 		{
-			"name": "UILayout",
+			"name": "UI",
 			"overriden": 0,
 			"instances": [
 				{
