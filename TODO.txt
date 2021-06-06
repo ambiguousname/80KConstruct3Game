@@ -24,8 +24,6 @@ Known bugs:
 Digger sometimes just ignores pitfalls? (Forgot this was intentional. After hitting a pitfall,
 the digger will have some immunity for a time)
 
-Whip enemy will also just sit on top of snake trap.
-
 Playtest Notes:
 Liked the balloon animation
 Make it clearer how you can buy traps (Separate tutorials for each concept of placing and buying traps?) (Done)
