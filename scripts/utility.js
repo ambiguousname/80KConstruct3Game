@@ -53,8 +53,8 @@ class Whip extends Enemy {
 		if (!self.dead) {if (self.dying) self.dyingUpdate(self, self.killer);} if(self.jumpTimer > 0) {self.jumpTimer -= self.instance.runtime.dt; self.jumpingDuration += self.instance.runtime.dt;  if (self.jumpTimer <= 0) {self.instance.setAnimation("whip_move"); self.jumpingDuration = 0;} }}
 	getCollision(self, trapInstance){
 		if((!self.dying || (self.isSnaked && self.killer != trapInstance) || self.jumpingDuration > 0) && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
-			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpingDuration < 3){
-				self.instance.setAnimation("whip_jump"); self.jumpTimer = 3;
+			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpingDuration < 2){
+				self.instance.setAnimation("whip_jump"); self.jumpTimer = 0.6;
 			} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.isSnaked === true || self.jumpingDuration >= 3) {
 				self.isSnaked = false; self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.stop(); self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y);
 			}}}}

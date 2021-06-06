@@ -21,8 +21,6 @@ Feedback from play testing:
 
 Known bugs:
 
-Whip enemy can't jump over pitfall?
-
 Digger sometimes just ignores pitfalls? (Forgot this was intentional. After hitting a pitfall,
 the digger will have some immunity for a time)
 
