@@ -5,6 +5,13 @@ What we need to do:
 - Better looking wind and piston traps?
 - Make Jumper immune to Snake until it hits a pitfall
 - Make animation for enemies' reactions to the snake
+- Change it so that you can see visually what trap you've selected (and how much of that trap you have)
+- Make it so that if a trap costs 500, it's clear that you can't buy it.
+- Add restart button from game over
+- Level select screen?
+- Add visual effect to Jumper to show that they're vulnerable a few seconds after they jump?
+- Add visual effect while an enemy is being affected by the snake trap (Whip enemy already has animation,
+visual effect for other enemies?).
 
 
 Feedback from play testing:
@@ -24,18 +31,11 @@ Digger sometimes just ignores pitfalls?
 
 When you refund snake trap while enemy is snaked, they'll stop moving.
 
-Defeating all enemies won't start the next level (maybe exclusive to Balloon trap?)
-
 Whip enemy will continually jump forever if it hits a block and a pitfall.
 
 Whip enemy will also just sit on top of snake trap.
 
 Wind trap sometimes causes enemies to bug out?
-
-Maybe set it so refunding the trapdoor or piston just gives the piston and trapdoor back?
-
-More of an aesthetic thing, but if you close the trapdoor while an enemy is falling in, they still
-remain on top of the trapdoor.
 
 Playtest Notes:
 Liked the balloon animation
@@ -44,27 +44,6 @@ Don't have a timer for the tutorial.
 Liked experimenting with different traps
 
 Tyler's Playtest Notes:
-Players didn't know how to restart the game from the game over screen, and
-had to start all the way back at the start screen. Maybe a way to transition to 
-previously unlocked levels from the game over screen?
-
-Controls are somewhat difficult to use (maybe Q to purchase instead of P?).
-
-Hard to tell if the traps are going to be hit or not by enemies (generous hitboxes? Straigher enemy paths?)
-
-Need a better indicator of what trap is selected and if you have any
-
-Indicators to show what traps you get from doing stuff.
-
-Pitfalls and Trapdoors sometimes don't work on Digger enemy
-
-Make it clearer that after the Jumper jumps, for a while they're vulnerable (new animation?)
-
-Make inventory more visual? (Player has to spend time seeing how many traps they have and of what type)
-
-Make it so that there's an "Unbuyable" option for inventory items
-
-Illustrate enemies are vulnerable to other traps after snake trap (new animation? Visual indicator?)
 
 Balloon in the fifth level makes it looks like you need to move the jumper enemy there instead 
 of using the pitfall.
