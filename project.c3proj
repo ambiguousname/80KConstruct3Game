@@ -172,7 +172,8 @@
 			"Sprite4",
 			"Piston",
 			"Sprite5",
-			"Tilemap"
+			"Tilemap",
+			"Sprite6"
 		],
 		"subfolders": []
 	},
