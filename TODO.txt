@@ -14,6 +14,8 @@ What we need to do:
 visual effect for other enemies?).
 
 
+- Add Visual Inventory (Need to add shop item to all levels, and make things unbuyable)
+
 Feedback from play testing:
 - Add a tutorial section before the game starts.
 - Maybe increase countdown.
