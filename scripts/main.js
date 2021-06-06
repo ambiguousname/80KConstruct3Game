@@ -52,7 +52,7 @@ function Tick(runtime){
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
 			if(o.objectType.name === "Wind" || o.objectType.name === "Snake") {
-				o.inactive = false;
+				o.inactive = true;
 				o.opacity = 0;
 				if (o.wind){
 					o.wind.destroy();
