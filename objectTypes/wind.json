@@ -14,7 +14,7 @@
 						"width": 100,
 						"height": 500,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,

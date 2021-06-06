@@ -43,7 +43,7 @@ function Tick(runtime){
 		trap.trapIndex = runtime.globalVars.totalPlaced; runtime.globalVars.totalPlaced += 1; obstacles.set(trap.trapIndex, trap);
 		inv.set(runtime.globalVars.SelectedName, inv.get(runtime.globalVars.SelectedName) - 1);
 		runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(invTemp)[runtime.globalVars.Selected] + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; runtime.globalVars[Object.keys(invTemp)[runtime.globalVars.Selected] + "Placed"] += 1;
-		if(runtime.globalVars.SelectedName === "Wind") { trap.angleDegrees = runtime.objects.Player.getFirstInstance().angleDegrees + 180; trap.y -= trap.height/2 * Math.cos(trap.angle); trap.x += trap.height/2 * Math.sin(trap.angle); trap.wind = runtime.objects.WindParticles.createInstance(0, trap.x - trap.height/4 * Math.sin(trap.angle), trap.y + trap.height/4 * Math.cos(trap.angle)); trap.wind.width = trap.wind.width * runtime.objects.Player.getFirstInstance().instVars.localScale; trap.wind.height *= runtime.objects.Player.getFirstInstance().instVars.localScale; trap.wind.angleDegrees = trap.angleDegrees - 90; trap.actualPos = [runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y]; }
+		if(runtime.globalVars.SelectedName === "Wind") { trap.angleDegrees = runtime.objects.Player.getFirstInstance().angleDegrees + 180; trap.wind = runtime.objects.WindParticles.createInstance(0, trap.x + trap.height/4 * Math.sin(trap.angle), trap.y - trap.height/4 * Math.cos(trap.angle)); trap.wind.angleDegrees = trap.angleDegrees - 90; var vector = {x: trap.height * Math.sin(trap.angle), y: trap.height * Math.cos(trap.angle)}; var magnitude = Math.sqrt(Math.pow(vector.x, 2) + Math.pow(vector.y, 2)); trap.endDest = {x: trap.x + ((vector.x / magnitude)) * 700 * runtime.objects.Player.getFirstInstance().instVars.localScale, y: trap.y - ((vector.y / magnitude) * 700 * runtime.objects.Player.getFirstInstance().instVars.localScale)}; trap.actualPos = [runtime.objects.Player.getFirstInstance().x, runtime.objects.Player.getFirstInstance().y];}
 		}
 	} else if (runtime.keyboard.isKeyDown("Space") && (runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") && inv.get(runtime.globalVars.SelectedName) <= 0 && !runtime.spaceDown) {
 		runtime.spaceDown = true; var trap = runtime.objects[runtime.globalVars.SelectedName].getFirstInstance(); trap.isOpen = !trap.isOpen; if (trap.isOpen) { trap.setAnimation("Open"); if(runtime.globalVars.SelectedName === "Piston") {trap.openTimer = 0.25;} } else { trap.setAnimation(runtime.globalVars.SelectedName); trap.openTimer = 0; }
@@ -51,10 +51,15 @@ function Tick(runtime){
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o); if(o.openTimer > 0) { o.openTimer -= runtime.dt; } else if (o.openTimer <= 0) { o.isOpen = false }})});
 	if (runtime.keyboard.isKeyDown("KeyR")){
 		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
-			if(o.objectType.name === "Trapdoor" || o.objectType.name === "Piston") {
-				runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(o.objectType.name, runtime.objects.InventoryCostInit.getFirstInstance().instVars[o.objectType.name]); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
+			if(o.objectType.name === "Wind" || o.objectType.name === "Snake") {
+				o.inactive = false;
+				o.opacity = 0;
+				if (o.wind){
+					o.wind.destroy();
+				}
+			} else {
+				obstacles.delete(o.trapIndex); o.destroy(); 
 			}
-			obstacles.delete(o.trapIndex); o.destroy(); 
 			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
 		}});
 	}
