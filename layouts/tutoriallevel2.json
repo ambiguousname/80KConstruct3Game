@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use the number keys (1-8) to select traps.\n\nPress P to buy the trap you have selected, and press space to place that trap.",
+						"text": "Use the number keys (1-8) to select traps.\n\nPress Q to buy the trap you have selected, and press space to place that trap.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,

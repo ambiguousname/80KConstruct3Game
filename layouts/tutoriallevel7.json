@@ -22,8 +22,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -7,
-						"y": -12,
+						"x": -10,
+						"y": -10,
 						"width": 869.2413524359673,
 						"height": 497.2625437555677,
 						"originX": 0,
@@ -41,10 +41,10 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "The wind trap (4) can push the NPC in a specific direction when an NPC walks in front of it.  \n\nThe direction depends on where the player is facing when placing it. Use your mouse for controlling the direction.\n\nTry to do it right now !",
+						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with P.",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 10,
+						"size": 12,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -64,10 +64,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 21,
-						"y": 64,
-						"width": 363,
-						"height": 127,
+						"x": 147,
+						"y": 56,
+						"width": 356,
+						"height": 207,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -99,15 +99,15 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": "playerhit"
+								"tags": ""
 							}
 						}
 					},
 					"world": {
-						"x": 449,
-						"y": -5,
-						"width": 28,
-						"height": 479,
+						"x": 10,
+						"y": 495,
+						"width": 479,
+						"height": 61,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -133,8 +133,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 799,
-						"y": 40,
+						"x": 222,
+						"y": 199,
 						"width": 80,
 						"height": 35,
 						"originX": 0.5664739884393064,
@@ -162,182 +162,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 799,
-						"y": 88,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 234,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 800,
-						"y": 133,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 235,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 800,
-						"y": 180,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 236,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 803,
-						"y": 225,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 237,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 804,
-						"y": 275,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 238,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 806,
-						"y": 321,
-						"width": 80,
-						"height": 35,
-						"originX": 0.5664739884393064,
-						"originY": 0.6190476190476191,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pitfall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 239,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 805,
-						"y": 374,
+						"x": 102,
+						"y": 426,
 						"width": 80,
 						"height": 35,
 						"originX": 0.5664739884393064,
@@ -356,14 +182,14 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Arrow",
+						"initial-animation": "Cross",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 214,
 					"instanceVariables": {
-						"Coins": 0,
+						"Coins": 5,
 						"NextLevel": "FirstLevel",
 						"TimeLimit": 500,
 						"localScale": 1
@@ -389,8 +215,8 @@
 					"world": {
 						"x": 110.06,
 						"y": 254.98,
-						"width": 40.220222201635636,
-						"height": 40.269505043847666,
+						"width": 52.60805063973942,
+						"height": 48.3234060526172,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -420,10 +246,10 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 56.00000000000001,
-								"acceleration": 168.00000000000003,
-								"deceleration": 168.00000000000003,
-								"rotate-speed": 0,
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 300,
 								"set-angle": false,
 								"stop-on-solids": true,
 								"enabled": true
@@ -431,10 +257,10 @@
 						}
 					},
 					"world": {
-						"x": 530.6265093132904,
-						"y": 229.49026851436227,
-						"width": 70.34952285774027,
-						"height": 42.638291548105435,
+						"x": 795,
+						"y": 223,
+						"width": 83.09650423115943,
+						"height": 43.61882857682998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -463,8 +289,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 523,
-						"y": 240,
+						"x": 821,
+						"y": 232,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
@@ -495,8 +321,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 699,
-						"y": 349,
+						"x": 347,
+						"y": 312,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
@@ -527,8 +353,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 664,
-						"y": 47,
+						"x": 546,
+						"y": 89,
 						"width": 30.684366293941935,
 						"height": 30.684366293941935,
 						"originX": 0.5,
@@ -544,7 +370,7 @@
 					}
 				}
 			],
-			"sid": 976670699462670,
+			"sid": 287763721640182,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -804,7 +630,7 @@
 						"Pitfall": 0,
 						"Balloon": 0,
 						"Snake": 0,
-						"Wind": 3
+						"Wind": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -835,7 +661,7 @@
 					},
 					"uid": 233,
 					"instanceVariables": {
-						"Pitfall": 500,
+						"Pitfall": 10,
 						"Balloon": 500,
 						"Snake": 500,
 						"Wind": 500
@@ -859,7 +685,7 @@
 					}
 				}
 			],
-			"sid": 873848764981270,
+			"sid": 820289426812015,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -884,7 +710,7 @@
 			"global": false
 		}
 	],
-	"sid": 420664136790369,
+	"sid": 339150581561426,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,
