@@ -195,10 +195,11 @@
 			"ThirdLevel",
 			"FourthLevel",
 			"FifthLevel",
+			"SixLevel",
 			"LastLevel",
 			"You Win",
 			"You Lose",
-			"SixLevel2"
+			"TutorialLevel8"
 		],
 		"subfolders": []
 	},
