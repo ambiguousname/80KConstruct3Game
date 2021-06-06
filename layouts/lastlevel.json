@@ -18,14 +18,14 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 224,
+					"uid": 369,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -5,
-						"y": -2,
-						"width": 869.2413524359673,
-						"height": 497.2625437555677,
+						"x": -38,
+						"y": -35,
+						"width": 954.8072611526402,
+						"height": 550.6154044847873,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -36,224 +36,6 @@
 						],
 						"angle": 0,
 						"zElevation": -1
-					}
-				},
-				{
-					"type": "UIBackground",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 225,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 644,
-						"y": 443,
-						"width": 428.73,
-						"height": 78,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.1
-						],
-						"angle": 0,
-						"zElevation": -1
-					}
-				},
-				{
-					"type": "UIBackground",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 226,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 194,
-						"y": 15,
-						"width": 417.62,
-						"height": 56.79,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.1
-						],
-						"angle": 0,
-						"zElevation": -1
-					}
-				},
-				{
-					"type": "UI_coins",
-					"properties": {
-						"text": "COINS: 50",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 227,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 14,
-						"y": 13,
-						"width": 228,
-						"height": 39,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UI_time",
-					"properties": {
-						"text": "TIME: ",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 228,
-					"instanceVariables": {},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 207,
-						"y": 15,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UI_trap",
-					"properties": {
-						"text": "Trap Cost: 0",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 229,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 444,
-						"y": 448,
-						"width": 394,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Shop_text",
-					"properties": {
-						"text": "Trap: Pitfall. Count: 0",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 230,
-					"instanceVariables": {
-						"regular": false,
-						"firework": false,
-						"trapdoor": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 421,
-						"y": 418,
-						"width": 424.99999999999994,
-						"height": 28,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				},
 				{
@@ -265,17 +47,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 231,
+					"uid": 370,
 					"instanceVariables": {
 						"Pitfall": 10,
 						"Balloon": 15,
-						"Snake": 13,
-						"Wind": 500
+						"Snake": 20,
+						"Wind": 30
 					},
 					"behaviors": {},
 					"world": {
-						"x": 99.17355371900987,
-						"y": 140.16942148760506,
+						"x": 106,
+						"y": 141,
 						"width": 98.13256340277675,
 						"height": 98.13256340277675,
 						"originX": 0.5,
@@ -299,17 +81,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 232,
+					"uid": 371,
 					"instanceVariables": {
 						"Pitfall": 0,
 						"Balloon": 0,
 						"Snake": 0,
-						"Wind": 5
+						"Wind": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 263.6363636363655,
-						"y": 129.4256198347125,
+						"x": 265,
+						"y": 129,
 						"width": 95.86970324351694,
 						"height": 95.86970324351694,
 						"originX": 0.5,
@@ -325,24 +107,307 @@
 					}
 				},
 				{
-					"type": "Wind",
+					"type": "Pitfall",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Wind",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 233,
+					"uid": 372,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 173.16253857473686,
-						"y": 759.6297924265284,
-						"width": 100,
-						"height": 500,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 437,
+						"y": 321,
+						"width": 31.116772516235628,
+						"height": 13.613587975853083,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 373,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 414,
+						"y": 422,
+						"width": 34.11450061144967,
+						"height": 14.925094017509231,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Trees",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 162,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"world": {
+						"x": 713,
+						"y": 104,
+						"width": 28.909842223891815,
+						"height": 373.1141998497371,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Trees",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 163,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"world": {
+						"x": 717,
+						"y": 72,
+						"width": 139.90984222389181,
+						"height": 29.114199849737076,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 164,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 806,
+						"y": 162,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 191,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 803,
+						"y": 216,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 192,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 803,
+						"y": 267,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 193,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 804,
+						"y": 320,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 194,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 801,
+						"y": 380,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 195,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 795,
+						"y": 441,
+						"width": 91.11677251623563,
+						"height": 44.61358797585308,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
 						"color": [
 							1,
 							1,
@@ -378,12 +443,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1
 					},
-					"uid": 234,
+					"uid": 200,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 173.26464442328438,
-						"y": 991.9730256421042,
+						"x": 400,
+						"y": 632,
 						"width": 100,
 						"height": 100,
 						"originX": 0,
@@ -399,86 +464,6 @@
 					}
 				},
 				{
-					"type": "WeaknessText",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 241,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 463,
-						"y": 5,
-						"width": 369,
-						"height": 43,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text",
-					"properties": {
-						"text": "We're trying to figure out how to explain the Boss character.\n\nHe's immune to almost all traps, except one.\n\nTo find out the boss' weakness, try trapping this enemy.",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 264,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 431,
-						"y": 17,
-						"width": 356,
-						"height": 207,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -487,11 +472,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 235,
+					"uid": 374,
 					"instanceVariables": {
-						"Coins": 100,
+						"Coins": 30,
 						"NextLevel": "You Win",
-						"TimeLimit": 180,
+						"TimeLimit": 200,
 						"localScale": 0.4
 					},
 					"behaviors": {
@@ -513,10 +498,10 @@
 						}
 					},
 					"world": {
-						"x": 96.4053981968445,
-						"y": 72.9227685950413,
-						"width": 33.86244425666614,
-						"height": 33.95725910058479,
+						"x": 39,
+						"y": 184,
+						"width": 34.84526265436466,
+						"height": 34.94282938979688,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -533,23 +518,23 @@
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "boss",
+						"initial-animation": "forward",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 236,
+					"uid": 375,
 					"instanceVariables": {
-						"EnemyName": "Duplicate",
-						"EnemyType": "BossDuplicate"
+						"EnemyName": "",
+						"EnemyType": ""
 					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 300,
+								"max-speed": 57.4,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
 								"set-angle": false,
 								"stop-on-solids": true,
 								"enabled": true
@@ -557,10 +542,138 @@
 						}
 					},
 					"world": {
-						"x": 605,
-						"y": 194,
-						"width": 43.03093006637558,
-						"height": 29.19955968789772,
+						"x": 261,
+						"y": 238,
+						"width": 41.34478568077374,
+						"height": 25.442945034322314,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 376,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 175,
+						"y": 251,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 377,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 372,
+						"y": 237,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 378,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Jumper1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 461,
+						"y": 261,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 379,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Jumper1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 398,
+						"y": 466,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -577,23 +690,23 @@
 					"type": "Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "boss",
+						"initial-animation": "jumperforward",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 237,
+					"uid": 380,
 					"instanceVariables": {
-						"EnemyName": "Boss",
-						"EnemyType": "Boss"
+						"EnemyName": "Jumper1",
+						"EnemyType": "Jumper"
 					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 300,
+								"max-speed": 57.4,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
 								"set-angle": false,
 								"stop-on-solids": true,
 								"enabled": true
@@ -601,10 +714,54 @@
 						}
 					},
 					"world": {
-						"x": 248,
-						"y": 415,
-						"width": 72.48291104252797,
-						"height": 49.184832493143986,
+						"x": 425,
+						"y": 373,
+						"width": 40.734289242422065,
+						"height": 26.477288007574344,
+						"originX": 0.5,
+						"originY": 0.9230769230769231,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "whip_move",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 161,
+					"instanceVariables": {
+						"EnemyName": "Whip1",
+						"EnemyType": "Whip"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 57.4,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 796,
+						"y": 113,
+						"width": 23.852760969677156,
+						"height": 36.574233486838324,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -626,17 +783,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 238,
+					"uid": 196,
 					"instanceVariables": {
 						"Position": 0,
-						"EnemyName": "Boss"
+						"EnemyName": "Whip1"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 178,
-						"y": 276,
-						"width": 30.684366293941935,
-						"height": 30.684366293941935,
+						"x": 758,
+						"y": 116,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -658,17 +815,93 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 239,
+					"uid": 197,
 					"instanceVariables": {
 						"Position": 1,
-						"EnemyName": "Boss"
+						"EnemyName": "Whip1"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 249,
-						"y": 415,
-						"width": 30.684366293941935,
-						"height": 30.684366293941935,
+						"x": 835,
+						"y": 119,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "diggerforward",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 223,
+					"instanceVariables": {
+						"EnemyName": "Digger1",
+						"EnemyType": "Digger"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 57.4,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 784,
+						"y": 468,
+						"width": 48.44523114491091,
+						"height": 30.278269465569338,
+						"originX": 0.44642857142857145,
+						"originY": 0.6428571428571429,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 262,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Digger1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 785,
+						"y": 473,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -690,17 +923,157 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 240,
+					"uid": 263,
 					"instanceVariables": {
 						"Position": 0,
-						"EnemyName": "Duplicate"
+						"EnemyName": "Digger1"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 604,
-						"y": 194,
-						"width": 30.684366293941935,
-						"height": 30.684366293941935,
+						"x": 794,
+						"y": 117,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "whip_move",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 275,
+					"instanceVariables": {
+						"EnemyName": "Whip2",
+						"EnemyType": "Whip"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 57.4,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 532,
+						"y": 120,
+						"width": 23.38370414292502,
+						"height": 35.855013019151684,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 276,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Whip2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 427,
+						"y": 126,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 283,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Whip2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 94,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 387,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "Whip2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 595,
+						"y": 251,
+						"width": 38.91587469390696,
+						"height": 38.77547015412242,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -714,7 +1087,7 @@
 					}
 				}
 			],
-			"sid": 945241282639791,
+			"sid": 225572731224863,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -737,9 +1110,256 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
+		},
+		{
+			"name": "UILayout",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "UIBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 382,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 645,
+						"y": 443,
+						"width": 428.73,
+						"height": 78,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
+					"type": "UIBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 381,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 195,
+						"y": 15,
+						"width": 417.62,
+						"height": 56.79,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
+						],
+						"angle": 0,
+						"zElevation": -1
+					}
+				},
+				{
+					"type": "UI_trap",
+					"properties": {
+						"text": "Trap Cost: 0",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 385,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 445,
+						"y": 448,
+						"width": 394,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shop_text",
+					"properties": {
+						"text": "Trap: Pitfall. Count: 0",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 386,
+					"instanceVariables": {
+						"regular": false,
+						"firework": false,
+						"trapdoor": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 418,
+						"width": 424.99999999999994,
+						"height": 28,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_coins",
+					"properties": {
+						"text": "COINS: 0",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 383,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 15,
+						"y": 13,
+						"width": 228,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_time",
+					"properties": {
+						"text": "TIME: ",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 384,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 208,
+						"y": 15,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 202336160856944,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
 		}
 	],
-	"sid": 984191128097306,
+	"sid": 974290111997645,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

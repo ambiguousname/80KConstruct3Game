@@ -16,6 +16,10 @@ Known bugs:
 
 Balloon and Snake traps are really tiny when placed?
 
+Whip enemy can't jump over pitfall?
+
+Digger sometimes just ignores pitfalls?
+
 When you refund snake trap while enemy is snaked, they'll stop moving.
 
 Defeating all enemies won't start the next level (maybe exclusive to Balloon trap?)
