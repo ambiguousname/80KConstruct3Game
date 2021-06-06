@@ -27,13 +27,7 @@ Whip enemy can't jump over pitfall?
 
 Digger sometimes just ignores pitfalls?
 
-When you refund snake trap while enemy is snaked, they'll stop moving.
-
-Whip enemy will continually jump forever if it hits a block and a pitfall.
-
 Whip enemy will also just sit on top of snake trap.
-
-Wind trap sometimes causes enemies to bug out?
 
 Playtest Notes:
 Liked the balloon animation
