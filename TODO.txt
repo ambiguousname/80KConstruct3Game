@@ -3,7 +3,7 @@ What we need to do:
 - Level transitions?
 - Add sound effects and music - After first draft is done
 - Better looking wind and piston traps?
-- Make Jumper immune to Snake until it hits a pitfall
+- Make Jumper immune to Snake until it hits a pitfall?
 - Make animation for enemies' reactions to the snake
 - Change it so that you can see visually what trap you've selected (and how much of that trap you have)
 - Make it so that if a trap costs 500, it's clear that you can't buy it.
