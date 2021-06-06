@@ -1,5 +1,5 @@
 {
-	"name": "FifthLevel",
+	"name": "SixthLevel",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 330,
+					"uid": 99,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -47,17 +47,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 331,
+					"uid": 102,
 					"instanceVariables": {
-						"Pitfall": 15,
+						"Pitfall": 500,
 						"Balloon": 500,
-						"Snake": 20,
+						"Snake": 500,
 						"Wind": 500
 					},
 					"behaviors": {},
 					"world": {
-						"x": 99.17355371900987,
-						"y": 140.16942148760506,
+						"x": 105,
+						"y": 141,
 						"width": 98.13256340277675,
 						"height": 98.13256340277675,
 						"originX": 0.5,
@@ -81,12 +81,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 332,
+					"uid": 108,
 					"instanceVariables": {
-						"Pitfall": 3,
+						"Pitfall": 0,
 						"Balloon": 0,
-						"Snake": 3,
-						"Wind": 0
+						"Snake": 0,
+						"Wind": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -119,7 +119,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 336,
+					"uid": 110,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -130,159 +130,10 @@
 						}
 					},
 					"world": {
-						"x": 0.13198489046021677,
-						"y": 314.7288109521079,
-						"width": 299.3831705484598,
-						"height": 31,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Trees",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 337,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"world": {
-						"x": 271.0410757995514,
-						"y": 343.8197200430169,
-						"width": 30.29226145755041,
-						"height": 133.72727272727286,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Balloon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 338,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 127.40471216318758,
-						"y": 405.6379018611988,
-						"width": 53.326769227645634,
-						"height": 130.1173169154553,
-						"originX": 0.4090909090909091,
-						"originY": 0.4444444444444444,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Trees",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 346,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"world": {
-						"x": 626.4956212540972,
-						"y": -7.089370866074404,
-						"width": 30.29226145755041,
-						"height": 148.27272727272742,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Trees",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 347,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"world": {
-						"x": 625.5865303450063,
-						"y": 141.09244731574398,
-						"width": 222.11044327573245,
-						"height": 31,
+						"x": 597,
+						"y": 2,
+						"width": 28.29226145755041,
+						"height": 482.2727272727274,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -304,12 +155,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 348,
+					"uid": 112,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 745,
-						"y": 100.18335640665308,
+						"x": 823,
+						"y": 303,
 						"width": 31.71374662880862,
 						"height": 30.272212691135508,
 						"originX": 0.5,
@@ -325,15 +176,73 @@
 					}
 				},
 				{
-					"type": "Player",
+					"type": "Pitfall",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Cross",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 343,
+					"uid": 118,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 678,
+						"y": 308,
+						"width": 80,
+						"height": 35,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pitfall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 142,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 549.0426629856546,
+						"y": 306.7972573694939,
+						"width": 80,
+						"height": 35,
+						"originX": 0.5664739884393064,
+						"originY": 0.6190476190476191,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Arrow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 133,
 					"instanceVariables": {
 						"Coins": 0,
 						"NextLevel": "TutorialLevel7",
@@ -361,8 +270,8 @@
 					"world": {
 						"x": 37.51648475226821,
 						"y": 184.0491197815992,
-						"width": 25,
-						"height": 23,
+						"width": 34.84526265436466,
+						"height": 34.94282938979688,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -384,7 +293,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 344,
+					"uid": 134,
 					"instanceVariables": {
 						"EnemyName": "",
 						"EnemyType": ""
@@ -403,8 +312,8 @@
 						}
 					},
 					"world": {
-						"x": 388.88442848687384,
-						"y": 232.93962316762145,
+						"x": 739,
+						"y": 296,
 						"width": 41.34478568077374,
 						"height": 25.442945034322314,
 						"originX": 0.5,
@@ -428,49 +337,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 333,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 355.3792576177335,
-						"y": 208.70972004301677,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 334,
+					"uid": 132,
 					"instanceVariables": {
 						"Position": 1,
 						"EnemyName": ""
 					},
 					"behaviors": {},
 					"world": {
-						"x": 468.3138030722789,
-						"y": 140.1833564066531,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
+						"x": 735,
+						"y": 365,
+						"width": 38.67405651208871,
+						"height": 41.07001560866786,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -492,157 +369,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 335,
+					"uid": 141,
 					"instanceVariables": {
-						"Position": 2,
+						"Position": 0,
 						"EnemyName": ""
 					},
 					"behaviors": {},
 					"world": {
-						"x": 454.6774394359153,
-						"y": 259.2742654975623,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "Enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "diggerforward",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 339,
-					"instanceVariables": {
-						"EnemyName": "Digger1",
-						"EnemyType": "Digger"
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 57.4,
-								"acceleration": 168.00000000000003,
-								"deceleration": 168.00000000000003,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 124.95743943591484,
-						"y": 283.17972004301686,
-						"width": 46.78112685250406,
-						"height": 28.349113373724194,
-						"originX": 0.44642857142857145,
-						"originY": 0.6428571428571429,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 340,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": "Digger1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 26.60834852682379,
-						"y": 296.57608367938053,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 341,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": "Digger1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 185.58653034500583,
-						"y": 246.5469927702896,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 342,
-					"instanceVariables": {
-						"Position": 2,
-						"EnemyName": "Digger1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 263.95743943591503,
-						"y": 297.3360836793805,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
+						"x": 742,
+						"y": 228,
+						"width": 38.67405651208871,
+						"height": 41.07001560866786,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -664,7 +401,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 345,
+					"uid": 128,
 					"instanceVariables": {
 						"EnemyName": "Jumper1",
 						"EnemyType": "Jumper"
@@ -683,10 +420,10 @@
 						}
 					},
 					"world": {
-						"x": 797.206310809936,
-						"y": 200.1074566009322,
-						"width": 50.578294320893455,
-						"height": 32.87589130858077,
+						"x": 666.166299349291,
+						"y": 113.72998464222121,
+						"width": 53.43314906465204,
+						"height": 34.73154689202384,
 						"originX": 0.5,
 						"originY": 0.9230769230769231,
 						"color": [
@@ -708,81 +445,49 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 349,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": "Jumper1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 745,
-						"y": 186,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 350,
-					"instanceVariables": {
-						"Position": 2,
-						"EnemyName": "Jumper1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 745.5865303450064,
-						"y": 49.274265497562084,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 352,
+					"uid": 130,
 					"instanceVariables": {
 						"Position": 0,
 						"EnemyName": "Jumper1"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 795.5865303450064,
-						"y": 186,
-						"width": 30.914056512088713,
-						"height": 29.88456106321324,
+						"x": 659.0026629856548,
+						"y": 62.26089373313031,
+						"width": 38.67405651208871,
+						"height": 41.07001560866786,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Jumper1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 699.3117538947456,
+						"y": 256.7063482785848,
+						"width": 38.67405651208871,
+						"height": 41.07001560866786,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -796,7 +501,7 @@
 					}
 				}
 			],
-			"sid": 322792651359281,
+			"sid": 863340858347792,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -833,7 +538,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 355,
+					"uid": 165,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -862,7 +567,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 356,
+					"uid": 166,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -900,7 +605,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 357,
+					"uid": 168,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -938,7 +643,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 358,
+					"uid": 169,
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
@@ -980,7 +685,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 359,
+					"uid": 170,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1018,7 +723,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 360,
+					"uid": 171,
 					"instanceVariables": {
 						"regular": false,
 						"firework": false,
@@ -1043,7 +748,7 @@
 					}
 				}
 			],
-			"sid": 530954829565275,
+			"sid": 991309871461760,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1068,7 +773,7 @@
 			"global": false
 		}
 	],
-	"sid": 526164837203815,
+	"sid": 958908394565800,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

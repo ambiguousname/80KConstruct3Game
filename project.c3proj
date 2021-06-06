@@ -172,7 +172,8 @@
 			"Sprite4",
 			"Piston",
 			"Sprite5",
-			"Tilemap"
+			"Tilemap",
+			"Text2"
 		],
 		"subfolders": []
 	},
@@ -195,6 +196,8 @@
 			"ThirdLevel",
 			"FourthLevel",
 			"FifthLevel",
+			"TutorialLevel7",
+			"SixthLevel",
 			"LastLevel",
 			"You Win",
 			"You Lose"

@@ -463,7 +463,7 @@
 					"uid": 300,
 					"instanceVariables": {
 						"Coins": 50,
-						"NextLevel": "LastLevel",
+						"NextLevel": "FifthLevel",
 						"TimeLimit": 200,
 						"localScale": 0.4
 					},

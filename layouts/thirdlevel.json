@@ -253,7 +253,7 @@
 					"uid": 96,
 					"instanceVariables": {
 						"Coins": 0,
-						"NextLevel": "SecondLevel",
+						"NextLevel": "FourthLevel",
 						"TimeLimit": 300,
 						"localScale": 0.4
 					},
