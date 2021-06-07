@@ -216,7 +216,7 @@
 							"height": 18,
 							"max-width": 39,
 							"max-height": 30,
-							"data": "70x0,3,16,29,42,26x0,4,17,30,43,26x0,5,18,31,44,26x0,6,19,32,45,172x0,79,92,105,27x0,80,93,106,27x0,81,94,107,352x0,3,16,29,42,6x0,3,16,29,42,16x0,4,17,30,43,6x0,4,17,30,43,16x0,5,18,31,44,6x0,5,18,31,44,16x0,6,19,32,45,6x0,6,19,32,45,315x0"
+							"data": "70x0,3,16,29,42,26x0,4,17,30,43,26x0,5,18,31,44,26x0,6,19,32,45,172x0,79,92,105,27x0,80,93,106,27x0,81,94,107,352x0,3,16,29,42,26x0,4,17,30,43,26x0,5,18,31,44,26x0,6,19,32,45,325x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -819,6 +819,178 @@
 						"angle": 0,
 						"zElevation": 2
 					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 181,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": "Jumper2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 612,
+						"y": 54,
+						"width": 31.274372064305076,
+						"height": 27.922998328427436,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 174,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "C"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 185,
+						"y": 148,
+						"width": 31.274372064305076,
+						"height": 27.922998328427436,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 182,
+					"instanceVariables": {
+						"Position": 2,
+						"EnemyName": "Jumper2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 432,
+						"y": 206,
+						"width": 31.274372064305076,
+						"height": 27.922998328427436,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 180,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": "Jumper2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 622,
+						"y": 358,
+						"width": 31.274372064305076,
+						"height": 27.922998328427436,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "jumperforward",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 179,
+					"instanceVariables": {
+						"EnemyName": "Jumper2",
+						"EnemyType": "Jumper"
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 130,
+								"acceleration": 168.00000000000003,
+								"deceleration": 168.00000000000003,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 626,
+						"y": 391,
+						"width": 40.734289242422065,
+						"height": 26.477288007574344,
+						"originX": 0.5,
+						"originY": 0.9230769230769231,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
 				}
 			],
 			"sid": 870040441372906,
@@ -988,61 +1160,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tilemap",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 97,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 29,
-							"height": 17,
-							"max-width": 40,
-							"max-height": 30,
-							"data": "761x0,3,16,29,42,26x0,4,17,30,43,26x0,5,18,31,44,26x0,6,19,32,45,345x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": -68,
-						"y": 532,
-						"width": 957,
-						"height": 555,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"zElevation": 0
 					}
 				},
@@ -1432,7 +1549,7 @@
 					}
 				},
 				{
-					"type": "PathObj",
+					"type": "Lose_background",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1440,75 +1557,28 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 174,
-					"instanceVariables": {
-						"Position": 2,
-						"EnemyName": "C"
-					},
+					"uid": 97,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 185,
-						"y": 148,
-						"width": 31.274372064305076,
-						"height": 27.922998328427436,
+						"x": 424,
+						"y": 247,
+						"width": 878,
+						"height": 514,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
-							1,
-							1,
-							1,
-							1
+							0,
+							0,
+							0,
+							0.65
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "Enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "jumperforward",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 179,
-					"instanceVariables": {
-						"EnemyName": "Jumper2",
-						"EnemyType": "Jumper"
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 130,
-								"acceleration": 168.00000000000003,
-								"deceleration": 168.00000000000003,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 626,
-						"y": 391,
-						"width": 40.734289242422065,
-						"height": 26.477288007574344,
-						"originX": 0.5,
-						"originY": 0.9230769230769231,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
+					"type": "Lose",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1516,19 +1586,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 180,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": "Jumper2"
-					},
+					"uid": 398,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 622,
-						"y": 358,
-						"width": 31.274372064305076,
-						"height": 27.922998328427436,
+						"x": 412,
+						"y": 411,
+						"width": 333,
+						"height": 182,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -1536,31 +1603,37 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "PathObj",
+					"type": "LoseText",
 					"properties": {
+						"text": "YOU LOSE ...",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 181,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": "Jumper2"
-					},
+					"uid": 399,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 612,
-						"y": 54,
-						"width": 31.274372064305076,
-						"height": 27.922998328427436,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 272,
+						"y": 103,
+						"width": 415,
+						"height": 46,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -1568,31 +1641,37 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "PathObj",
+					"type": "LoseText",
 					"properties": {
+						"text": "press R to restart",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 182,
-					"instanceVariables": {
-						"Position": 2,
-						"EnemyName": "Jumper2"
-					},
+					"uid": 400,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 432,
-						"y": 206,
-						"width": 31.274372064305076,
-						"height": 27.922998328427436,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 162,
+						"y": 172,
+						"width": 597,
+						"height": 46,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -1600,7 +1679,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 0
 					}
 				}
 			],
