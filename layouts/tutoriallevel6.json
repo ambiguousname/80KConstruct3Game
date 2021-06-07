@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with P.",
+						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with Q.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -687,7 +687,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,

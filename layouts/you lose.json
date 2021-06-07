@@ -44,7 +44,7 @@
 					}
 				},
 				{
-					"type": "Sprite4",
+					"type": "Lose",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

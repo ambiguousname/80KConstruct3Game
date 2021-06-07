@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Use the number keys (1-8) to select traps.\n\nPress SPACE to place down a trap.\n\nTry placing a trap here.",
+						"text": "Use the number keys (1-4) to select traps.\n\nPress SPACE to place down a trap.\n\nTry placing a trap here.",
 						"enable-bbcode": true,
 						"font": "Andale Mono",
 						"size": 12,
@@ -658,7 +658,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,

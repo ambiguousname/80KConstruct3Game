@@ -184,11 +184,43 @@
 					],
 					"actions": [
 						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 589304407292845,
+							"id": "set-visible",
+							"objectClass": "Lose",
+							"sid": 454635269218612,
 							"parameters": {
-								"layout": "You Lose"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Lose_background",
+							"sid": 384696599380340,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LoseText",
+							"sid": 460672577761030,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Player",
+							"sid": 184762012766579,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "UI_time",
+							"sid": 154977668141868,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						}
 					],
@@ -208,12 +240,9 @@
 							],
 							"actions": [
 								{
-									"id": "go-to-nextprevious-layout",
+									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 394971823767990,
-									"parameters": {
-										"which": "previous"
-									}
+									"sid": 757355268913416
 								}
 							],
 							"sid": 293930200238888

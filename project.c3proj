@@ -169,11 +169,13 @@
 			"Wind",
 			"WindParticles",
 			"Win",
-			"Sprite4",
+			"Lose",
 			"Piston",
 			"Sprite5",
 			"Tilemap",
-			"Sprite6"
+			"Sprite6",
+			"Text2",
+			"Lose_background"
 		],
 		"subfolders": []
 	},

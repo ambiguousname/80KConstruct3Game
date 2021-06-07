@@ -39,35 +39,6 @@
 					}
 				},
 				{
-					"type": "Sprite6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 237,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 400.5,
-						"y": 350.5,
-						"width": 76.90499424727872,
-						"height": 74.11286272297558,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.513225936321291,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Text",
 					"properties": {
 						"text": "This is the current trap you have selected.\n\nPlace a trap on the enemy here to continue.",
@@ -804,7 +775,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -818,6 +789,35 @@
 						"y": 361,
 						"width": 71.26549528569856,
 						"height": 87.10227201585383,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 237,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 357,
+						"y": 307,
+						"width": 137,
+						"height": 85,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
