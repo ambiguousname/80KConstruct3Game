@@ -33,7 +33,7 @@ class Jumper extends Enemy {
 	getCollision(self, trapInstance){
 		if((!self.dying || (self.isSnaked && self.killer != trapInstance)) && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpTimer <= 0 && self.landTimer >= 2 && self.instance.animationName === "jumperforward"){
-				self.instance.setAnimation("jumper_jump"); self.jumpTimer = 0.8; self.landTimer = 0;} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || (self.jumpTimer <= 0 && self.landTimer < 2 && (self.instance.animationName === "jumpersnaked"))) { self.isSnaked = false; self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.stop(); self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }}}}
+				self.instance.setAnimation("jumper_jump"); self.jumpTimer = 0.8; self.landTimer = 0;} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || (self.jumpTimer <= 0 && self.landTimer < 2 && (self.instance.animationName === "JumperSnaked"))) { self.isSnaked = false; self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.stop(); self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.instance.behaviors.MoveTo.rotateSpeed = 0; }}}}
 class Digger extends Enemy {
 	constructor(enemyName, enemyInstance, index, scale, type){
 		super(enemyName, enemyInstance, index, scale, type); this.trapImmunity = ["Pitfall", "Trapdoor"]; this.surfaceTimer = 0; this.instance.opacity = 0.5; this.immuneTimer = 2; this.coinDrop = 20;
