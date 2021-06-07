@@ -17,7 +17,7 @@
 						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "png",
-						"exportQuality": 0.8,
+						"exportQuality": 1,
 						"imageSpriteId": 1469977,
 						"useCollisionPoly": true,
 						"duration": 1

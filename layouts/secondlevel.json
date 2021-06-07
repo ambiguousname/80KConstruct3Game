@@ -988,7 +988,7 @@
 					"type": "Store",
 					"properties": {
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -997,8 +997,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 465.3013404567473,
-						"y": 383.21273686702654,
+						"x": 812,
+						"y": 358,
 						"width": 71.26549528569856,
 						"height": 87.10227201585383,
 						"originX": 0.5,

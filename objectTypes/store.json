@@ -21,16 +21,16 @@
 						"imageSpriteId": 6409044,
 						"collisionPoly": {
 							"points": [
-								0.07407407407407407,
-								0.06060606060606061,
+								0,
+								0,
 								0.5,
 								0,
 								0.9259259259259259,
 								0.030303030303030304,
 								0.9629629629629629,
 								0.5,
-								0.8518518518518519,
-								0.8787878787878788,
+								1,
+								1,
 								0.5,
 								0.9696969696969697,
 								0.037037037037037035,
@@ -44,7 +44,159 @@
 					}
 				],
 				"sid": 274658532388798,
-				"name": "Animation 1",
+				"name": "Store",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 56,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8844680,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.2857142857142857,
+								0.5,
+								0,
+								0.93359375,
+								0.14285714285714285,
+								0.99609375,
+								0.5,
+								0.93359375,
+								0.8482142857142857,
+								0.5,
+								0.9910714285714286,
+								0.0625,
+								0.8482142857142857,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 156574308533638,
+				"name": "Pitfall",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 820476,
+						"collisionPoly": {
+							"points": [
+								0.09090909090909091,
+								0.037037037037037035,
+								0.5,
+								0,
+								0.6363636363636364,
+								0.1111111111111111,
+								0.36363636363636365,
+								0.5,
+								0.36363636363636365,
+								0.7407407407407407,
+								0.5,
+								0.9629629629629629,
+								0.2727272727272727,
+								0.8518518518518519,
+								0.36363636363636365,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 655188334516985,
+				"name": "Balloon",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 132,
+						"height": 126,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2012372,
+						"collisionPoly": {
+							"points": [
+								0.13636363636363635,
+								0.14285714285714285,
+								0.5,
+								0.047619047619047616,
+								0.5454545454545454,
+								0.42857142857142855,
+								0.7727272727272727,
+								0.5,
+								0.8636363636363636,
+								0.8571428571428571,
+								0.5,
+								0.9523809523809523,
+								0.09090909090909091,
+								0.8571428571428571,
+								0.18181818181818182,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 932184335664209,
+				"name": "Snake",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9240434,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 639860051626408,
+				"name": "wind",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
