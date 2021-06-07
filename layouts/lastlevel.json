@@ -1361,6 +1361,61 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 305,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 30,
+							"height": 18,
+							"max-width": 39,
+							"max-height": 30,
+							"data": "62x0,3,16,29,42,3x0,3,16,29,42,3,16,29,42,15x0,4,17,30,43,3x0,4,17,30,43,4,17,30,43,15x0,5,18,31,44,3x0,5,18,31,44,5,18,31,44,15x0,6,19,32,45,3x0,6,19,32,45,6,19,32,45,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,285x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,326x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -73,
+						"y": -54,
+						"width": 989,
+						"height": 583,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 202336160856944,
