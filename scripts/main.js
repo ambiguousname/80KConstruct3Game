@@ -62,7 +62,7 @@ function Tick(runtime){
 			}
 			if (runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) != 500){runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);}
 		}});
-	}
+	} if (runtime.keyboard.isKeyDown("KeyQ")) { setTrapInv(runtime); }
 	if(runtime.globalVars.EnemiesDestroyed == runtime.globalVars.ExistingEnemies) {
 		runtime.goToLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel);
 	}

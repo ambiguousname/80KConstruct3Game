@@ -14,10 +14,7 @@ What we need to do:
 visual effect for other enemies?).
 
 Feedback from play testing:
-- Add a tutorial section before the game starts.
-- Maybe increase countdown.
 - Balloon is still too small
-- Visual inventory for wind and snake is broken
 
 
 
