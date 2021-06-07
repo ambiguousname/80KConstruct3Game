@@ -190,7 +190,7 @@
 					"instanceVariables": {
 						"Coins": 19,
 						"NextLevel": "TutorialLevel6",
-						"TimeLimit": 5,
+						"TimeLimit": 500,
 						"localScale": 1
 					},
 					"behaviors": {
