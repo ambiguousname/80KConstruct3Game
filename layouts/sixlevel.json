@@ -1624,7 +1624,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,

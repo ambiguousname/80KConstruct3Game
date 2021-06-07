@@ -20,7 +20,7 @@ async function OnBeforeProjectStart(runtime)
 		enemies.set(enemy.name, enemy);
 	}); runtime.globalVars.totalPlaced = 0;
 	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars;
-	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + ".";  setTrapInv(runtime); runtime.globalVars.totalPlaced = 0; 
+	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + "."; runtime.globalVars.totalPlaced = 0; 
 	Object.keys(inv).forEach(function(trapName){ runtime.globalVars[trapName + "Placed"] = 0; invActual.set(trapName, inv[trapName]); runtime.objects[trapName].getAllInstances().forEach(function(t) {t.isOpen = true; t.trapIndex = runtime.globalVars.totalPlaced; runtime.globalVars.totalPlaced += 1; obstacles.set(t.trapIndex, t);}); invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
 	runtime.addEventListener("tick", () => Tick(runtime)); runtime.globalVars.SelectedName = Object.keys(inv)[0]; setTrapInv(runtime);
 }
@@ -30,7 +30,7 @@ function Tick(runtime){
 	for (var i = 0; i < Object.keys(invTemp).length; i++){
 		if (runtime.keyboard.isKeyDown("Digit" + (i + 1)) || runtime.keyboard.isKeyDown("Numpad" + (i + 1))) {
 			runtime.globalVars.SelectedName = Object.keys(invTemp)[i]; runtime.globalVars.Selected = i; if ((runtime.globalVars.SelectedName === "Trapdoor" || runtime.globalVars.SelectedName === "Piston") && inv.get(runtime.globalVars.SelectedName) > 0) { runtime.objects.InventoryCost.getFirstInstance().getDataMap().set(runtime.globalVars.SelectedName, 1000); }
-			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + "."; setTrapInv(runtime);  runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName);
+			runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + runtime.globalVars.SelectedName + ". Count: " + inv.get(runtime.globalVars.SelectedName) + ".";  runtime.objects.UI_trap.getFirstInstance().text = "Cost: " + runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName); setTrapInv(runtime);
 		}
 	}
 	if (runtime.keyboard.isKeyDown("Space") && inv.get(runtime.globalVars.SelectedName) > 0 && !runtime.spaceDown) { runtime.spaceDown = true;
@@ -60,14 +60,14 @@ function Tick(runtime){
 			} else {
 				obstacles.delete(o.trapIndex); o.destroy(); 
 			}
-			runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);
+			if (runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) != 500){runtime.objects.Player.getFirstInstance().instVars.Coins += Math.floor(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(o.objectType.name) * 0.5);}
 		}});
 	}
 	if(runtime.globalVars.EnemiesDestroyed == runtime.globalVars.ExistingEnemies) {
 		runtime.goToLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel);
 	}
 }
-function setTrapInv(runtime){ var inv = runtime.objects.Inventory.getFirstInstance().getDataMap(); var shopLocation = runtime.objects.Store.getFirstInstance(); var uiLayer = runtime.layout.getLayer("UI").index;
-	var invKeys = Object.keys(runtime.objects.InventoryInit.getFirstInstance().instVars); invKeys.forEach(function(trapName){ runtime.objects[trapName].getAllInstances().forEach(function(trapInstance){ if(trapInstance.layer.index === uiLayer) { trapInstance.destroy(); } }); });
-	for(var i = 0; i < inv.get(runtime.globalVars.SelectedName); i++) { var obj = runtime.objects[runtime.globalVars.SelectedName].createInstance(uiLayer, shopLocation.x, shopLocation.y + i); obj.x += i * 20; obj.setCollisionsEnabled(false); }
+function setTrapInv(runtime){ var inv = runtime.objects.Inventory.getFirstInstance().getDataMap();
+	if (inv.get(runtime.globalVars.SelectedName) > 0) { runtime.objects.Store.getFirstInstance().setAnimation(runtime.globalVars.SelectedName);} else { runtime.objects.Store.getFirstInstance().setAnimation("Store"); } console.log(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName));
+	if (runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName) === 500) { runtime.objects.UI_trap.getFirstInstance().text = "Cannot Buy."; }
 }
