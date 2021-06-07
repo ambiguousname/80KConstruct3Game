@@ -16,7 +16,7 @@ async function OnBeforeProjectStart(runtime)
 		switch(e.instVars.EnemyType){
 			case "Jumper": enemyClass = Jumper; break; case "Digger": enemyClass = Digger; break; case "Destroyer": enemyClass = Destroyer; break; case "Whip": enemyClass = Whip; break; case "AnimalHandler": enemyClass = AnimalHandler; break; case "BossDuplicate": enemyClass = BossDuplicate; break; case "Boss": enemyClass = Boss; break;
 		}
-		var enemy = new enemyClass(e.instVars.EnemyName, e, runtime.globalVars.ExistingEnemies, runtime.objects.Player.getFirstInstance().instVars.localScale); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1; if(e.instVars.EnemyType === "Boss") { runtime.bossWeakness = enemy.weakness; }
+		var enemy = new enemyClass(e.instVars.EnemyName, e, runtime.globalVars.ExistingEnemies, runtime.objects.Player.getFirstInstance().instVars.localScale, e.instVars.EnemyType); enemy.initializePathing(); runtime.globalVars.ExistingEnemies += 1; if(e.instVars.EnemyType === "Boss") { runtime.bossWeakness = enemy.weakness; }
 		enemies.set(enemy.name, enemy);
 	}); runtime.globalVars.totalPlaced = 0;
 	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars;

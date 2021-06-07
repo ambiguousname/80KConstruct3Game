@@ -39,6 +39,61 @@
 					}
 				},
 				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 304,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 29,
+							"height": 18,
+							"max-width": 57,
+							"max-height": 40,
+							"data": "83x0,64,77,38x0,65,78,38x0,64,77,38x0,65,78,38x0,64,77,38x0,65,78,38x0,64,77,38x0,65,78,38x0,64,77,38x0,65,78,7x0,118,131,144,157,27x0,64,77,7x0,119,132,145,158,25x0,64,77,65,78,7x0,120,133,146,159,25x0,65,78,9x0,121,134,147,160,25x0,64,77,38x0,65,78,38x0,64,77,38x0,65,78,38x0,64,77,64,77,36x0,65,78,65,78,196x0,118,131,144,157,36x0,119,132,145,158,36x0,120,133,146,159,36x0,121,134,147,160,1155x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -47,
+						"y": -33,
+						"width": 955,
+						"height": 580,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "InventoryCostInit",
 					"properties": {
 						"initially-visible": false,
@@ -308,10 +363,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 745,
-						"y": 100.18335640665308,
-						"width": 54.63457695670322,
-						"height": 51.902848108868056,
+						"x": 741.3349261979027,
+						"y": 105.65790591153535,
+						"width": 20.187432392711912,
+						"height": 19.178060773076318,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -321,61 +376,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tilemap",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 304,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 30,
-							"height": 18,
-							"max-width": 39,
-							"max-height": 30,
-							"data": "63x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,7x0,118,131,144,157,17x0,64,77,7x0,119,132,145,158,15x0,64,77,65,78,7x0,120,133,146,159,15x0,65,78,9x0,121,134,147,160,15x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,64,77,26x0,65,78,65,78,146x0,118,131,144,157,26x0,119,132,145,158,26x0,120,133,146,159,26x0,121,134,147,160,325x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": -47,
-						"y": -36,
-						"width": 989,
-						"height": 583,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"zElevation": 0
 					}
 				},
@@ -802,8 +802,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 745.5865303450064,
-						"y": 49.274265497562084,
+						"x": 741,
+						"y": 24,
 						"width": 30.914056512088713,
 						"height": 29.88456106321324,
 						"originX": 0.5,

@@ -298,7 +298,7 @@
 					}
 				],
 				"sid": 885292330496372,
-				"name": "forward+snake",
+				"name": "Snaked",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -537,7 +537,18 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
-					},
+					}
+				],
+				"sid": 381170307032906,
+				"name": "jumper_jump",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
 					{
 						"width": 112,
 						"height": 48,
@@ -546,7 +557,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4589366,
+						"imageSpriteId": 2385952,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -578,7 +589,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 874953,
+						"imageSpriteId": 398095,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -610,7 +621,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5103037,
+						"imageSpriteId": 1615973,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -642,7 +653,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 822698,
+						"imageSpriteId": 6434389,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -674,7 +685,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5503520,
+						"imageSpriteId": 7212157,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -706,7 +717,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4990819,
+						"imageSpriteId": 7034889,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -738,7 +749,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3307451,
+						"imageSpriteId": 4311721,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -765,12 +776,12 @@
 					{
 						"width": 112,
 						"height": 48,
-						"originX": 0.49107142857142855,
-						"originY": 3.0416666666666665,
+						"originX": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 646474,
+						"imageSpriteId": 9298182,
 						"collisionPoly": {
 							"points": [
 								0.1875,
@@ -795,9 +806,9 @@
 						"duration": 1
 					}
 				],
-				"sid": 381170307032906,
-				"name": "jumper_jump",
-				"isLooping": true,
+				"sid": 867586555078248,
+				"name": "JumperSnaked",
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
@@ -1074,7 +1085,7 @@
 					}
 				],
 				"sid": 981375473502748,
-				"name": "digger+snake",
+				"name": "DiggerSnaked",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -1651,7 +1662,7 @@
 					}
 				],
 				"sid": 356380265296705,
-				"name": "whip+snake",
+				"name": "WhipSnaked",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
