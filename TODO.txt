@@ -1,10 +1,5 @@
 What we need to do:
 - Add sound effects and music?
-- Make Jumper immune to Snake until it hits a pitfall?
-- Make animation for enemies' reactions to the snake
-- Add visual effect to Jumper to show that they're vulnerable a few seconds after they jump?
-- Add visual effect while an enemy is being affected by the snake trap (Whip enemy already has animation,
-visual effect for other enemies?).
 
 Feedback from play testing:
 - Balloon is still too small
