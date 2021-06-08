@@ -150,8 +150,8 @@
 					"world": {
 						"x": 752.066115702479,
 						"y": 225.14312546957166,
-						"width": 27.47015201082121,
-						"height": 67.02717090640374,
+						"width": 13.735076005410605,
+						"height": 33.51358545320187,
 						"originX": 0.4090909090909091,
 						"originY": 0.4444444444444444,
 						"color": [
@@ -179,8 +179,8 @@
 					"world": {
 						"x": 782.1187077385421,
 						"y": 276.2325319308789,
-						"width": 27.47015201082121,
-						"height": 67.02717090640374,
+						"width": 13.735076005410605,
+						"height": 33.51358545320187,
 						"originX": 0.4090909090909091,
 						"originY": 0.4444444444444444,
 						"color": [
@@ -208,8 +208,8 @@
 					"world": {
 						"x": 669.4214876033054,
 						"y": 301.77723516153253,
-						"width": 27.47015201082121,
-						"height": 67.02717090640374,
+						"width": 13.735076005410605,
+						"height": 33.51358545320187,
 						"originX": 0.4090909090909091,
 						"originY": 0.4444444444444444,
 						"color": [
@@ -991,70 +991,6 @@
 						"angle": 0,
 						"zElevation": 2
 					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 93,
-					"instanceVariables": {
-						"Position": 0,
-						"EnemyName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 784.0823741547705,
-						"y": 228.64838467317793,
-						"width": 30.543057263403497,
-						"height": 30.116942731132184,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "PathObj",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 94,
-					"instanceVariables": {
-						"Position": 1,
-						"EnemyName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 698.6038016528921,
-						"y": 343.6708640120209,
-						"width": 30.543057263403497,
-						"height": 30.116942731132184,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
 				}
 			],
 			"sid": 779492991898622,
@@ -1306,7 +1242,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1464,6 +1400,70 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 93,
+					"instanceVariables": {
+						"Position": 0,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 784.0823741547705,
+						"y": 228.64838467317793,
+						"width": 30.543057263403497,
+						"height": 30.116942731132184,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "PathObj",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 94,
+					"instanceVariables": {
+						"Position": 1,
+						"EnemyName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 698.6038016528921,
+						"y": 343.6708640120209,
+						"width": 30.543057263403497,
+						"height": 30.116942731132184,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
 					}
 				}
 			],

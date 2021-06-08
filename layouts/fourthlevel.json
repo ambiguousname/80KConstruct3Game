@@ -121,8 +121,8 @@
 					"world": {
 						"x": 462.58493272317463,
 						"y": 151.27149784850764,
-						"width": 45.03285644823281,
-						"height": 109.88016973368809,
+						"width": 22.516428224116407,
+						"height": 54.940084866844046,
 						"originX": 0.4090909090909091,
 						"originY": 0.4444444444444444,
 						"color": [
@@ -1195,7 +1195,7 @@
 				{
 					"type": "Store",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Store",
 						"initial-frame": 0,
 						"enable-collisions": true,
