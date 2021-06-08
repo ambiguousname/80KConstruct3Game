@@ -50,7 +50,7 @@ function Tick(runtime){
 	} else if (!runtime.keyboard.isKeyDown("Space") && runtime.spaceDown === true) runtime.spaceDown = false;
 	enemies.forEach((e) => {e.update(e); obstacles.forEach((o)=> {e.getCollision(e, o); if(o.openTimer > 0) { o.openTimer -= runtime.dt; } else if (o.openTimer <= 0) { o.isOpen = false }})});
 	if (runtime.keyboard.isKeyDown("KeyR")){
-		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o)) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
+		obstacles.forEach((o)=> {if(runtime.objects.Player.getFirstInstance().testOverlap(o) && !o.inactive) { if (o.objectType.name == "Wind") { o.wind.destroy(); }
 			if(o.objectType.name === "Wind" || o.objectType.name === "Snake") {
 				o.inactive = true;
 				o.opacity = 0;

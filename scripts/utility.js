@@ -18,7 +18,7 @@ class Enemy {
 				if (self.instance.zElevation > 100) {self.kill(self); obstacles.delete(self.killer.trapIndex); self.killer.destroy();}
 				break;
 			case "Snake":
-				self.isSnaked = true; if(!self.jumpTimer > 0){self.instance.setAnimation(self.type + "Snaked");} self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 500 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 500 * self.scale + self.killer.y);
+				self.isSnaked = true; if(!self.jumpTimer || self.jumpTimer <= 0){self.instance.setAnimation(self.type + "Snaked");} self.instance.behaviors.MoveTo.moveToPosition(Math.sign(self.instance.x - self.killer.x) * 500 * self.scale + self.killer.x, Math.sign(self.instance.y - self.killer.y) * 500 * self.scale + self.killer.y);
 				if (self.instance.x == Math.sign(self.instance.x - self.killer.x) * 500 * self.scale + self.killer.x && self.instance.y == Math.sign(self.instance.y - self.killer.y) * 500 * self.scale + self.killer.y) { self.instance.setAnimation(self.regularAnimation); self.dying = false; self.pathIndex = (self.pathIndex + 1) % paths[self.name].length; self.updatePath(self); self.isSnaked = false; }
 				break;
 			case "Wind":if(!self.jumpTimer > 0){self.instance.setAnimation(self.type + "Snaked");} var killerPos = self.killer.actualPos; self.instance.behaviors.MoveTo.acceleration = 1000; self.instance.behaviors.MoveTo.deceleration = 1000; self.instance.behaviors.MoveTo.maxSpeed = 1000; self.instance.behaviors.MoveTo.rotateSpeed = 0;
@@ -55,6 +55,6 @@ class Whip extends Enemy {
 		if((!self.dying || (self.isSnaked && self.killer != trapInstance) || self.jumpingDuration > 0) && (trapInstance.isOpen === true) && trapInstance.objectType.name != "Block" && self.instance.testOverlap(trapInstance) && !trapInstance.inactive) {
 			if (self.trapImmunity.includes(trapInstance.objectType.name) && self.jumpingDuration < 2 && self.isSnaked === false){
 				self.instance.setAnimation("whip_jump"); self.jumpTimer = 0.8;
-			} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.jumpingDuration >= 2) {
+			} else if (!self.trapImmunity.includes(trapInstance.objectType.name) || self.jumpingDuration >= 2 || self.isSnaked) {
 				self.isSnaked = false; self.dying = true; self.killer = trapInstance; self.instance.behaviors.MoveTo.stop(); self.instance.behaviors.MoveTo.moveToPosition(trapInstance.x, trapInstance.y); self.dyingUpdate(self);
 			}}}}
