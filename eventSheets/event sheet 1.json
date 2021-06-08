@@ -224,30 +224,7 @@
 							}
 						}
 					],
-					"sid": 329609673624354,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 612296843190953,
-									"parameters": {
-										"key": 82
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 757355268913416
-								}
-							],
-							"sid": 293930200238888
-						}
-					]
+					"sid": 329609673624354
 				},
 				{
 					"eventType": "block",
@@ -504,6 +481,31 @@
 				}
 			],
 			"sid": 659824238275426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 644405644959565,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 149549444655880,
+					"parameters": {
+						"variable": "Total_time",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 370205965647230
 		}
 	],
 	"sid": 465544461764587

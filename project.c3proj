@@ -201,7 +201,8 @@
 			"TutorialLevel7",
 			"SixLevel",
 			"LastLevel",
-			"You Win"
+			"You Win",
+			"You Lose"
 		],
 		"subfolders": []
 	},

@@ -41,7 +41,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with Q.",
+						"text": "Traps can be refunded for 50% of their cost.\n\nPress R when close to any trap to refund it.\n\nTry refunding both these pitfalls, then purchase a new pitfall with Q.\n\nIf you mess up, press F to restart the level.",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -93,8 +93,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 222,
-						"y": 199,
+						"x": 141,
+						"y": 183,
 						"width": 80,
 						"height": 35,
 						"originX": 0.5664739884393064,

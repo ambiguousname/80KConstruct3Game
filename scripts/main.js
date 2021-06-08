@@ -66,6 +66,7 @@ function Tick(runtime){
 	if(runtime.globalVars.EnemiesDestroyed == runtime.globalVars.ExistingEnemies) {
 		runtime.goToLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel);
 	}
+	if (runtime.globalVars.Total_time <= 0 && runtime.keyboard.isKeyDown("KeyR")) { runtime.layout.addEventListener("beforelayoutstart", function(){ setLoadNext(runtime); }); runtime.goToLayout(runtime.layout.name); }
 }
 function setTrapInv(runtime){ var inv = runtime.objects.Inventory.getFirstInstance().getDataMap();
 	if (inv.get(runtime.globalVars.SelectedName) > 0) { runtime.objects.Store.getFirstInstance().setAnimation(runtime.globalVars.SelectedName);} else { runtime.objects.Store.getFirstInstance().setAnimation("Store"); } console.log(runtime.objects.InventoryCost.getFirstInstance().getDataMap().get(runtime.globalVars.SelectedName));
