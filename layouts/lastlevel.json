@@ -119,8 +119,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 437,
-						"y": 321,
+						"x": 443,
+						"y": 303,
 						"width": 31.116772516235628,
 						"height": 13.613587975853083,
 						"originX": 0.5664739884393064,
@@ -148,8 +148,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 414,
-						"y": 422,
+						"x": 417,
+						"y": 395,
 						"width": 34.11450061144967,
 						"height": 14.925094017509231,
 						"originX": 0.5664739884393064,
@@ -464,6 +464,61 @@
 					}
 				},
 				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 305,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 30,
+							"height": 18,
+							"max-width": 39,
+							"max-height": 30,
+							"data": "62x0,3,16,29,42,3x0,3,16,29,42,3,16,29,42,15x0,4,17,30,43,3x0,4,17,30,43,4,17,30,43,15x0,5,18,31,44,3x0,5,18,31,44,5,18,31,44,15x0,6,19,32,45,3x0,6,19,32,45,6,19,32,45,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,285x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,326x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -72,
+						"y": -66,
+						"width": 989,
+						"height": 583,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -670,8 +725,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 398,
-						"y": 466,
+						"x": 391,
+						"y": 479,
 						"width": 38.91587469390696,
 						"height": 38.77547015412242,
 						"originX": 0.5,
@@ -714,8 +769,8 @@
 						}
 					},
 					"world": {
-						"x": 425,
-						"y": 373,
+						"x": 428,
+						"y": 357,
 						"width": 40.734289242422065,
 						"height": 26.477288007574344,
 						"originX": 0.5,
@@ -1363,61 +1418,6 @@
 					}
 				},
 				{
-					"type": "Tilemap",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 305,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 30,
-							"height": 18,
-							"max-width": 39,
-							"max-height": 30,
-							"data": "62x0,3,16,29,42,3x0,3,16,29,42,3,16,29,42,15x0,4,17,30,43,3x0,4,17,30,43,4,17,30,43,15x0,5,18,31,44,3x0,5,18,31,44,5,18,31,44,15x0,6,19,32,45,3x0,6,19,32,45,6,19,32,45,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,285x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,28x0,64,77,28x0,65,78,326x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": -73,
-						"y": -54,
-						"width": 989,
-						"height": 583,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Lose_background",
 					"properties": {
 						"initially-visible": false,
@@ -1430,8 +1430,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 427,
-						"y": 246,
+						"x": 429,
+						"y": 238,
 						"width": 878,
 						"height": 514,
 						"originX": 0.5,
@@ -1459,8 +1459,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 410,
-						"y": 439,
+						"x": 408,
+						"y": 444,
 						"width": 333,
 						"height": 182,
 						"originX": 0.5,

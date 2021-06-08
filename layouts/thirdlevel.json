@@ -226,8 +226,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -64,
-						"y": -47,
+						"x": -60,
+						"y": -35,
 						"width": 989,
 						"height": 583,
 						"originX": 0,
@@ -309,7 +309,7 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 80,
+								"max-speed": 65,
 								"acceleration": 168.00000000000003,
 								"deceleration": 168.00000000000003,
 								"rotate-speed": 0,
@@ -417,7 +417,7 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 80,
+								"max-speed": 50,
 								"acceleration": 168.00000000000003,
 								"deceleration": 168.00000000000003,
 								"rotate-speed": 0,
@@ -665,7 +665,7 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 93,
+								"max-speed": 72,
 								"acceleration": 168.00000000000003,
 								"deceleration": 168.00000000000003,
 								"rotate-speed": 0,
@@ -708,8 +708,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 790,
-						"y": 277,
+						"x": 784.8697930472043,
+						"y": 271.8866465523053,
 						"width": 31.274372064305076,
 						"height": 27.922998328427436,
 						"originX": 0.5,
@@ -965,7 +965,7 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 130,
+								"max-speed": 80,
 								"acceleration": 168.00000000000003,
 								"deceleration": 168.00000000000003,
 								"rotate-speed": 0,
@@ -1561,8 +1561,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 424,
-						"y": 247,
+						"x": 428,
+						"y": 241,
 						"width": 878,
 						"height": 514,
 						"originX": 0.5,
@@ -1590,8 +1590,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 412,
-						"y": 411,
+						"x": 429,
+						"y": 418,
 						"width": 333,
 						"height": 182,
 						"originX": 0.5,

@@ -37,7 +37,7 @@
 				{
 					"type": "SpriteFont",
 					"properties": {
-						"text": "YOU WIN !!!",
+						"text": "CONGRATULATIONS,\n\nYOU WIN!!!",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -56,9 +56,47 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 215,
-						"y": 180,
-						"width": 461,
+						"x": 212,
+						"y": 71,
+						"width": 627,
+						"height": 188,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": "The end.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 306,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 563,
+						"y": 404,
+						"width": 303,
 						"height": 44,
 						"originX": 0,
 						"originY": 0,
