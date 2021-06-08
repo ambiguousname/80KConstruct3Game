@@ -1,6 +1,6 @@
 // Forgive me for all of the ugly tricks I've had to use to shorten the number of lines this has. I could just minify, but this at least allows me to somewhat read my code.
 import {Enemy, Jumper, Digger, Whip, enemies, obstacles, paths} from "./utility.js"; var setLoadNext = function (runtime) {if (runtime.layout.name.includes("Level")) {OnBeforeProjectStart(runtime);} if (runtime.objects.Player.getFirstInstance()) { runtime.getLayout(runtime.objects.Player.getFirstInstance().instVars.NextLevel).addEventListener("beforelayoutstart", () => {setLoadNext(runtime);});}};
-runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {setLoadNext(runtime)}));
+runOnStartup(async runtime => runtime.addEventListener("beforeprojectstart", () => {setLoadNext(runtime)})); var addedTick = false;
 async function OnBeforeProjectStart(runtime)
 {
 	paths.clear(); enemies.clear(); obstacles.clear(); //Reset global variables for a new scene load.
@@ -22,7 +22,7 @@ async function OnBeforeProjectStart(runtime)
 	var inv = runtime.objects.InventoryInit.getFirstInstance().instVars; var invActual = runtime.objects.Inventory.getFirstInstance().getDataMap(); var invCost = runtime.objects.InventoryCost.getFirstInstance().getDataMap(); var invCostInit = runtime.objects.InventoryCostInit.getFirstInstance().instVars;
 	runtime.objects.Shop_text.getFirstInstance().text = "Trap: " + Object.keys(inv)[0] + ". Count: " + inv[Object.keys(inv)[0]] + "."; runtime.globalVars.totalPlaced = 0; 
 	Object.keys(inv).forEach(function(trapName){ runtime.globalVars[trapName + "Placed"] = 0; invActual.set(trapName, inv[trapName]); runtime.objects[trapName].getAllInstances().forEach(function(t) {t.isOpen = true; t.trapIndex = runtime.globalVars.totalPlaced; runtime.globalVars.totalPlaced += 1; obstacles.set(t.trapIndex, t);}); invCost.set(trapName, invCostInit[trapName]);}); runtime.objects.UI_trap.getFirstInstance().text = "Cost: " +  invCost.get(Object.keys(inv)[0]);
-	runtime.addEventListener("tick", () => Tick(runtime)); runtime.globalVars.SelectedName = Object.keys(inv)[0]; setTrapInv(runtime);
+	if (!addedTick) {runtime.addEventListener("tick", () => Tick(runtime));addedTick = true;} runtime.globalVars.SelectedName = Object.keys(inv)[0]; setTrapInv(runtime);
 }
 
 function Tick(runtime){
