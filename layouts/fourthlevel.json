@@ -39,6 +39,61 @@
 					}
 				},
 				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 303,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "playerhit"
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 30,
+							"height": 18,
+							"max-width": 39,
+							"max-height": 30,
+							"data": "62x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,205x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,8x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,194x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,445x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": -60,
+						"y": -45,
+						"width": 989,
+						"height": 583,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "InventoryCostInit",
 					"properties": {
 						"initially-visible": false,
@@ -119,10 +174,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 462.58493272317463,
-						"y": 151.27149784850764,
-						"width": 75.0547607470547,
-						"height": 183.1336162228135,
+						"x": 458,
+						"y": 144,
+						"width": 20.339111067800218,
+						"height": 49.627431005432555,
 						"originX": 0.4090909090909091,
 						"originY": 0.4444444444444444,
 						"color": [
@@ -448,61 +503,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tilemap",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 303,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "playerhit"
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 30,
-							"height": 18,
-							"max-width": 39,
-							"max-height": 30,
-							"data": "62x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,205x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,8x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,194x0,122,135,148,161,26x0,123,136,149,162,26x0,124,137,150,163,445x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": -60,
-						"y": -45,
-						"width": 989,
-						"height": 583,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"zElevation": 0
 					}
 				},
@@ -1345,6 +1345,35 @@
 						"height": 46,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Balloon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 307,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 360,
+						"y": 656,
+						"width": 52.06339168106092,
+						"height": 127.03467570178867,
+						"originX": 0.4090909090909091,
+						"originY": 0.4444444444444444,
 						"color": [
 							1,
 							1,
