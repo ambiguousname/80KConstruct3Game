@@ -1013,6 +1013,7 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
+			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
@@ -1703,6 +1704,7 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
+			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
